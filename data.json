@@ -1,25 +1,172 @@
 {
   "phases": [
-    { "number": 1, "title": "Original Heists", "year": "2015", "ops": ["FLE-001","PRI-002","HUM-003","SER-004","PAC-005"] },
-    { "number": 2, "title": "Lowriders", "year": "2015", "ops": ["LOW-006"] },
-    { "number": 3, "title": "Executives and Other Criminals", "year": "2015", "ops": ["EXE-007"] },
-    { "number": 4, "title": "Finance and Felony", "year": "2016", "ops": ["FIN-008"] },
-    { "number": 5, "title": "Bikers", "year": "2016", "ops": ["BIK-009"] },
-    { "number": 6, "title": "Gunrunning", "year": "2017", "ops": ["GUN-010"] },
-    { "number": 7, "title": "Smuggler's Run", "year": "2017", "ops": ["SMU-011"] },
-    { "number": 8, "title": "The Doomsday Heist", "year": "2017", "ops": ["DOOM-012","DOOM-013","DOOM-014"] },
-    { "number": 9, "title": "After Hours", "year": "2018", "ops": ["AH-015"] },
-    { "number": 10, "title": "Diamond Casino & Resort", "year": "2019", "ops": ["CAS-016","CAS-017"] },
-    { "number": 11, "title": "Los Santos Summer Special", "year": "2020", "ops": ["SUM-018"] },
-    { "number": 12, "title": "Cayo Perico Heist", "year": "2020", "ops": ["CAY-019"] },
-    { "number": 13, "title": "Los Santos Tuners", "year": "2021", "ops": ["TUN-020"] },
-    { "number": 14, "title": "The Contract", "year": "2021", "ops": ["CON-021"] },
-    { "number": 15, "title": "Criminal Enterprises", "year": "2022", "ops": ["CE-022"] },
-    { "number": 16, "title": "San Andreas Mercenaries", "year": "2023", "ops": ["SAM-023"] },
-    { "number": 17, "title": "Chop Shop", "year": "2023", "ops": ["CHOP-024"] },
-    { "number": 18, "title": "Bottom Dollar Bounties", "year": "2024", "ops": ["BDB-025"] },
-    { "number": 19, "title": "Bottom Dollar / Garment Factory Era", "year": "2024", "ops": ["GAR-026"] },
-    { "number": 20, "title": "Kortz Center Operation", "year": "", "ops": ["KOR-027"] }
+    {
+      "number": 1,
+      "title": "Original Heists",
+      "year": "2015",
+      "ops": [
+        "FLE-001",
+        "HUM-003",
+        "SER-004",
+        "PAC-005",
+        "PRI-002"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Lowriders",
+      "year": "2015",
+      "ops": [
+        "LOW-006"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Executives and Other Criminals",
+      "year": "2015",
+      "ops": [
+        "EXE-007"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Finance and Felony",
+      "year": "2016",
+      "ops": [
+        "FIN-008"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Bikers",
+      "year": "2016",
+      "ops": [
+        "BIK-009"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Gunrunning",
+      "year": "2017",
+      "ops": [
+        "GUN-010"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Smuggler's Run",
+      "year": "2017",
+      "ops": [
+        "SMU-011"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "The Doomsday Heist",
+      "year": "2017",
+      "ops": [
+        "DOOM-012",
+        "DOOM-013",
+        "DOOM-014"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "After Hours",
+      "year": "2018",
+      "ops": [
+        "AH-015"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Diamond Casino & Resort",
+      "year": "2019",
+      "ops": [
+        "CAS-016",
+        "CAS-017"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Los Santos Summer Special",
+      "year": "2020",
+      "ops": [
+        "SUM-018"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Cayo Perico Heist",
+      "year": "2020",
+      "ops": [
+        "CAY-019"
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Los Santos Tuners",
+      "year": "2021",
+      "ops": [
+        "TUN-020"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "The Contract",
+      "year": "2021",
+      "ops": [
+        "CON-021"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Criminal Enterprises",
+      "year": "2022",
+      "ops": [
+        "CE-022"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "San Andreas Mercenaries",
+      "year": "2023",
+      "ops": [
+        "SAM-023"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Chop Shop",
+      "year": "2023",
+      "ops": [
+        "CHOP-024"
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Bottom Dollar Bounties",
+      "year": "2024",
+      "ops": [
+        "BDB-025"
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Bottom Dollar / Garment Factory Era",
+      "year": "2024",
+      "ops": [
+        "GAR-026"
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Kortz Center Operation",
+      "year": "",
+      "ops": [
+        "KOR-027"
+      ]
+    }
   ],
   "operations": {
     "FLE-001": {
@@ -41,26 +188,62 @@
         "evidenceRating": "★★★★★ Strong"
       },
       "setup": [
-        { "name": "1. Scope Out Fleeca Bank", "objective": "Observe security systems and identify weaknesses.", "locations": "Fleeca Bank, Great Ocean Highway", "intel": "Security cameras, vault location, guard positions, escape route" },
-        { "name": "2. Kuruma", "objective": "Acquire an armored vehicle for the robbery.", "locations": "Armored Kuruma", "intel": "Provides protection during the escape." }
+        {
+          "name": "1. Scope Out Fleeca Bank",
+          "objective": "Observe security systems and identify weaknesses.",
+          "locations": "Fleeca Bank, Great Ocean Highway",
+          "intel": "Security cameras, vault location, guard positions, escape route"
+        },
+        {
+          "name": "2. Kuruma",
+          "objective": "Acquire an armored vehicle for the robbery.",
+          "locations": "Armored Kuruma",
+          "intel": "Provides protection during the escape."
+        }
       ],
       "finalOperation": {
         "roles": [
-          { "role": "Driver", "duties": "Controls escape vehicle, manages getaway" },
-          { "role": "Driller", "duties": "Opens safety deposit box area, handles vault access" }
+          {
+            "role": "Driver",
+            "duties": "Controls escape vehicle, manages getaway"
+          },
+          {
+            "role": "Driller",
+            "duties": "Opens safety deposit box area, handles vault access"
+          }
         ]
       },
       "equipment": {
-        "required": ["Armored vehicle", "Drill equipment", "Weapons"],
-        "recommended": ["Armored Kuruma", "Suppressed weapons", "Fast escape vehicle"]
+        "required": [
+          "Armored vehicle",
+          "Drill equipment",
+          "Weapons"
+        ],
+        "recommended": [
+          "Armored Kuruma",
+          "Suppressed weapons",
+          "Fast escape vehicle"
+        ]
       },
       "organizations": [
-        { "name": "Fleeca Bank", "role": "Financial institution targeted by the crew." },
-        { "name": "Law Enforcement", "role": "Responds after robbery begins." }
+        {
+          "name": "Fleeca Bank",
+          "role": "Financial institution targeted by the crew."
+        },
+        {
+          "name": "Law Enforcement",
+          "role": "Responds after robbery begins."
+        }
       ],
       "lore": [
-        { "name": "Lester Crest", "note": "First major operation connecting the player crew to Lester's criminal network." },
-        { "name": "Los Santos Financial System", "note": "Introduces the wider banking infrastructure later referenced in the Pacific Standard Job, Union Depository references, and other financial crimes." }
+        {
+          "name": "Lester Crest",
+          "note": "First major operation connecting the player crew to Lester's criminal network."
+        },
+        {
+          "name": "Los Santos Financial System",
+          "note": "Introduces the wider banking infrastructure later referenced in the Pacific Standard Job, Union Depository references, and other financial crimes."
+        }
       ],
       "environmentalEvidence": {
         "title": "Fleeca Apartment Theory",
@@ -69,31 +252,266 @@
         "confidence": "High"
       }
     },
-    "PRI-002": { "title": "The Prison Break", "release": "March 10, 2015", "status": "Unfiled", "notes": ["Bolingbroke Penitentiary extraction", "Rashkovsky operation", "Introduces larger crew coordination"] },
-    "HUM-003": { "title": "Humane Labs Raid", "release": "March 10, 2015", "status": "Unfiled", "notes": ["Humane Labs infiltration", "Merryweather involvement", "Don Percival connection", "Biochemical research storyline"] },
-    "SER-004": { "title": "Series A Funding", "release": "March 10, 2015", "status": "Unfiled", "notes": ["Trevor Philips connection", "Drug supply operations", "Lost MC / The Professionals / O'Neil involvement"] },
-    "PAC-005": { "title": "The Pacific Standard Job", "release": "March 10, 2015", "status": "Unfiled", "notes": ["Largest original bank robbery", "Pacific Standard Bank", "Downtown financial district", "Lester's most ambitious operation"] },
-    "LOW-006": { "title": "Lamar Davis Operations", "release": "October 20, 2015", "status": "Unfiled", "notes": ["Benny's Original Motor Works", "Families vs Ballas conflict", "Lamar's criminal ambitions"] },
-    "EXE-007": { "title": "CEO Operations", "release": "December 15, 2015", "status": "Unfiled", "notes": ["CEO offices", "Special Cargo", "Vehicle Cargo", "VIP Work"] },
-    "FIN-008": { "title": "CEO Criminal Empire Expansion", "release": "2016", "status": "Unfiled", "notes": ["Warehouses", "Smuggling operations", "Corporate crime"] },
-    "BIK-009": { "title": "Motorcycle Club Operations", "release": "2016", "status": "Unfiled", "notes": ["Cocaine lockups", "Meth labs", "Counterfeit cash", "Weed farms", "Document forgery"] },
-    "GUN-010": { "title": "Military Operations", "release": "2017", "status": "Unfiled", "notes": ["Bunkers", "Research", "Mobile Operations Center", "Weapons trafficking"] },
-    "SMU-011": { "title": "Aircraft Operations", "release": "2017", "status": "Unfiled", "notes": ["Hangars", "Smuggling network", "Air cargo"] },
-    "DOOM-012": { "title": "Act I — The Data Breaches", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
-    "DOOM-013": { "title": "Act II — The Bogdan Problem", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
-    "DOOM-014": { "title": "Act III — The Doomsday Scenario", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
-    "AH-015": { "title": "Nightclub Operations", "release": "2018", "status": "Unfiled", "notes": ["Gay Tony", "Tony Prince", "Underground economy"] },
-    "CAS-016": { "title": "Casino Story Missions", "release": "2019", "status": "Unfiled", "notes": [] },
-    "CAS-017": { "title": "Diamond Casino Heist", "release": "2019", "status": "Unfiled", "notes": ["Approaches: Silent & Sneaky, The Big Con, Aggressive"] },
-    "SUM-018": { "title": "Los Santos Summer Special", "release": "2020", "status": "Unfiled", "notes": ["Yacht missions", "Business updates"] },
-    "CAY-019": { "title": "Cayo Perico Heist", "release": "2020", "status": "Unfiled", "notes": ["El Rubio", "Kosatka submarine", "Island infiltration"] },
-    "TUN-020": { "title": "Auto Shop Contracts", "release": "2021", "status": "Unfiled", "notes": ["Street racing scene"] },
-    "CON-021": { "title": "The Contract", "release": "2021", "status": "Unfiled", "notes": ["Franklin Clinton", "Dr. Dre", "Agency operations"] },
-    "CE-022": { "title": "Criminal Enterprises", "release": "2022", "status": "Unfiled", "notes": ["IAA missions", "Operation Paper Trail"] },
-    "SAM-023": { "title": "San Andreas Mercenaries", "release": "2023", "status": "Unfiled", "notes": ["Merryweather conflict", "Project Overthrow"] },
-    "CHOP-024": { "title": "Salvage Yard Robberies", "release": "2023", "status": "Unfiled", "notes": ["Vehicle theft operations", "Yusuf Amir", "Tow truck business"] },
-    "BDB-025": { "title": "Bail Enforcement", "release": "2024", "status": "Unfiled", "notes": ["Maude's legacy", "Vincent", "Bounty targets"] },
-    "GAR-026": { "title": "Garment Factory Operations", "release": "2024", "status": "Unfiled", "notes": ["FIB-related missions", "Federal investigations"] },
-    "KOR-027": { "title": "Kortz Center Operation", "release": "", "status": "Unfiled", "notes": ["High-end art theft", "Artwork acquisition", "Security infiltration", "Elite Los Santos connections"] }
+    "PRI-002": {
+      "title": "The Prison Break",
+      "release": "March 10, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "Bolingbroke Penitentiary extraction",
+        "Rashkovsky operation",
+        "Introduces larger crew coordination"
+      ]
+    },
+    "HUM-003": {
+      "title": "Humane Labs Raid",
+      "release": "March 10, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "Humane Labs infiltration",
+        "Merryweather involvement",
+        "Don Percival connection",
+        "Biochemical research storyline"
+      ]
+    },
+    "SER-004": {
+      "title": "Series A Funding",
+      "release": "March 10, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "Trevor Philips connection",
+        "Drug supply operations",
+        "Lost MC / The Professionals / O'Neil involvement"
+      ]
+    },
+    "PAC-005": {
+      "title": "The Pacific Standard Job",
+      "release": "March 10, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "Largest original bank robbery",
+        "Pacific Standard Bank",
+        "Downtown financial district",
+        "Lester's most ambitious operation"
+      ]
+    },
+    "LOW-006": {
+      "title": "Lamar Davis Operations",
+      "release": "October 20, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "Benny's Original Motor Works",
+        "Families vs Ballas conflict",
+        "Lamar's criminal ambitions"
+      ]
+    },
+    "EXE-007": {
+      "title": "CEO Operations",
+      "release": "December 15, 2015",
+      "status": "Unfiled",
+      "notes": [
+        "CEO offices",
+        "Special Cargo",
+        "Vehicle Cargo",
+        "VIP Work"
+      ]
+    },
+    "FIN-008": {
+      "title": "CEO Criminal Empire Expansion",
+      "release": "2016",
+      "status": "Unfiled",
+      "notes": [
+        "Warehouses",
+        "Smuggling operations",
+        "Corporate crime"
+      ]
+    },
+    "BIK-009": {
+      "title": "Motorcycle Club Operations",
+      "release": "2016",
+      "status": "Unfiled",
+      "notes": [
+        "Cocaine lockups",
+        "Meth labs",
+        "Counterfeit cash",
+        "Weed farms",
+        "Document forgery"
+      ]
+    },
+    "GUN-010": {
+      "title": "Military Operations",
+      "release": "2017",
+      "status": "Unfiled",
+      "notes": [
+        "Bunkers",
+        "Research",
+        "Mobile Operations Center",
+        "Weapons trafficking"
+      ]
+    },
+    "SMU-011": {
+      "title": "Aircraft Operations",
+      "release": "2017",
+      "status": "Unfiled",
+      "notes": [
+        "Hangars",
+        "Smuggling network",
+        "Air cargo"
+      ]
+    },
+    "DOOM-012": {
+      "title": "Act I — The Data Breaches",
+      "release": "2017",
+      "status": "Unfiled",
+      "notes": [
+        "IAA",
+        "Agent 14",
+        "Avon Hertz",
+        "Clifford AI",
+        "Government operations"
+      ]
+    },
+    "DOOM-013": {
+      "title": "Act II — The Bogdan Problem",
+      "release": "2017",
+      "status": "Unfiled",
+      "notes": [
+        "IAA",
+        "Agent 14",
+        "Avon Hertz",
+        "Clifford AI",
+        "Government operations"
+      ]
+    },
+    "DOOM-014": {
+      "title": "Act III — The Doomsday Scenario",
+      "release": "2017",
+      "status": "Unfiled",
+      "notes": [
+        "IAA",
+        "Agent 14",
+        "Avon Hertz",
+        "Clifford AI",
+        "Government operations"
+      ]
+    },
+    "AH-015": {
+      "title": "Nightclub Operations",
+      "release": "2018",
+      "status": "Unfiled",
+      "notes": [
+        "Gay Tony",
+        "Tony Prince",
+        "Underground economy"
+      ]
+    },
+    "CAS-016": {
+      "title": "Casino Story Missions",
+      "release": "2019",
+      "status": "Unfiled",
+      "notes": []
+    },
+    "CAS-017": {
+      "title": "Diamond Casino Heist",
+      "release": "2019",
+      "status": "Unfiled",
+      "notes": [
+        "Approaches: Silent & Sneaky, The Big Con, Aggressive"
+      ]
+    },
+    "SUM-018": {
+      "title": "Los Santos Summer Special",
+      "release": "2020",
+      "status": "Unfiled",
+      "notes": [
+        "Yacht missions",
+        "Business updates"
+      ]
+    },
+    "CAY-019": {
+      "title": "Cayo Perico Heist",
+      "release": "2020",
+      "status": "Unfiled",
+      "notes": [
+        "El Rubio",
+        "Kosatka submarine",
+        "Island infiltration"
+      ]
+    },
+    "TUN-020": {
+      "title": "Auto Shop Contracts",
+      "release": "2021",
+      "status": "Unfiled",
+      "notes": [
+        "Street racing scene"
+      ]
+    },
+    "CON-021": {
+      "title": "The Contract",
+      "release": "2021",
+      "status": "Unfiled",
+      "notes": [
+        "Franklin Clinton",
+        "Dr. Dre",
+        "Agency operations"
+      ]
+    },
+    "CE-022": {
+      "title": "Criminal Enterprises",
+      "release": "2022",
+      "status": "Unfiled",
+      "notes": [
+        "IAA missions",
+        "Operation Paper Trail"
+      ]
+    },
+    "SAM-023": {
+      "title": "San Andreas Mercenaries",
+      "release": "2023",
+      "status": "Unfiled",
+      "notes": [
+        "Merryweather conflict",
+        "Project Overthrow"
+      ]
+    },
+    "CHOP-024": {
+      "title": "Salvage Yard Robberies",
+      "release": "2023",
+      "status": "Unfiled",
+      "notes": [
+        "Vehicle theft operations",
+        "Yusuf Amir",
+        "Tow truck business"
+      ]
+    },
+    "BDB-025": {
+      "title": "Bail Enforcement",
+      "release": "2024",
+      "status": "Unfiled",
+      "notes": [
+        "Maude's legacy",
+        "Vincent",
+        "Bounty targets"
+      ]
+    },
+    "GAR-026": {
+      "title": "Garment Factory Operations",
+      "release": "2024",
+      "status": "Unfiled",
+      "notes": [
+        "FIB-related missions",
+        "Federal investigations"
+      ]
+    },
+    "KOR-027": {
+      "title": "Kortz Center Operation",
+      "release": "",
+      "status": "Unfiled",
+      "notes": [
+        "High-end art theft",
+        "Artwork acquisition",
+        "Security infiltration",
+        "Elite Los Santos connections"
+      ]
+    }
   }
 }
