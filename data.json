@@ -5,11 +5,11 @@
       "title": "Original Heists",
       "year": "2015",
       "ops": [
-        "FLE-001",
         "HUM-003",
         "SER-004",
         "PAC-005",
-        "PRI-002"
+        "PRI-002",
+        "FLE-001"
       ]
     },
     {
@@ -182,6 +182,7 @@
         "objective": "Infiltrate Fleeca's security network, obtain access codes, and execute a coordinated robbery."
       },
       "intel": "Lester Crest begins assembling a professional crew capable of executing high-value criminal operations across Los Santos. The Fleeca Job serves as the first major heist operation, testing the crew's ability to perform reconnaissance, bypass security, coordinate transportation, and manage law enforcement response.",
+      "dialogue": "test",
       "planningLocation": {
         "host": "High-End Apartment",
         "observation": "Apartment Connection: 4 Integrity Way, Apartment 30. Visible Landmark: Fleeca Bank flags. Possible Connection: the apartment view appears to reference the first heist target.",
