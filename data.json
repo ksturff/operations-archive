@@ -1,0 +1,226 @@
+{
+  "phases": [
+    { "number": 1, "title": "Original Heists", "year": "2015", "ops": ["FLE-001","PRI-002","HUM-003","SER-004","PAC-005"] },
+    { "number": 2, "title": "Lowriders", "year": "2015", "ops": ["LOW-006"] },
+    { "number": 3, "title": "Executives and Other Criminals", "year": "2015", "ops": ["EXE-007"] },
+    { "number": 4, "title": "Finance and Felony", "year": "2016", "ops": ["FIN-008"] },
+    { "number": 5, "title": "Bikers", "year": "2016", "ops": ["BIK-009"] },
+    { "number": 6, "title": "Gunrunning", "year": "2017", "ops": ["GUN-010"] },
+    { "number": 7, "title": "Smuggler's Run", "year": "2017", "ops": ["SMU-011"] },
+    { "number": 8, "title": "The Doomsday Heist", "year": "2017", "ops": ["DOOM-012","DOOM-013","DOOM-014"] },
+    { "number": 9, "title": "After Hours", "year": "2018", "ops": ["AH-015"] },
+    { "number": 10, "title": "Diamond Casino & Resort", "year": "2019", "ops": ["CAS-016","CAS-017"] },
+    { "number": 11, "title": "Los Santos Summer Special", "year": "2020", "ops": ["SUM-018"] },
+    { "number": 12, "title": "Cayo Perico Heist", "year": "2020", "ops": ["CAY-019"] },
+    { "number": 13, "title": "Los Santos Tuners", "year": "2021", "ops": ["TUN-020"] },
+    { "number": 14, "title": "The Contract", "year": "2021", "ops": ["CON-021"] },
+    { "number": 15, "title": "Criminal Enterprises", "year": "2022", "ops": ["CE-022"] },
+    { "number": 16, "title": "San Andreas Mercenaries", "year": "2023", "ops": ["SAM-023"] },
+    { "number": 17, "title": "Chop Shop", "year": "2023", "ops": ["CHOP-024"] },
+    { "number": 18, "title": "Bottom Dollar Bounties", "year": "2024", "ops": ["BDB-025"] },
+    { "number": 19, "title": "Bottom Dollar / Garment Factory Era", "year": "2024", "ops": ["GAR-026"] },
+    { "number": 20, "title": "Kortz Center Operation", "year": "", "ops": ["KOR-027"] }
+  ],
+  "operations": {
+    "FLE-001": {
+      "title": "The Fleeca Job",
+      "classification": "Financial Crime",
+      "type": "Two-person bank robbery",
+      "release": "March 10, 2015",
+      "difficulty": "Low",
+      "status": "Filed",
+      "overview": {
+        "target": "Fleeca Bank — Great Ocean Highway Branch",
+        "contact": "Lester Crest",
+        "objective": "Infiltrate Fleeca's security network, obtain access codes, and execute a coordinated robbery."
+      },
+      "intel": "Lester Crest begins assembling a professional crew capable of executing high-value criminal operations across Los Santos. The Fleeca Job serves as the first major heist operation, testing the crew's ability to perform reconnaissance, bypass security, coordinate transportation, and manage law enforcement response.",
+      "planningLocation": {
+        "host": "High-End Apartment",
+        "observation": "Apartment Connection: 4 Integrity Way, Apartment 30. Visible Landmark: Fleeca Bank flags. Possible Connection: the apartment view appears to reference the first heist target.",
+        "evidenceRating": "★★★★★ Strong"
+      },
+      "setup": [
+        { "name": "1. Scope Out Fleeca Bank", "objective": "Observe security systems and identify weaknesses.", "locations": "Fleeca Bank, Great Ocean Highway", "intel": "Security cameras, vault location, guard positions, escape route" },
+        { "name": "2. Kuruma", "objective": "Acquire an armored vehicle for the robbery.", "locations": "Armored Kuruma", "intel": "Provides protection during the escape." }
+      ],
+      "finalOperation": {
+        "roles": [
+          { "role": "Driver", "duties": "Controls escape vehicle, manages getaway" },
+          { "role": "Driller", "duties": "Opens safety deposit box area, handles vault access" }
+        ]
+      },
+      "equipment": {
+        "required": ["Armored vehicle", "Drill equipment", "Weapons"],
+        "recommended": ["Armored Kuruma", "Suppressed weapons", "Fast escape vehicle"]
+      },
+      "organizations": [
+        { "name": "Fleeca Bank", "role": "Financial institution targeted by the crew." },
+        { "name": "Law Enforcement", "role": "Responds after robbery begins." }
+      ],
+      "lore": [
+        { "name": "Lester Crest", "note": "First major operation connecting the player crew to Lester's criminal network." },
+        { "name": "Los Santos Financial System", "note": "Introduces the wider banking infrastructure later referenced in the Pacific Standard Job, Union Depository references, and other financial crimes." }
+      ],
+      "environmentalEvidence": {
+        "title": "Fleeca Apartment Theory",
+        "observation": "The apartment assigned for hosting the original heists has a direct visual connection to Fleeca branding.",
+        "theory": "Rockstar may have used apartment views to subtly connect each original heist location with its host apartment.",
+        "confidence": "High"
+      }
+    },
+    "PRI-002": {
+      "title": "The Prison Break",
+      "classification": "Criminal Extraction",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Bolingbroke Penitentiary — Professor Maxim Rashkovsky",
+        "contact": "Lester Crest / Agent 14",
+        "objective": "Break Professor Maxim Rashkovsky out of Bolingbroke Penitentiary and get him out of the country."
+      },
+      "intel": "Agent 14 outlines the setup jobs needed before the breakout: securing an aircraft for Rashkovsky's escape flight, hijacking a prison transport bus, obtaining the inmate transfer schedule, retrieving Rashkovsky's car from a rival theft ring, and cleaning up loose ends connected to his case.",
+      "setup": [
+        { "name": "1. Plane", "objective": "Fight through Vagos gang members at McKenzie Airfield to steal a Velum aircraft for Rashkovsky's escape flight.", "locations": "McKenzie Airfield, LSIA hangar", "intel": "", "dialogue": "" },
+        { "name": "2. Bus", "objective": "Intercept and steal a Bolingbroke prison transport bus during a police pursuit, then stash it at a Sandy Shores junkyard.", "locations": "Blaine County convoy route, Sandy Shores junkyard", "intel": "", "dialogue": "" },
+        { "name": "3. Station", "objective": "Split into two teams — one poses as cops at Mission Row Police Station for the inmate transfer schedule, the other retrieves Rashkovsky's Lampadati Casco from a cargo ship at the port.", "locations": "Mission Row Police Station, Port of Los Santos", "intel": "", "dialogue": "" },
+        { "name": "4. Wet Work", "objective": "Split into two teams to tie off loose ends — take out Rashkovsky's business associate Dima Popov, and two lawyers outside the FIB building for their deposition documents.", "locations": "Richman Glen mansion, FIB building", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Prisoner", "duties": "Infiltrates disguised as an inmate, locates and frees Rashkovsky." },
+          { "role": "Prison Officer", "duties": "Partners with the Prisoner inside, helps escort Rashkovsky out." },
+          { "role": "Pilot", "duties": "Flies the stolen Velum, evacuates the ground team from Sandy Shores Airfield." },
+          { "role": "Demolition", "duties": "Intercepts an incoming prison bus, then provides air support in a Buzzard." }
+        ]
+      },
+      "equipment": {
+        "required": ["Velum aircraft", "Prison bus", "Buzzard attack helicopter"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "HUM-003": {
+      "title": "Humane Labs Raid",
+      "classification": "Corporate Infiltration",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Humane Labs and Research facility (Merryweather-operated, under Don Percival)",
+        "contact": "Lester Crest / Agent 14",
+        "objective": "Infiltrate the Humane Labs facility and steal sensitive research data."
+      },
+      "intel": "Agent 14 lays out five setups: securing lab key codes, stealing armored Insurgents, taking a Hydra fitted with an EMP, seizing a Valkyrie attack helicopter, and driving the EMP into the facility grounds ahead of the raid itself.",
+      "setup": [
+        { "name": "1. Key Codes", "objective": "Meet a contact downtown as Buyer and Bodyguard to obtain the lab's key codes, then fight out.", "locations": "Downtown Los Santos", "intel": "", "dialogue": "" },
+        { "name": "2. Insurgents", "objective": "Steal two armored Insurgent LAPVs from a Merryweather test site.", "locations": "Davis Quartz Quarry", "intel": "", "dialogue": "" },
+        { "name": "3. EMP", "objective": "Fight onto a Merryweather aircraft carrier to steal a Hydra jump jet fitted with an EMP device.", "locations": "Merryweather aircraft carrier, at sea", "intel": "", "dialogue": "" },
+        { "name": "4. Valkyrie", "objective": "Assault Merryweather's naval base to steal the Buckingham Valkyrie attack helicopter used in the finale.", "locations": "Los Santos Naval Port", "intel": "", "dialogue": "" },
+        { "name": "5. Deliver EMP", "objective": "Load the EMP into a stolen Insurgent and drive it into the Humane Labs grounds undetected.", "locations": "Humane Labs facility", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Ground Team", "duties": "Enters the facility with night vision and rebreathers to retrieve the target data." },
+          { "role": "Pilot", "duties": "Flies the Valkyrie for air support and evac." },
+          { "role": "Gunner", "duties": "Mans the Valkyrie's weapons, defends the ground team during extraction." }
+        ]
+      },
+      "equipment": {
+        "required": ["Buckingham Valkyrie", "Night vision goggles", "Rebreather"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "SER-004": {
+      "title": "Series A Funding",
+      "classification": "Narcotics Operation",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Rival drug stashes across Los Santos and Blaine County",
+        "contact": "Trevor Philips",
+        "objective": "Steal drug stashes from rival gangs to sell for profit, then defend the haul at Trevor's warehouse."
+      },
+      "intel": "Trevor runs five setup missions to gather product from various rival operations, then calls in the crew to defend the TPI Warehouse once every group he's stolen from figures out who's responsible.",
+      "setup": [
+        { "name": "1. Coke", "objective": "Split into air and water teams to hit a yacht for a cocaine shipment.", "locations": "Yacht, open water", "intel": "", "dialogue": "" },
+        { "name": "2. Trash Truck", "objective": "Collect drug-stashed trash bags from four locations around the city in teams of two.", "locations": "Various Los Santos locations", "intel": "", "dialogue": "" },
+        { "name": "3. Bikers", "objective": "Raid a Lost MC stash.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "4. Weed", "objective": "Steal a weed shipment.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "5. Steal Meth", "objective": "Clear the O'Neil Brothers' farm, then escort a meth tanker off the property with two escort drivers.", "locations": "O'Neil Brothers Farm, Grapeseed", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Warehouse Defense", "duties": "Two players hold the north end, two hold the south, fending off waves of attackers at the TPI Warehouse." },
+          { "role": "Van Escort", "duties": "Drive armed escort alongside the drug vans on the run to the drop-off, fending off pursuers." }
+        ]
+      },
+      "notes": []
+    },
+    "PAC-005": {
+      "title": "The Pacific Standard Job",
+      "classification": "Financial Crime",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "High",
+      "status": "Filed",
+      "overview": {
+        "target": "Pacific Standard Public Deposit Bank — Downtown Vinewood",
+        "contact": "Lester Crest",
+        "objective": "Rob the flagship branch of the Pacific Standard Bank and escape with the vault's contents."
+      },
+      "intel": "Lester's most ambitious job: five setups gather a disabling transponder, hacking equipment, thermal charges, and getaway bikes before the crew hits the bank itself.",
+      "setup": [
+        { "name": "1. Vans", "objective": "Two teams (Driver + Navigator) use the Trackify app to locate and photograph Post OP vans, then steal the one Lester identifies.", "locations": "Los Santos streets", "intel": "", "dialogue": "" },
+        { "name": "2. Signal", "objective": "Rescue signal expert Avi Schwartzman and deliver him to Paige so he can tune a transponder to disable the bank's dye packs.", "locations": "North Chumash", "intel": "", "dialogue": "" },
+        { "name": "3. Hack", "objective": "Steal a hacking rig from a rival heist crew and swap it into your own van.", "locations": "Vinewood", "intel": "", "dialogue": "" },
+        { "name": "4. Convoy", "objective": "Hijack a Merryweather convoy in Blaine County for thermal charges to breach the vault doors.", "locations": "Blaine County", "intel": "", "dialogue": "" },
+        { "name": "5. Bikes", "objective": "Steal four Principe Lectro motorcycles from The Lost MC's East Los Santos clubhouse for the getaway.", "locations": "East Los Santos", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Hacker", "duties": "Hacks the vault doors open." },
+          { "role": "Demolition", "duties": "Uses thermal charges to breach doors and security." },
+          { "role": "Crowd Control", "duties": "Two players hold the hostages and bank staff in the lobby." }
+        ]
+      },
+      "equipment": {
+        "required": ["Hacking rig", "Thermal charges", "Principe Lectro motorcycles"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "LOW-006": { "title": "Lamar Davis Operations", "release": "October 20, 2015", "status": "Unfiled", "notes": ["Benny's Original Motor Works", "Families vs Ballas conflict", "Lamar's criminal ambitions"] },
+    "EXE-007": { "title": "CEO Operations", "release": "December 15, 2015", "status": "Unfiled", "notes": ["CEO offices", "Special Cargo", "Vehicle Cargo", "VIP Work"] },
+    "FIN-008": { "title": "CEO Criminal Empire Expansion", "release": "2016", "status": "Unfiled", "notes": ["Warehouses", "Smuggling operations", "Corporate crime"] },
+    "BIK-009": { "title": "Motorcycle Club Operations", "release": "2016", "status": "Unfiled", "notes": ["Cocaine lockups", "Meth labs", "Counterfeit cash", "Weed farms", "Document forgery"] },
+    "GUN-010": { "title": "Military Operations", "release": "2017", "status": "Unfiled", "notes": ["Bunkers", "Research", "Mobile Operations Center", "Weapons trafficking"] },
+    "SMU-011": { "title": "Aircraft Operations", "release": "2017", "status": "Unfiled", "notes": ["Hangars", "Smuggling network", "Air cargo"] },
+    "DOOM-012": { "title": "Act I — The Data Breaches", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
+    "DOOM-013": { "title": "Act II — The Bogdan Problem", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
+    "DOOM-014": { "title": "Act III — The Doomsday Scenario", "release": "2017", "status": "Unfiled", "notes": ["IAA", "Agent 14", "Avon Hertz", "Clifford AI", "Government operations"] },
+    "AH-015": { "title": "Nightclub Operations", "release": "2018", "status": "Unfiled", "notes": ["Gay Tony", "Tony Prince", "Underground economy"] },
+    "CAS-016": { "title": "Casino Story Missions", "release": "2019", "status": "Unfiled", "notes": [] },
+    "CAS-017": { "title": "Diamond Casino Heist", "release": "2019", "status": "Unfiled", "notes": ["Approaches: Silent & Sneaky, The Big Con, Aggressive"] },
+    "SUM-018": { "title": "Los Santos Summer Special", "release": "2020", "status": "Unfiled", "notes": ["Yacht missions", "Business updates"] },
+    "CAY-019": { "title": "Cayo Perico Heist", "release": "2020", "status": "Unfiled", "notes": ["El Rubio", "Kosatka submarine", "Island infiltration"] },
+    "TUN-020": { "title": "Auto Shop Contracts", "release": "2021", "status": "Unfiled", "notes": ["Street racing scene"] },
+    "CON-021": { "title": "The Contract", "release": "2021", "status": "Unfiled", "notes": ["Franklin Clinton", "Dr. Dre", "Agency operations"] },
+    "CE-022": { "title": "Criminal Enterprises", "release": "2022", "status": "Unfiled", "notes": ["IAA missions", "Operation Paper Trail"] },
+    "SAM-023": { "title": "San Andreas Mercenaries", "release": "2023", "status": "Unfiled", "notes": ["Merryweather conflict", "Project Overthrow"] },
+    "CHOP-024": { "title": "Salvage Yard Robberies", "release": "2023", "status": "Unfiled", "notes": ["Vehicle theft operations", "Yusuf Amir", "Tow truck business"] },
+    "BDB-025": { "title": "Bail Enforcement", "release": "2024", "status": "Unfiled", "notes": ["Maude's legacy", "Vincent", "Bounty targets"] },
+    "GAR-026": { "title": "Garment Factory Operations", "release": "2024", "status": "Unfiled", "notes": ["FIB-related missions", "Federal investigations"] },
+    "KOR-027": { "title": "Kortz Center Operation", "release": "", "status": "Unfiled", "notes": ["High-end art theft", "Artwork acquisition", "Security infiltration", "Elite Los Santos connections"] }
+  }
+}
