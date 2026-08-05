@@ -801,33 +801,22 @@
           "name": "Scoping",
           "objective": "Photograph all access points and points of interest around the casino to unlock more finale options.",
           "locations": "The Diamond Casino & Resort",
-          "intel": "",
-          "dialogue": ""
+          "dialogue": "Okay. So, you're ready to scope out the target. The classic first step. Head on over there. Like I said before, how we can approach this thing will depend on what we discover at this stage, so be as thorough or quick as you like. There's a lot of information you can gather, but it's not all equally important.”\n—Lester's briefing."
         },
         {
           "name": "Silent & Sneaky prep",
-          "objective": "Gather a support crew (Gunman, Driver, Hacker) and approach-specific gear like lasers for the vault door.",
-          "locations": "",
-          "intel": "",
-          "dialogue": ""
+          "objective": "Gather a support crew (Gunman, Driver, Hacker) and approach-specific gear like lasers for the vault door."
         },
         {
           "name": "The Big Con prep",
-          "objective": "Gather disguises and subterfuge tools — sneak in, then drill the vault once inside.",
-          "locations": "",
-          "intel": "",
-          "dialogue": ""
+          "objective": "Gather disguises and subterfuge tools — sneak in, then drill the vault once inside."
         },
         {
           "name": "Aggressive prep",
-          "objective": "Gather heavier weapons and armor for a direct assault entry.",
-          "locations": "",
-          "intel": "",
-          "dialogue": ""
+          "objective": "Gather heavier weapons and armor for a direct assault entry."
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Entry Team",
@@ -838,8 +827,7 @@
             "duties": "Breaches the vault (hack, drill, or force depending on approach) and bags loot before the timer runs out."
           }
         ]
-      },
-      "notes": []
+      }
     },
     "SUM-018": {
       "title": "Los Santos Summer Special",
