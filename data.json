@@ -1,0 +1,437 @@
+{
+  "phases": [
+    { "number": 1, "title": "Original Heists", "year": "2015", "ops": ["FLE-001","PRI-002","HUM-003","SER-004","PAC-005"] },
+    { "number": 2, "title": "Lowriders", "year": "2015", "ops": ["LOW-006"] },
+    { "number": 3, "title": "Executives and Other Criminals", "year": "2015", "ops": ["EXE-007"] },
+    { "number": 4, "title": "Finance and Felony", "year": "2016", "ops": ["FIN-008"] },
+    { "number": 5, "title": "Bikers", "year": "2016", "ops": ["BIK-009"] },
+    { "number": 6, "title": "Gunrunning", "year": "2017", "ops": ["GUN-010"] },
+    { "number": 7, "title": "Smuggler's Run", "year": "2017", "ops": ["SMU-011"] },
+    { "number": 8, "title": "The Doomsday Heist", "year": "2017", "ops": ["DOOM-012","DOOM-013","DOOM-014"] },
+    { "number": 9, "title": "After Hours", "year": "2018", "ops": ["AH-015"] },
+    { "number": 10, "title": "Diamond Casino & Resort", "year": "2019", "ops": ["CAS-016","CAS-017"] },
+    { "number": 11, "title": "Los Santos Summer Special", "year": "2020", "ops": ["SUM-018"] },
+    { "number": 12, "title": "Cayo Perico Heist", "year": "2020", "ops": ["CAY-019"] },
+    { "number": 13, "title": "Los Santos Tuners", "year": "2021", "ops": ["TUN-020"] },
+    { "number": 14, "title": "The Contract", "year": "2021", "ops": ["CON-021"] },
+    { "number": 15, "title": "Criminal Enterprises", "year": "2022", "ops": ["CE-022"] },
+    { "number": 16, "title": "San Andreas Mercenaries", "year": "2023", "ops": ["SAM-023"] },
+    { "number": 17, "title": "Chop Shop", "year": "2023", "ops": ["CHOP-024"] },
+    { "number": 18, "title": "Bottom Dollar Bounties", "year": "2024", "ops": ["BDB-025"] },
+    { "number": 19, "title": "Bottom Dollar / Garment Factory Era", "year": "2024", "ops": ["GAR-026"] },
+    { "number": 20, "title": "Kortz Center Operation", "year": "", "ops": ["KOR-027"] }
+  ],
+  "operations": {
+    "FLE-001": {
+      "title": "The Fleeca Job",
+      "classification": "Financial Crime",
+      "type": "Two-person bank robbery",
+      "release": "March 10, 2015",
+      "difficulty": "Low",
+      "status": "Filed",
+      "overview": {
+        "target": "Fleeca Bank — Great Ocean Highway Branch",
+        "contact": "Lester Crest",
+        "objective": "Infiltrate Fleeca's security network, obtain access codes, and execute a coordinated robbery."
+      },
+      "intel": "Lester Crest begins assembling a professional crew capable of executing high-value criminal operations across Los Santos. The Fleeca Job serves as the first major heist operation, testing the crew's ability to perform reconnaissance, bypass security, coordinate transportation, and manage law enforcement response.",
+      "planningLocation": {
+        "host": "High-End Apartment",
+        "observation": "Apartment Connection: 4 Integrity Way, Apartment 30. Visible Landmark: Fleeca Bank flags. Possible Connection: the apartment view appears to reference the first heist target.",
+        "evidenceRating": "★★★★★ Strong"
+      },
+      "setup": [
+        { "name": "1. Scope Out Fleeca Bank", "objective": "Before committing to the job, the crew stakes out the target branch to map its security setup from the outside — camera coverage, guard rotations, exactly where the vault sits relative to the main floor, and the fastest route out once the alarm goes up.", "locations": "Fleeca Bank — Great Ocean Highway branch", "intel": "Scouting confirms camera placement, guard numbers on duty, the vault's position inside the building, and which street offers the cleanest getaway from the first wave of responding police." },
+        { "name": "2. Kuruma", "objective": "With the target scouted, the crew needs a vehicle tough enough to survive a running gunfight with law enforcement during the getaway. An armored Kuruma fits — unremarkable enough not to draw attention beforehand, but built to shrug off small-arms fire once things go loud.", "locations": "Acquired ahead of time and stored for the final job", "intel": "The armored Kuruma becomes the crew's default getaway vehicle for the operation, prioritizing survivability over raw speed." }
+      ],
+      "finalOperation": {
+        "roles": [
+          { "role": "Driver", "duties": "Positions the armored Kuruma outside the bank and holds it there under fire while the Driller works, then pilots the getaway once the vault's open — threading through the responding police without losing the vehicle or the haul." },
+          { "role": "Driller", "duties": "Goes in on foot to breach the safety deposit boxes. Vault security resets after a set window, so it's a race against time as much as a drilling job — speed matters as much as getting through the door cleanly." }
+        ]
+      },
+      "equipment": {
+        "required": ["Armored vehicle", "Drill equipment", "Weapons"],
+        "recommended": ["Armored Kuruma", "Suppressed weapons", "Fast escape vehicle"]
+      },
+      "organizations": [
+        { "name": "Fleeca Bank", "role": "Financial institution targeted by the crew." },
+        { "name": "Law Enforcement", "role": "Responds after robbery begins." }
+      ],
+      "lore": [
+        { "name": "Lester Crest", "note": "First major operation connecting the player crew to Lester's criminal network." },
+        { "name": "Los Santos Financial System", "note": "Introduces the wider banking infrastructure later referenced in the Pacific Standard Job, Union Depository references, and other financial crimes." }
+      ],
+      "environmentalEvidence": {
+        "title": "Fleeca Apartment Theory",
+        "observation": "The apartment assigned for hosting the original heists has a direct visual connection to Fleeca branding.",
+        "theory": "Rockstar may have used apartment views to subtly connect each original heist location with its host apartment.",
+        "confidence": "High"
+      }
+    },
+    "PRI-002": {
+      "title": "The Prison Break",
+      "classification": "Criminal Extraction",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Bolingbroke Penitentiary — Professor Maxim Rashkovsky",
+        "contact": "Lester Crest / Agent 14",
+        "objective": "Break Professor Maxim Rashkovsky out of Bolingbroke Penitentiary and get him out of the country."
+      },
+      "intel": "Agent 14 outlines the setup jobs needed before the breakout: securing an aircraft for Rashkovsky's escape flight, hijacking a prison transport bus, obtaining the inmate transfer schedule, retrieving Rashkovsky's car from a rival theft ring, and cleaning up loose ends connected to his case.",
+      "setup": [
+        { "name": "1. Plane", "objective": "Fight through Vagos gang members at McKenzie Airfield to steal a Velum aircraft for Rashkovsky's escape flight.", "locations": "McKenzie Airfield, LSIA hangar", "intel": "", "dialogue": "" },
+        { "name": "2. Bus", "objective": "Intercept and steal a Bolingbroke prison transport bus during a police pursuit, then stash it at a Sandy Shores junkyard.", "locations": "Blaine County convoy route, Sandy Shores junkyard", "intel": "", "dialogue": "" },
+        { "name": "3. Station", "objective": "Split into two teams — one poses as cops at Mission Row Police Station for the inmate transfer schedule, the other retrieves Rashkovsky's Lampadati Casco from a cargo ship at the port.", "locations": "Mission Row Police Station, Port of Los Santos", "intel": "", "dialogue": "" },
+        { "name": "4. Wet Work", "objective": "Split into two teams to tie off loose ends — take out Rashkovsky's business associate Dima Popov, and two lawyers outside the FIB building for their deposition documents.", "locations": "Richman Glen mansion, FIB building", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Prisoner", "duties": "Infiltrates disguised as an inmate, locates and frees Rashkovsky." },
+          { "role": "Prison Officer", "duties": "Partners with the Prisoner inside, helps escort Rashkovsky out." },
+          { "role": "Pilot", "duties": "Flies the stolen Velum, evacuates the ground team from Sandy Shores Airfield." },
+          { "role": "Demolition", "duties": "Intercepts an incoming prison bus, then provides air support in a Buzzard." }
+        ]
+      },
+      "equipment": {
+        "required": ["Velum aircraft", "Prison bus", "Buzzard attack helicopter"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "HUM-003": {
+      "title": "Humane Labs Raid",
+      "classification": "Corporate Infiltration",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Humane Labs and Research facility (Merryweather-operated, under Don Percival)",
+        "contact": "Lester Crest / Agent 14",
+        "objective": "Infiltrate the Humane Labs facility and steal sensitive research data."
+      },
+      "intel": "Agent 14 lays out five setups: securing lab key codes, stealing armored Insurgents, taking a Hydra fitted with an EMP, seizing a Valkyrie attack helicopter, and driving the EMP into the facility grounds ahead of the raid itself.",
+      "setup": [
+        { "name": "1. Key Codes", "objective": "Meet a contact downtown as Buyer and Bodyguard to obtain the lab's key codes, then fight out.", "locations": "Downtown Los Santos", "intel": "", "dialogue": "" },
+        { "name": "2. Insurgents", "objective": "Steal two armored Insurgent LAPVs from a Merryweather test site.", "locations": "Davis Quartz Quarry", "intel": "", "dialogue": "" },
+        { "name": "3. EMP", "objective": "Fight onto a Merryweather aircraft carrier to steal a Hydra jump jet fitted with an EMP device.", "locations": "Merryweather aircraft carrier, at sea", "intel": "", "dialogue": "" },
+        { "name": "4. Valkyrie", "objective": "Assault Merryweather's naval base to steal the Buckingham Valkyrie attack helicopter used in the finale.", "locations": "Los Santos Naval Port", "intel": "", "dialogue": "" },
+        { "name": "5. Deliver EMP", "objective": "Load the EMP into a stolen Insurgent and drive it into the Humane Labs grounds undetected.", "locations": "Humane Labs facility", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Ground Team", "duties": "Enters the facility with night vision and rebreathers to retrieve the target data." },
+          { "role": "Pilot", "duties": "Flies the Valkyrie for air support and evac." },
+          { "role": "Gunner", "duties": "Mans the Valkyrie's weapons, defends the ground team during extraction." }
+        ]
+      },
+      "equipment": {
+        "required": ["Buckingham Valkyrie", "Night vision goggles", "Rebreather"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "SER-004": {
+      "title": "Series A Funding",
+      "classification": "Narcotics Operation",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Rival drug stashes across Los Santos and Blaine County",
+        "contact": "Trevor Philips",
+        "objective": "Steal drug stashes from rival gangs to sell for profit, then defend the haul at Trevor's warehouse."
+      },
+      "intel": "Trevor runs five setup missions to gather product from various rival operations, then calls in the crew to defend the TPI Warehouse once every group he's stolen from figures out who's responsible.",
+      "setup": [
+        { "name": "1. Coke", "objective": "Split into air and water teams to hit a yacht for a cocaine shipment.", "locations": "Yacht, open water", "intel": "", "dialogue": "" },
+        { "name": "2. Trash Truck", "objective": "Collect drug-stashed trash bags from four locations around the city in teams of two.", "locations": "Various Los Santos locations", "intel": "", "dialogue": "" },
+        { "name": "3. Bikers", "objective": "Raid a Lost MC stash.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "4. Weed", "objective": "Steal a weed shipment.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "5. Steal Meth", "objective": "Clear the O'Neil Brothers' farm, then escort a meth tanker off the property with two escort drivers.", "locations": "O'Neil Brothers Farm, Grapeseed", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Warehouse Defense", "duties": "Two players hold the north end, two hold the south, fending off waves of attackers at the TPI Warehouse." },
+          { "role": "Van Escort", "duties": "Drive armed escort alongside the drug vans on the run to the drop-off, fending off pursuers." }
+        ]
+      },
+      "notes": []
+    },
+    "PAC-005": {
+      "title": "The Pacific Standard Job",
+      "classification": "Financial Crime",
+      "type": "Four-player heist",
+      "release": "March 10, 2015",
+      "difficulty": "High",
+      "status": "Filed",
+      "overview": {
+        "target": "Pacific Standard Public Deposit Bank — Downtown Vinewood",
+        "contact": "Lester Crest",
+        "objective": "Rob the flagship branch of the Pacific Standard Bank and escape with the vault's contents."
+      },
+      "intel": "Lester's most ambitious job: five setups gather a disabling transponder, hacking equipment, thermal charges, and getaway bikes before the crew hits the bank itself.",
+      "setup": [
+        { "name": "1. Vans", "objective": "Two teams (Driver + Navigator) use the Trackify app to locate and photograph Post OP vans, then steal the one Lester identifies.", "locations": "Los Santos streets", "intel": "", "dialogue": "" },
+        { "name": "2. Signal", "objective": "Rescue signal expert Avi Schwartzman and deliver him to Paige so he can tune a transponder to disable the bank's dye packs.", "locations": "North Chumash", "intel": "", "dialogue": "" },
+        { "name": "3. Hack", "objective": "Steal a hacking rig from a rival heist crew and swap it into your own van.", "locations": "Vinewood", "intel": "", "dialogue": "" },
+        { "name": "4. Convoy", "objective": "Hijack a Merryweather convoy in Blaine County for thermal charges to breach the vault doors.", "locations": "Blaine County", "intel": "", "dialogue": "" },
+        { "name": "5. Bikes", "objective": "Steal four Principe Lectro motorcycles from The Lost MC's East Los Santos clubhouse for the getaway.", "locations": "East Los Santos", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Hacker", "duties": "Hacks the vault doors open." },
+          { "role": "Demolition", "duties": "Uses thermal charges to breach doors and security." },
+          { "role": "Crowd Control", "duties": "Two players hold the hostages and bank staff in the lobby." }
+        ]
+      },
+      "equipment": {
+        "required": ["Hacking rig", "Thermal charges", "Principe Lectro motorcycles"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "LOW-006": { "title": "Lamar Davis Operations", "release": "October 20, 2015", "status": "Unfiled", "notes": ["Benny's Original Motor Works", "Families vs Ballas conflict", "Lamar's criminal ambitions"] },
+    "EXE-007": { "title": "CEO Operations", "release": "December 15, 2015", "status": "Unfiled", "notes": ["CEO offices", "Special Cargo", "Vehicle Cargo", "VIP Work"] },
+    "FIN-008": { "title": "CEO Criminal Empire Expansion", "release": "2016", "status": "Unfiled", "notes": ["Warehouses", "Smuggling operations", "Corporate crime"] },
+    "BIK-009": { "title": "Motorcycle Club Operations", "release": "2016", "status": "Unfiled", "notes": ["Cocaine lockups", "Meth labs", "Counterfeit cash", "Weed farms", "Document forgery"] },
+    "GUN-010": { "title": "Military Operations", "release": "2017", "status": "Unfiled", "notes": ["Bunkers", "Research", "Mobile Operations Center", "Weapons trafficking"] },
+    "SMU-011": { "title": "Aircraft Operations", "release": "2017", "status": "Unfiled", "notes": ["Hangars", "Smuggling network", "Air cargo"] },
+    "DOOM-012": {
+      "title": "Act I — The Data Breaches",
+      "classification": "Government Conspiracy",
+      "type": "Facility heist, Act 1 of 3",
+      "release": "December 12, 2017",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Data on a series of breaches targeting sensitive government information",
+        "contact": "Lester Crest / Avon Hertz",
+        "objective": "Investigate who's behind the breaches and feed the recovered data to Avon's AI, Clifford, for analysis."
+      },
+      "intel": "Lester and tech billionaire Avon Hertz recruit the crew to track down a string of data breaches, framing it as a straightforward recovery job. Requires owning a Facility to unlock the planning room. Three prep missions (Paramedic Equipment, Deluxos, Akula) unlock three setup missions before the finale — this act is the gentlest introduction to the trilogy, but it's what puts the crew on Avon's radar for what's coming in Acts 2 and 3.",
+      "setup": [
+        { "name": "1. Dead Courier", "objective": "A government courier has turned up dead with a data cache still on them. The crew poses as first responders — stealing an ambulance is the cleanest way to reach the body without drawing attention — then recovers the cache before anyone else gets to it.", "locations": "LS County Coroners / crime scene", "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for.", "dialogue": "" },
+        { "name": "2. Signal Intercepts", "objective": "Using the amphibious, flight-capable Deluxos acquired in prep, the crew tails a set of moving targets — armored vans first, then boats — getting close enough to hack each one with the SecuroServ app before it can relay its data onward.", "locations": "Across land and waterways in Los Santos", "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight.", "dialogue": "" },
+        { "name": "3. Server Farm", "objective": "With the Akula stealth helicopter from prep, the crew flies undetected onto the roof of a NOOSE facility, then moves in on foot to quietly clear guards and cameras on the way to the server room.", "locations": "NOOSE Headquarters", "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach.", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Infiltration Team", "duties": "Fights into the IAA facility itself to physically stop the ongoing server hack before it completes." },
+          { "role": "Support/Air", "duties": "Provides outside cover and mans the war room's gun camera system to clear remaining resistance while the infiltration team works." }
+        ]
+      },
+      "notes": []
+    },
+    "DOOM-013": {
+      "title": "Act II — The Bogdan Problem",
+      "classification": "Government Conspiracy",
+      "type": "Facility heist, Act 2 of 3",
+      "release": "December 12, 2017",
+      "difficulty": "Medium",
+      "status": "Filed",
+      "overview": {
+        "target": "Bogdan — a rogue foreign agent operating an armed submarine off the San Andreas coast",
+        "contact": "Lester Crest / Avon Hertz / Agent ULP",
+        "objective": "Work with Agent ULP to track down and neutralize Bogdan before he can destabilize the region."
+      },
+      "intel": "Escalates hard from Act 1 — what looked like a data recovery job turns into tracking down a genuine rogue agent with a submarine off the coast. Five prep missions (Keycards, ULP Intel, Riot Control Van, Acquiring Strombergs, Acquiring Torpedo ECUs) build toward four setups that gather the intelligence and hardware needed to actually find and hit Bogdan's sub.",
+      "setup": [
+        { "name": "1. Avenger", "objective": "Secure a Avenger jet, which becomes the crew's new mobile operations base for the rest of the act — replacing the Facility as the planning hub while at sea.", "locations": "", "intel": "The Avenger's mobility is the whole point here — Bogdan's submarine moves, so the crew needs a base that can move with it.", "dialogue": "" },
+        { "name": "2. Rescue ULP", "objective": "Extract Agent ULP, the government asset who actually has intel on Bogdan's whereabouts and operations, before Bogdan's people can silence them.", "locations": "", "intel": "ULP becomes the crew's inside source for the rest of Act 2 once safely extracted.", "dialogue": "" },
+        { "name": "3. Salvage Hard Drives", "objective": "Recover hard drives holding further detail on Bogdan's submarine and operation, filling in the gaps ULP's intel alone can't cover.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "4. Submarine Recon", "objective": "Scout Bogdan's submarine directly ahead of the finale, confirming its position, defenses, and the safest approach vector.", "locations": "At sea, off the San Andreas coast", "intel": "This is the last piece before the finale — everything from the previous three setups feeds into planning the actual assault.", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Air Team", "duties": "Handles aerial support during the assault, keeping Bogdan's defenses occupied from above while the submarine team moves in." },
+          { "role": "Submarine Team", "duties": "Infiltrates the submarine directly to track down and neutralize Bogdan at the source." }
+        ]
+      },
+      "notes": []
+    },
+    "DOOM-014": {
+      "title": "Act III — The Doomsday Scenario",
+      "classification": "Government Conspiracy",
+      "type": "Facility heist, Act 3 of 3",
+      "release": "December 12, 2017",
+      "difficulty": "High",
+      "status": "Filed",
+      "overview": {
+        "target": "Avon Hertz's fortified mountain base",
+        "contact": "Lester Crest / Agent 14",
+        "objective": "Stop Avon Hertz and his AI Clifford from executing a plan to trigger a global cataclysm."
+      },
+      "intel": "The trilogy's turn: Avon Hertz — the billionaire who framed Acts 1 and 2 as a hunt for someone else's conspiracy — is revealed as the actual architect, with his AI Clifford as the instrument. Six prep missions (Marked Cash, Recon, Chernobog, Flight Path, Test Site Intel, Onboard Computer) build toward five setups that arm the crew for a direct assault on Avon's fortified base.",
+      "setup": [
+        { "name": "1. Rescue Agent 14", "objective": "Extract Agent 14, who has intel critical to understanding what Avon and Clifford are actually planning.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "2. Escort ULP", "objective": "Secure a Chernobog mobile anti-air platform and escort ULP safely clear of danger.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "3. Barrage", "objective": "Push back an assault against the crew's own operations, buying time to keep preparing for the base itself.", "locations": "", "intel": "", "dialogue": "" },
+        { "name": "4. Khanjali", "objective": "Steal a TM-02 Khanjali battle tank from Avon's own test site — heavy armor the crew will need for the assault to come.", "locations": "Weapons test site", "intel": "", "dialogue": "" },
+        { "name": "5. Air Defenses", "objective": "Take down anti-air defenses guarding Avon's base so the finale's air support isn't shot out of the sky before it arrives.", "locations": "Pacific Allied Shipyard and surrounding area", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Assault Team", "duties": "Fights through Avon's fortified mountain base defenses on the ground, using the Khanjali and cleared air defenses from prep to push in." },
+          { "role": "Air/Jetpack Support", "duties": "Pursues and takes down Avon directly during the climactic final confrontation." }
+        ]
+      },
+      "notes": []
+    },
+    "AH-015": { "title": "Nightclub Operations", "release": "2018", "status": "Unfiled", "notes": ["Gay Tony", "Tony Prince", "Underground economy"] },
+    "CAS-016": {
+      "title": "Casino Story Missions",
+      "classification": "Casino Storyline",
+      "type": "Introductory story missions",
+      "release": "2019",
+      "status": "Filed",
+      "overview": {
+        "target": "The Diamond Casino & Resort",
+        "contact": "Ms. Baker / the Cheng family",
+        "objective": "Get up to speed on the newly opened casino and its ownership before the real operation — the Diamond Casino Heist — becomes available."
+      },
+      "intel": "A short run of introductory missions that come with the casino's opening. They establish the Cheng family's ownership of the building, put the crew on their payroll doing odd jobs around the resort, and — critically — introduce the Arcade property as the base needed to unlock and plan the Diamond Casino Heist itself. Nothing here is a heist in its own right; it's the on-ramp to Phase 10's real centerpiece.",
+      "notes": []
+    },
+    "CAS-017": {
+      "title": "Diamond Casino Heist",
+      "classification": "Financial Crime",
+      "type": "Arcade heist, 3 selectable approaches",
+      "release": "2019",
+      "difficulty": "Variable by approach",
+      "status": "Filed",
+      "overview": {
+        "target": "The Diamond Casino & Resort's vault — contents rotate between cash, art, gold, or diamonds",
+        "contact": "The Cheng family",
+        "objective": "Plan from a player-owned Arcade, then commit to one of three finale approaches — Silent & Sneaky, The Big Con, or Aggressive — to breach the vault and get out with the loot."
+      },
+      "intel": "This is the first heist built around genuine player choice in approach rather than one fixed finale. Two general preps are mandatory for every run regardless of approach — Vault Keycards (the only truly mandatory general prep, since it opens the mantrap between the casino floor and the vault) and Vault Contents (identifies what's actually in the vault this time: cash around $2.1M, art around $2.3M, gold around $2.5M, or diamonds upward of $3.2M). The same approach can't be picked twice in a row, so the crew has to alternate.",
+      "setup": [
+        { "name": "1. Casino Scoping", "objective": "Photograph every access point and point of interest around the resort — staff lobby, waste disposal, roof terrace, helipad, and the security tunnel used by the Big Con route. Doesn't need to be redone every heist, but it's what unlocks entry-point choice on the prep board.", "locations": "The Diamond Casino & Resort", "intel": "The photographed access points determine which entry routes are available when planning the finale — skipping a location later locks that door off entirely.", "dialogue": "" },
+        {
+          "name": "2. General Preps",
+          "objective": "A shared pool of prep work that applies no matter which finale approach gets picked later. Only one of these is actually mandatory — the rest are optional but make every approach easier.",
+          "locations": "",
+          "intel": "",
+          "dialogue": "",
+          "operations": [
+            { "mandatory": true, "name": "Vault Keycards", "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. The only general prep that's mandatory on every single run, no matter which approach gets chosen.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": false, "name": "Guard Patrol Routes", "objective": "Photograph the guards' staff roster at a Duggan security meeting to learn exactly where every guard will be positioned during the heist.", "locations": "Duggan security meeting", "intel": "This intel shows up on the in-game minimap during the finale, making it far easier to avoid or time around patrols.", "dialogue": "" },
+            { "mandatory": false, "name": "Duggan Shipments", "objective": "Destroy weapons and equipment shipments meant for the casino's Duggan-contracted security team. Ten targets exist around the map — the more that get destroyed, the weaker security is during the actual heist.", "locations": "Various locations around Los Santos", "intel": "", "dialogue": "" },
+            { "mandatory": false, "name": "Security Intel", "objective": "Meet Vincent at Rockford Plaza after retrieving a stolen Gauntlet Hellfire, in exchange for a USB drive loaded with casino security information.", "locations": "Rockford Plaza", "intel": "", "dialogue": "" }
+          ]
+        },
+        { "name": "3. Vault Contents", "objective": "Scout the vault itself to identify what's actually stored there this run — cash, art, gold, or diamonds — since the reward rotates and isn't known ahead of time. Mandatory on every run, same as Vault Keycards.", "locations": "The Diamond Casino & Resort vault", "intel": "Diamonds pay out the highest but are also the rarest find; cash tends to come up most often.", "dialogue": "" },
+        {
+          "name": "4. Silent & Sneaky prep",
+          "objective": "Build out a stealth-first loadout — the least prep-heavy of the three approaches on paper, but the least forgiving once inside. Rewards patience: staying fully undetected buys extra time inside the vault, which usually means walking out with the highest-value loot.",
+          "locations": "",
+          "intel": "",
+          "dialogue": "",
+          "operations": [
+            { "mandatory": true, "name": "Support Crew Selection", "objective": "Hire a Gunman, Driver, and Hacker for the finale. Their workload stays minimal if the run goes cleanly, but a bad Hacker in particular can cost real time.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": true, "name": "Acquiring the Hacking Device", "objective": "Retrieve a piece of NOOSE or FIB tech that the crew's Hacker will need to work the vault door quietly during the finale.", "locations": "NOOSE / FIB facility", "intel": "", "dialogue": "" },
+            { "mandatory": true, "name": "Nano Drone", "objective": "Destroy five LSPD-deployed drones and collect their scraps, then bring them back to the Arcade so Lester can build a nano drone from the parts.", "locations": "Around Los Santos", "intel": "An Oppressor Mk II or Buzzard makes this much faster, since drone scraps can be picked up from the vehicle without dismounting.", "dialogue": "" },
+            { "mandatory": true, "name": "Vault Lasers", "objective": "Steal two vault lasers from a location guarded by Merryweather and heavy army personnel.", "locations": "Merryweather-guarded facility", "intel": "", "dialogue": "" },
+            { "mandatory": false, "name": "EMP Device", "objective": "Steal an EMP device capable of cutting the casino's power for a short window, which knocks out security cameras and makes guards far less effective at spotting the crew.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": false, "name": "Infiltration Suits", "objective": "Steal infiltration suits with built-in night vision — usually paired with the EMP Device, since the power cut plunges the casino into darkness.", "locations": "Fort Zancudo or Humane Labs and Research", "intel": "", "dialogue": "" }
+          ]
+        },
+        {
+          "name": "5. The Big Con prep",
+          "objective": "Build out a disguise-based infiltration — considered the fastest and most forgiving of the three approaches, since a good cover story keeps the crew from tripping alarms on the way in rather than needing to avoid or fight past security directly.",
+          "locations": "",
+          "intel": "",
+          "dialogue": "",
+          "operations": [
+            { "mandatory": true, "name": "Support Crew Selection", "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": true, "name": "Gruppe Sechs Gear (Part 1 & 2)", "objective": "Complete both parts of this job to unlock the Gruppe Sechs security disguise, one of two possible entry routes for this approach. Requires having scoped the security tunnel access point beforehand.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": true, "name": "Vault Drills", "objective": "Acquire the drills needed to physically breach the vault door once inside, since the Big Con relies on drilling through rather than hacking or blowing it open.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": false, "name": "NOOSE Exit Disguise", "objective": "Secure a second disguise, worn as N.O.O.S.E. personnel, to swap into partway through the escape and slip past the police response that's already converged on the casino.", "locations": "", "intel": "", "dialogue": "" }
+          ]
+        },
+        {
+          "name": "6. Aggressive prep",
+          "objective": "Gather heavier weapons, armor, and a direct assault loadout — no disguises, no stealth, just enough firepower to fight straight to the vault. Fastest time-to-vault of the three approaches, but every shot fired damages a portion of the loot and draws a heavier police response, so it tends to pay out the least. Duggan Shipments, though technically a shared general prep, is close to mandatory here — finishing all ten shipments significantly weakens the guards' armor, aim, and health during the finale.",
+          "locations": "",
+          "intel": "",
+          "dialogue": "",
+          "operations": [
+            { "mandatory": true, "name": "Support Crew Selection", "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach.", "locations": "", "intel": "", "dialogue": "" },
+            { "mandatory": true, "name": "Vault Breach Method", "objective": "Choose and acquire one method of forcing the vault door open by brute strength rather than stealth or disguise — Thermal Charges, Vault Explosives, or a Boring Machine, depending on preference.", "locations": "", "intel": "", "dialogue": "" }
+          ]
+        }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Entry Team", "duties": "Gets the crew inside via whichever entry point was scoped and chosen — Staff Lobby and Waste Disposal favor Big Con and Aggressive respectively, while Silent & Sneaky typically threads through the security tunnel or roof terrace to stay unseen." },
+          { "role": "Vault Team", "duties": "Breaches the vault itself once inside — hacked open quietly for Silent & Sneaky, drilled through under a staff disguise for Big Con, or forced open under fire for Aggressive — then bags the loot before the timer runs out." },
+          { "role": "Support Crew (Gunman / Driver / Hacker)", "duties": "Hired ahead of the finale; their actual workload varies enormously by approach — nearly idle in a clean Silent & Sneaky run, essential for keeping the getaway alive in Aggressive." }
+        ]
+      },
+      "equipment": {
+        "required": ["Player-owned Arcade"],
+        "recommended": []
+      },
+      "notes": []
+    },
+    "SUM-018": { "title": "Los Santos Summer Special", "release": "2020", "status": "Unfiled", "notes": ["Yacht missions", "Business updates"] },
+    "CAY-019": {
+      "title": "Cayo Perico Heist",
+      "classification": "International Heist",
+      "type": "Kosatka-based heist, 1-4 players, first fully solo-capable heist",
+      "release": "December 15, 2020",
+      "difficulty": "Variable",
+      "status": "Filed",
+      "overview": {
+        "target": "Juan \"El Rubio\" Strickler's private island compound",
+        "contact": "Miguel Madrazo (via The Music Locker)",
+        "objective": "Infiltrate El Rubio's island, steal a primary target plus optional secondary loot, and escape."
+      },
+      "intel": "The first GTA Online heist completable entirely solo. Planned from a player-owned Kosatka submarine. Gather Intel reveals the primary/secondary loot values and approach routes before prep begins.",
+      "planningLocation": {
+        "host": "Kosatka submarine",
+        "observation": "El Rubio's island has an extensive sonar network — approaching by submarine requires stealing a sonar jammer from a Merryweather sub first.",
+        "evidenceRating": ""
+      },
+      "setup": [
+        { "name": "Gather Intel", "objective": "Reach the island's Communications Tower, hack the switchbox, and locate the primary target to reveal loot values and routes.", "locations": "Cayo Perico", "intel": "", "dialogue": "" },
+        { "name": "Kosatka approach prep", "objective": "Steal a sonar jammer from a Merryweather submarine to approach undetected by scuba gear.", "locations": "Merryweather submarine, at sea", "intel": "", "dialogue": "" },
+        { "name": "Alkonost / other approach preps", "objective": "Optionally steal an RO-86 Alkonost or other approach vehicles (plane, boat) for alternate infiltration routes.", "locations": "Fort Zancudo and other locations", "intel": "", "dialogue": "" }
+      ],
+      "finalOperation": {
+        "dialogue": "",
+        "roles": [
+          { "role": "Infiltrator", "duties": "Enters the compound, reaches the underground vault, and steals the primary target plus any secondary loot." },
+          { "role": "Support (if not solo)", "duties": "Covers the infiltrator and helps carry additional loot before the escape." }
+        ]
+      },
+      "equipment": {
+        "required": ["Kosatka submarine"],
+        "recommended": ["Sparrow helicopter", "Kraken Avisa submersible"]
+      },
+      "notes": []
+    },
+    "TUN-020": { "title": "Auto Shop Contracts", "release": "2021", "status": "Unfiled", "notes": ["Street racing scene"] },
+    "CON-021": { "title": "The Contract", "release": "2021", "status": "Unfiled", "notes": ["Franklin Clinton", "Dr. Dre", "Agency operations"] },
+    "CE-022": { "title": "Criminal Enterprises", "release": "2022", "status": "Unfiled", "notes": ["IAA missions", "Operation Paper Trail"] },
+    "SAM-023": { "title": "San Andreas Mercenaries", "release": "2023", "status": "Unfiled", "notes": ["Merryweather conflict", "Project Overthrow"] },
+    "CHOP-024": { "title": "Salvage Yard Robberies", "release": "2023", "status": "Unfiled", "notes": ["Vehicle theft operations", "Yusuf Amir", "Tow truck business"] },
+    "BDB-025": { "title": "Bail Enforcement", "release": "2024", "status": "Unfiled", "notes": ["Maude's legacy", "Vincent", "Bounty targets"] },
+    "GAR-026": { "title": "Garment Factory Operations", "release": "2024", "status": "Unfiled", "notes": ["FIB-related missions", "Federal investigations"] },
+    "KOR-027": { "title": "Kortz Center Operation", "release": "", "status": "Unfiled", "notes": ["High-end art theft", "Artwork acquisition", "Security infiltration", "Elite Los Santos connections"] }
+  }
+}
