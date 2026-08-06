@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA Online Operations Archive</title>
+<style>
+  :root{
+    --paper: #EDEDE4;
+    --paper-line: #DBDBCC;
+    --ink: #21261F;
+    --ink-soft: #565C51;
+    --card: #F7F7F0;
+    --accent: #2E6B5E;
+    --accent-soft: #DCE9E4;
+    --stamp: #9B3B34;
+    --stamp-soft: #F3E1DF;
+    --tab-idle: #D9D9CB;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      linear-gradient(var(--paper-line) 1px, transparent 1px) 0 0/100% 28px,
+      var(--paper);
+    color:var(--ink);
+    font-family: 'Courier New', ui-monospace, Menlo, monospace;
+    min-height:100vh;
+  }
+  header{
+    padding:32px 24px 8px;
+    max-width:860px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  h1{
+    font-size:22px;
+    letter-spacing:0.5px;
+    margin:0 0 4px;
+    font-weight:700;
+  }
+  header p{
+    color:var(--ink-soft);
+    font-size:13px;
+    margin:0 0 20px;
+    font-style:italic;
+  }
+  button, .btn{
+    font-family:inherit;
+    font-size:12px;
+    padding:8px 14px;
+    border:1px solid var(--ink);
+    background:var(--tab-idle);
+    border-radius:4px;
+    cursor:pointer;
+  }
+  button:hover{ background:var(--accent-soft); }
+  .phase-rail{
+    display:flex;
+    overflow-x:auto;
+    gap:6px;
+    max-width:860px;
+    margin:0 auto;
+    padding:0 24px 0;
+  }
+  .phase-tab{
+    flex:0 0 auto;
+    padding:8px 12px;
+    background:var(--tab-idle);
+    border:1px solid var(--ink);
+    border-bottom:none;
+    border-radius:5px 5px 0 0;
+    font-size:11px;
+    cursor:pointer;
+    white-space:nowrap;
+    position:relative;
+    top:1px;
+  }
+  .phase-tab.active{ background:var(--card); font-weight:700; }
+  .phase-tab .yr{ color:var(--ink-soft); font-size:10px; }
+  main{
+    max-width:860px;
+    margin:0 auto;
+    border-top:1px solid var(--ink);
+    background:var(--card);
+    padding:24px;
+    min-height:500px;
+  }
+  .phase-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:20px;
+    padding-bottom:14px;
+    border-bottom:1px dashed var(--paper-line);
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .phase-head .num{ font-size:11px; color:var(--accent); font-weight:700; letter-spacing:1px; }
+  .phase-head h2{ margin:2px 0 4px; font-size:18px; }
+  .phase-head .yr{ font-size:12px; color:var(--ink-soft); }
+  .file-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+    gap:12px;
+  }
+  .file-card{
+    border:1px solid var(--ink);
+    background:var(--paper);
+    padding:12px 14px;
+    border-radius:3px;
+    cursor:pointer;
+    transition:transform .1s;
+  }
+  .file-card:hover{ transform:translateY(-2px); }
+  .file-card .code{ font-size:10px; color:var(--ink-soft); letter-spacing:1px; }
+  .file-card .title{ font-size:14px; font-weight:700; margin:4px 0 8px; }
+  .status{ display:inline-block; font-size:9px; padding:2px 8px; border-radius:10px; font-weight:700; letter-spacing:0.5px; }
+  .status.filed{ background:var(--accent-soft); color:var(--accent); }
+  .status.unfiled{ background:var(--stamp-soft); color:var(--stamp); }
+  .back-link{ display:inline-block; font-size:12px; color:var(--accent); cursor:pointer; margin-bottom:16px; text-decoration:underline; }
+  .dossier .file-title-block{ border-bottom:2px solid var(--ink); padding-bottom:12px; margin-bottom:16px; }
+  .dossier .code-line{ font-size:11px; color:var(--ink-soft); letter-spacing:1px; margin-bottom:2px; }
+  .dossier h2{ font-size:20px; margin:0 0 10px; }
+  .meta-row{ display:flex; flex-wrap:wrap; gap:16px; font-size:11px; color:var(--ink-soft); }
+  .meta-row b{ color:var(--ink); }
+  .section{ margin-bottom:20px; }
+  .section-title{ font-size:12px; font-weight:700; letter-spacing:1px; color:var(--accent); border-bottom:1px solid var(--accent-soft); padding-bottom:4px; margin-bottom:8px; }
+  .section p{ font-size:13px; line-height:1.6; margin:0 0 8px; }
+  .section ul{ margin:0; padding-left:20px; font-size:13px; line-height:1.7; }
+  .subblock{ background:var(--paper); border:1px solid var(--paper-line); border-radius:4px; padding:10px 12px; margin-bottom:10px; }
+  .subblock .sb-title{ font-weight:700; font-size:13px; margin-bottom:4px; }
+  .kv{ font-size:12px; margin:2px 0; }
+  .kv b{ color:var(--ink-soft); font-weight:400; }
+  .evidence-rating{ font-size:13px; color:var(--stamp); font-weight:700; }
+  .empty{ color:var(--ink-soft); font-size:13px; padding:20px 0; text-align:center; }
+  footer{ max-width:860px; margin:0 auto; padding:16px 24px 48px; font-size:11px; color:var(--ink-soft); }
+
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(33,38,31,0.5);
+    display:flex; align-items:flex-start; justify-content:center;
+    padding:40px 16px; overflow-y:auto; z-index:100;
+  }
+  .modal{
+    background:var(--card); border:1px solid var(--ink); border-radius:6px;
+    padding:24px; max-width:680px; width:100%;
+  }
+  .modal h3{ margin:0 0 16px; font-size:16px; }
+  .fieldset{
+    border:1px solid var(--paper-line); border-radius:5px;
+    padding:12px 14px; margin-bottom:14px;
+  }
+  .fieldset legend{
+    font-size:11px; font-weight:700; letter-spacing:0.5px; color:var(--accent);
+    padding:0 6px;
+  }
+  .field{ margin-bottom:12px; }
+  .field label{ display:block; font-size:11px; color:var(--ink-soft); margin-bottom:4px; }
+  .field input, .field select, .field textarea{
+    width:100%; font-family:inherit; font-size:13px; padding:8px;
+    border:1px solid var(--paper-line); border-radius:4px; background:var(--paper); color:var(--ink);
+  }
+  .field textarea{ min-height:70px; resize:vertical; }
+  .row-block{
+    display:flex; gap:6px; margin-bottom:6px; align-items:flex-start;
+  }
+  .row-block input{
+    flex:1; font-family:inherit; font-size:12px; padding:6px 8px;
+    border:1px solid var(--paper-line); border-radius:4px; background:var(--paper); color:var(--ink);
+  }
+  .remove-row{
+    flex:0 0 auto; font-size:11px; padding:6px 10px; border:1px solid var(--ink);
+    background:var(--stamp-soft); color:var(--stamp); border-radius:4px; cursor:pointer;
+  }
+  .add-row{
+    font-size:11px; padding:6px 12px; border:1px dashed var(--ink); background:transparent;
+    border-radius:4px; cursor:pointer; color:var(--ink-soft);
+  }
+  .modal-actions{ display:flex; gap:8px; justify-content:flex-end; margin-top:16px; }
+  .status-msg{ font-size:12px; margin-top:10px; }
+  .status-msg.ok{ color:var(--accent); }
+  .status-msg.err{ color:var(--stamp); }
+  .token-note{ font-size:11px; color:var(--ink-soft); margin-top:4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>// gta online operations archive</h1>
+    <p>operation files: the complete criminal history of los santos</p>
+  </div>
+  <button id="addBtn">+ add operation</button>
+</header>
+
+<div class="phase-rail" id="phaseRail"></div>
+<main id="main"><div class="empty">loading archive…</div></main>
+
+<footer>data lives in data.json in this repo. use "+ add operation" to file a new one from the browser, or edit data.json directly for bigger changes.</footer>
+
+<div id="modalRoot"></div>
+
+<script>
+// ---------------------------------------------------------
+// CONFIGURE THESE TWO before deploying — they must match
+// your actual GitHub username and repo name.
+// ---------------------------------------------------------
+const REPO_OWNER = "ksturff";
+const REPO_NAME  = "operations-archive";
+const DATA_PATH  = "data.json";
+// ---------------------------------------------------------
+
+let DATA = { phases: [], operations: {} };
+let currentPhase = 0;
+let currentOp = null;
+let currentPart = null;
+
+async function loadData(){
+  try{
+    const res = await fetch(DATA_PATH + '?t=' + Date.now());
+    DATA = await res.json();
+  }catch(e){
+    document.getElementById('main').innerHTML = '<div class="empty">couldn\'t load data.json — make sure it\'s in the same repo as this file.</div>';
+    return;
+  }
+  renderPhaseRail();
+  renderMain();
+}
+
+function renderPhaseRail(){
+  const rail = document.getElementById('phaseRail');
+  rail.innerHTML = DATA.phases.map((p, i) => `
+    <div class="phase-tab${i===currentPhase ? ' active':''}" data-idx="${i}">
+      PHASE ${p.number}<br><span class="yr">${p.year}</span>
+    </div>
+  `).join('');
+  rail.querySelectorAll('.phase-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      currentPhase = parseInt(tab.dataset.idx);
+      currentOp = null;
+      currentPart = null;
+      renderPhaseRail();
+      renderMain();
+    });
+  });
+}
+
+function renderFileGrid(phase){
+  const main = document.getElementById('main');
+  const cards = (phase.ops || []).map(code => {
+    const op = DATA.operations[code];
+    if(!op) return '';
+    const statusClass = op.status === 'Filed' ? 'filed' : 'unfiled';
+    return `
+      <div class="file-card" data-code="${code}">
+        <div class="code">${code}</div>
+        <div class="title">${op.title}</div>
+        <span class="status ${statusClass}">${op.status.toUpperCase()}</span>
+      </div>
+    `;
+  }).join('');
+
+  main.innerHTML = `
+    <div class="phase-head">
+      <div>
+        <div class="num">PHASE ${phase.number}</div>
+        <h2>${phase.title}</h2>
+        <div class="yr">${phase.year}</div>
+      </div>
+    </div>
+    <div class="file-grid">${cards || '<div class="empty">no operations filed in this phase yet.</div>'}</div>
+  `;
+
+  main.querySelectorAll('.file-card').forEach(card => {
+    card.addEventListener('click', () => {
+      currentOp = card.dataset.code;
+      currentPart = null;
+      renderMain();
+    });
+  });
+}
+
+// Break an operation into its navigable parts: an Intro (background/
+// planning info), one card per Setup Mission, and a Finale.
+function buildParts(op){
+  const parts = [];
+  const hasIntro = op.overview || op.intel || op.dialogue || op.planningLocation ||
+    (op.organizations && op.organizations.length) || (op.lore && op.lore.length) ||
+    op.environmentalEvidence || (op.notes && op.notes.length);
+  if(hasIntro){
+    parts.push({ id: 'intro', title: 'Intro', subtitle: op.classification || op.type || 'background' });
+  }
+  (op.setup || []).forEach((s, i) => {
+    parts.push({ id: 'setup-' + i, title: s.name || ('Setup mission ' + (i+1)), subtitle: 'setup mission' });
+  });
+  if(op.finalOperation && (op.finalOperation.roles || op.finalOperation.dialogue) || op.equipment){
+    parts.push({ id: 'finale', title: 'Finale', subtitle: 'final operation' });
+  }
+  return parts;
+}
+
+function renderOperationCards(code){
+  const op = DATA.operations[code];
+  const main = document.getElementById('main');
+  if(!op){
+    main.innerHTML = '<div class="empty">file not found.</div>';
+    return;
+  }
+  const parts = buildParts(op);
+  const cardsHtml = parts.map((p, idx) => `
+    <div class="file-card" data-idx="${idx}">
+      <div class="code">${code}</div>
+      <div class="title">${p.title}</div>
+      <div class="kv">${p.subtitle || ''}</div>
+    </div>
+  `).join('');
+
+  main.innerHTML = `
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+      <div class="back-link" id="backLink">&larr; back to ${DATA.phases[currentPhase].title}</div>
+      <div style="display:flex; gap:8px;">
+        <button id="editOpBtn">edit</button>
+        <button id="deleteOpBtn">delete</button>
+      </div>
+    </div>
+    <div class="phase-head">
+      <div>
+        <div class="num">${code}</div>
+        <h2>${op.title}</h2>
+        <div class="yr">${op.release || ''}${op.release && op.status ? ' · ' : ''}${op.status || ''}</div>
+      </div>
+    </div>
+    <div class="file-grid">${cardsHtml || '<div class="empty">no parts filed yet — click edit to add setup missions or a finale.</div>'}</div>
+  `;
+
+  document.getElementById('backLink').addEventListener('click', () => {
+    currentOp = null;
+    renderMain();
+  });
+  document.getElementById('editOpBtn').addEventListener('click', () => openOperationModal(code));
+  document.getElementById('deleteOpBtn').addEventListener('click', () => deleteOperation(code));
+  main.querySelectorAll('.file-card').forEach(card => {
+    card.addEventListener('click', () => {
+      currentPart = parseInt(card.dataset.idx);
+      renderMain();
+    });
+  });
+}
+
+function renderPartDetail(code, partIdx){
+  const op = DATA.operations[code];
+  const main = document.getElementById('main');
+  const parts = buildParts(op);
+  const part = parts[partIdx];
+  if(!op || !part){
+    main.innerHTML = '<div class="empty">part not found.</div>';
+    return;
+  }
+
+  let html = `<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+    <div class="back-link" id="backLink">&larr; back to ${op.title}</div>
+    <div style="display:flex; gap:8px;">
+      <button id="editOpBtn">edit</button>
+      <button id="deleteOpBtn">delete</button>
+    </div>
+  </div>`;
+  html += `<div class="dossier">`;
+  html += `<div class="file-title-block">
+    <div class="code-line">${code} — ${part.title}</div>
+    <h2>${part.id === 'intro' ? op.title : part.title}</h2>
+  </div>`;
+
+  if(part.id === 'intro'){
+    html += `<div class="meta-row" style="margin-bottom:14px;">
+      ${op.classification ? `<span><b>Classification:</b> ${op.classification}</span>` : ''}
+      ${op.type ? `<span><b>Type:</b> ${op.type}</span>` : ''}
+      ${op.release ? `<span><b>Release:</b> ${op.release}</span>` : ''}
+      ${op.difficulty ? `<span><b>Difficulty:</b> ${op.difficulty}</span>` : ''}
+      <span><b>Status:</b> ${op.status}</span>
+    </div>`;
+    if(op.overview){
+      html += `<div class="section"><div class="section-title">MISSION OVERVIEW</div>
+        ${op.overview.target ? `<div class="kv"><b>Target:</b> ${op.overview.target}</div>` : ''}
+        ${op.overview.contact ? `<div class="kv"><b>Contact:</b> ${op.overview.contact}</div>` : ''}
+        ${op.overview.objective ? `<p style="margin-top:8px">${op.overview.objective}</p>` : ''}
+      </div>`;
+    }
+    if(op.intel){
+      html += `<div class="section"><div class="section-title">INTELLIGENCE SUMMARY</div><p>${op.intel}</p></div>`;
+    }
+    html += `<div class="section"><div class="section-title">DIALOGUE</div><p style="white-space:pre-wrap;">${op.dialogue || '<span class="empty" style="padding:0;">no dialogue filed yet.</span>'}</p></div>`;
+    if(op.planningLocation){
+      const pl = op.planningLocation;
+      html += `<div class="section"><div class="section-title">PLANNING LOCATION</div>
+        <div class="subblock">
+          ${pl.host ? `<div class="kv"><b>Host requirement:</b> ${pl.host}</div>` : ''}
+          ${pl.observation ? `<p style="margin-top:8px">${pl.observation}</p>` : ''}
+          ${pl.evidenceRating ? `<div class="evidence-rating">${pl.evidenceRating}</div>` : ''}
+        </div>
+      </div>`;
+    }
+    if(op.organizations && op.organizations.length){
+      html += `<div class="section"><div class="section-title">ORGANIZATIONS INVOLVED</div>`;
+      op.organizations.forEach(o => {
+        html += `<div class="subblock"><div class="sb-title">${o.name}</div><div class="kv">${o.role}</div></div>`;
+      });
+      html += `</div>`;
+    }
+    if(op.lore && op.lore.length){
+      html += `<div class="section"><div class="section-title">LORE CONNECTIONS</div>`;
+      op.lore.forEach(l => {
+        html += `<div class="subblock"><div class="sb-title">${l.name}</div><div class="kv">${l.note}</div></div>`;
+      });
+      html += `</div>`;
+    }
+    if(op.environmentalEvidence){
+      const ev = op.environmentalEvidence;
+      html += `<div class="section"><div class="section-title">ENVIRONMENTAL EVIDENCE</div>
+        <div class="subblock">
+          <div class="sb-title">${ev.title}</div>
+          ${ev.observation ? `<div class="kv"><b>Observation:</b> ${ev.observation}</div>` : ''}
+          ${ev.theory ? `<div class="kv" style="margin-top:6px"><b>Theory:</b> ${ev.theory}</div>` : ''}
+          ${ev.confidence ? `<div class="kv" style="margin-top:6px"><b>Confidence:</b> ${ev.confidence}</div>` : ''}
+        </div>
+      </div>`;
+    }
+    if(op.notes && op.notes.length){
+      html += `<div class="section"><div class="section-title">FIELD NOTES</div><ul>${op.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
+    }
+  } else if(part.id.startsWith('setup-')){
+    const idx = parseInt(part.id.split('-')[1]);
+    const s = (op.setup || [])[idx] || {};
+    if(s.objective){
+      html += `<div class="section"><div class="section-title">OBJECTIVE</div><p>${s.objective}</p></div>`;
+    }
+    if(s.locations){
+      html += `<div class="section"><div class="section-title">LOCATIONS</div><p>${s.locations}</p></div>`;
+    }
+    if(s.intel){
+      html += `<div class="section"><div class="section-title">INTEL GATHERED</div><p>${s.intel}</p></div>`;
+    }
+    html += `<div class="section"><div class="section-title">DIALOGUE</div><p style="white-space:pre-wrap;">${s.dialogue || '<span class="empty" style="padding:0;">no dialogue filed yet.</span>'}</p></div>`;
+  } else if(part.id === 'finale'){
+    const fo = op.finalOperation || {};
+    html += `<div class="section"><div class="section-title">DIALOGUE</div><p style="white-space:pre-wrap;">${fo.dialogue || '<span class="empty" style="padding:0;">no dialogue filed yet.</span>'}</p></div>`;
+    if(fo.roles && fo.roles.length){
+      html += `<div class="section"><div class="section-title">TEAM ROLES</div>`;
+      fo.roles.forEach(r => {
+        html += `<div class="subblock"><div class="sb-title">${r.role}</div><div class="kv">${r.duties}</div></div>`;
+      });
+      html += `</div>`;
+    }
+    if(op.equipment){
+      html += `<div class="section"><div class="section-title">EQUIPMENT</div>`;
+      if(op.equipment.required){
+        html += `<div class="kv"><b>Required</b></div><ul>${op.equipment.required.map(e=>`<li>${e}</li>`).join('')}</ul>`;
+      }
+      if(op.equipment.recommended){
+        html += `<div class="kv"><b>Recommended</b></div><ul>${op.equipment.recommended.map(e=>`<li>${e}</li>`).join('')}</ul>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  html += `</div>`;
+  main.innerHTML = html;
+  document.getElementById('editOpBtn').addEventListener('click', () => openOperationModal(code));
+  document.getElementById('deleteOpBtn').addEventListener('click', () => deleteOperation(code));
+  document.getElementById('backLink').addEventListener('click', () => {
+    currentPart = null;
+    renderMain();
+  });
+}
+
+function renderMain(){
+  if(currentPart !== null){
+    renderPartDetail(currentOp, currentPart);
+  } else if(currentOp){
+    renderOperationCards(currentOp);
+  } else if(DATA.phases[currentPhase]){
+    renderFileGrid(DATA.phases[currentPhase]);
+  }
+}
+
+// ---------------------------------------------------------
+// ADD / EDIT OPERATION MODAL (full form, no code required) + GITHUB COMMIT
+// ---------------------------------------------------------
+
+function escapeAttr(str){
+  return String(str == null ? '' : str).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+}
+
+// Generic repeatable-row list editor. `state` is a plain array that this
+// function mutates in place. `fieldDefs` is null for a simple string list,
+// or an array of {key,label} for a list of small objects.
+function renderList(containerId, state, fieldDefs){
+  const container = document.getElementById(containerId);
+  const rowsHtml = state.map((item, idx) => {
+    if(fieldDefs){
+      return `<div class="row-block" data-idx="${idx}" style="flex-wrap:wrap;">
+        ${fieldDefs.map(f => f.type === 'textarea'
+          ? `<textarea data-key="${f.key}" placeholder="${f.label}" style="flex:1 1 100%; min-height:70px;">${escapeAttr(item[f.key])}</textarea>`
+          : `<input type="text" data-key="${f.key}" placeholder="${f.label}" value="${escapeAttr(item[f.key])}">`
+        ).join('')}
+        <button type="button" class="remove-row" data-idx="${idx}">×</button>
+      </div>`;
+    }
+    return `<div class="row-block" data-idx="${idx}">
+      <input type="text" value="${escapeAttr(item)}">
+      <button type="button" class="remove-row" data-idx="${idx}">×</button>
+    </div>`;
+  }).join('');
+  container.innerHTML = rowsHtml + `<button type="button" class="add-row">+ add</button>`;
+
+  function syncFromDom(){
+    const rows = container.querySelectorAll('.row-block');
+    const newArr = [];
+    rows.forEach(row => {
+      if(fieldDefs){
+        const obj = {};
+        fieldDefs.forEach(f => {
+          const inp = row.querySelector(`[data-key="${f.key}"]`);
+          obj[f.key] = inp ? inp.value : '';
+        });
+        newArr.push(obj);
+      } else {
+        newArr.push(row.querySelector('input').value);
+      }
+    });
+    state.length = 0;
+    state.push(...newArr);
+  }
+
+  container.querySelectorAll('.remove-row').forEach(btn => {
+    btn.addEventListener('click', () => {
+      syncFromDom();
+      state.splice(parseInt(btn.dataset.idx), 1);
+      renderList(containerId, state, fieldDefs);
+    });
+  });
+  container.querySelector('.add-row').addEventListener('click', () => {
+    syncFromDom();
+    state.push(fieldDefs ? {} : '');
+    renderList(containerId, state, fieldDefs);
+  });
+}
+
+function findPhaseIdxForCode(code){
+  return DATA.phases.findIndex(p => (p.ops || []).includes(code));
+}
+
+let listStates = {};
+
+function openOperationModal(existingCode){
+  const isEdit = !!existingCode;
+  const root = document.getElementById('modalRoot');
+  const phaseOptions = DATA.phases.map((p,i) => `<option value="${i}">Phase ${p.number} — ${p.title}</option>`).join('');
+  const defaultPhaseIdx = isEdit ? findPhaseIdxForCode(existingCode) : 0;
+  const op = isEdit ? (DATA.operations[existingCode] || {}) : {};
+
+  listStates = {
+    setup: JSON.parse(JSON.stringify(op.setup || [])),
+    roles: JSON.parse(JSON.stringify((op.finalOperation && op.finalOperation.roles) || [])),
+    required: JSON.parse(JSON.stringify((op.equipment && op.equipment.required) || [])),
+    recommended: JSON.parse(JSON.stringify((op.equipment && op.equipment.recommended) || [])),
+    organizations: JSON.parse(JSON.stringify(op.organizations || [])),
+    lore: JSON.parse(JSON.stringify(op.lore || [])),
+    notes: JSON.parse(JSON.stringify(op.notes || []))
+  };
+
+  const ov = op.overview || {};
+  const pl = op.planningLocation || {};
+  const ev = op.environmentalEvidence || {};
+
+  root.innerHTML = `
+    <div class="modal-overlay" id="overlay">
+      <div class="modal">
+        <h3>${isEdit ? 'Edit operation ' + existingCode : 'Add operation'}</h3>
+
+        <div class="field">
+          <label>Github token (write access to this repo)</label>
+          <input type="password" id="fToken" placeholder="paste your token">
+          <div class="token-note"><label><input type="checkbox" id="fRemember"> remember on this device</label></div>
+        </div>
+        <div class="field">
+          <label>Phase</label>
+          <select id="fPhase">${phaseOptions}</select>
+        </div>
+        <div class="field">
+          <label>Operation code (short, unique, e.g. ABC-028)</label>
+          <input type="text" id="fCode" placeholder="ABC-028" value="${isEdit ? existingCode : ''}">
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>BASICS</legend>
+          <div class="field"><label>Title</label><input type="text" id="fTitle" value="${escapeAttr(op.title)}"></div>
+          <div class="field"><label>Classification</label><input type="text" id="fClassification" value="${escapeAttr(op.classification)}" placeholder="e.g. Financial Crime"></div>
+          <div class="field"><label>Type</label><input type="text" id="fType" value="${escapeAttr(op.type)}" placeholder="e.g. Two-person bank robbery"></div>
+          <div class="field"><label>Release date</label><input type="text" id="fRelease" value="${escapeAttr(op.release)}"></div>
+          <div class="field"><label>Difficulty</label><input type="text" id="fDifficulty" value="${escapeAttr(op.difficulty)}"></div>
+          <div class="field"><label>Status</label>
+            <select id="fStatus">
+              <option value="Unfiled" ${op.status !== 'Filed' ? 'selected' : ''}>Unfiled</option>
+              <option value="Filed" ${op.status === 'Filed' ? 'selected' : ''}>Filed</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>MISSION OVERVIEW</legend>
+          <div class="field"><label>Target</label><input type="text" id="fTarget" value="${escapeAttr(ov.target)}"></div>
+          <div class="field"><label>Contact</label><input type="text" id="fContact" value="${escapeAttr(ov.contact)}"></div>
+          <div class="field"><label>Objective</label><textarea id="fObjective">${escapeAttr(ov.objective)}</textarea></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>INTELLIGENCE SUMMARY</legend>
+          <div class="field"><textarea id="fIntel">${escapeAttr(op.intel)}</textarea></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>INTRO DIALOGUE</legend>
+          <div class="field"><textarea id="fDialogue" style="min-height:160px;">${escapeAttr(op.dialogue)}</textarea></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>PLANNING LOCATION</legend>
+          <div class="field"><label>Host requirement</label><input type="text" id="fHost" value="${escapeAttr(pl.host)}"></div>
+          <div class="field"><label>Observation</label><textarea id="fObservation">${escapeAttr(pl.observation)}</textarea></div>
+          <div class="field"><label>Evidence rating</label><input type="text" id="fEvidenceRating" value="${escapeAttr(pl.evidenceRating)}" placeholder="e.g. ★★★★★ Strong"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>SETUP MISSIONS</legend>
+          <div id="listSetup"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>FINAL OPERATION — TEAM ROLES</legend>
+          <div class="field"><label>Finale dialogue</label><textarea id="fFinaleDialogue" style="min-height:120px;">${escapeAttr(op.finalOperation && op.finalOperation.dialogue)}</textarea></div>
+          <div id="listRoles"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>EQUIPMENT — REQUIRED</legend>
+          <div id="listRequired"></div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>EQUIPMENT — RECOMMENDED</legend>
+          <div id="listRecommended"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>ORGANIZATIONS INVOLVED</legend>
+          <div id="listOrgs"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>LORE CONNECTIONS</legend>
+          <div id="listLore"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>ENVIRONMENTAL EVIDENCE</legend>
+          <div class="field"><label>Title</label><input type="text" id="fEvTitle" value="${escapeAttr(ev.title)}"></div>
+          <div class="field"><label>Observation</label><textarea id="fEvObservation">${escapeAttr(ev.observation)}</textarea></div>
+          <div class="field"><label>Theory</label><textarea id="fEvTheory">${escapeAttr(ev.theory)}</textarea></div>
+          <div class="field"><label>Confidence</label><input type="text" id="fEvConfidence" value="${escapeAttr(ev.confidence)}"></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>FIELD NOTES</legend>
+          <div id="listNotes"></div>
+        </fieldset>
+
+        <div id="modalStatus"></div>
+        <div class="modal-actions">
+          <button id="cancelBtn">Cancel</button>
+          <button id="saveBtn">Save to GitHub</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('fPhase').value = defaultPhaseIdx >= 0 ? defaultPhaseIdx : 0;
+
+  renderList('listSetup', listStates.setup, [{key:'name',label:'Name'},{key:'objective',label:'Objective'},{key:'locations',label:'Locations'},{key:'intel',label:'Intel gathered'},{key:'dialogue',label:'Dialogue',type:'textarea'}]);
+  renderList('listRoles', listStates.roles, [{key:'role',label:'Role'},{key:'duties',label:'Duties'}]);
+  renderList('listRequired', listStates.required, null);
+  renderList('listRecommended', listStates.recommended, null);
+  renderList('listOrgs', listStates.organizations, [{key:'name',label:'Name'},{key:'role',label:'Role'}]);
+  renderList('listLore', listStates.lore, [{key:'name',label:'Name'},{key:'note',label:'Note'}]);
+  renderList('listNotes', listStates.notes, null);
+
+  const savedToken = localStorage.getItem('gh_token');
+  if(savedToken){
+    document.getElementById('fToken').value = savedToken;
+    document.getElementById('fRemember').checked = true;
+  }
+
+  document.getElementById('overlay').addEventListener('click', (e) => {
+    if(e.target.id === 'overlay') root.innerHTML = '';
+  });
+  document.getElementById('cancelBtn').addEventListener('click', () => root.innerHTML = '');
+  document.getElementById('saveBtn').addEventListener('click', () => submitOperation(existingCode));
+}
+
+// drop empty strings/objects/arrays so data.json stays tidy and the
+// dossier's conditional rendering (which checks truthiness) behaves
+function pruneEmpty(val){
+  if(Array.isArray(val)){
+    const cleaned = val.map(pruneEmpty).filter(v => {
+      if(v == null) return false;
+      if(typeof v === 'string') return v.trim() !== '';
+      if(typeof v === 'object') return Object.keys(v).length > 0;
+      return true;
+    });
+    return cleaned.length ? cleaned : undefined;
+  }
+  if(val && typeof val === 'object'){
+    const out = {};
+    Object.keys(val).forEach(k => {
+      const cleaned = pruneEmpty(val[k]);
+      if(cleaned !== undefined && cleaned !== '') out[k] = cleaned;
+    });
+    return Object.keys(out).length ? out : undefined;
+  }
+  if(typeof val === 'string') return val.trim() === '' ? undefined : val.trim();
+  return val;
+}
+
+async function commitData(newData, message, token){
+  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_PATH}`;
+  const getRes = await fetch(apiUrl, { headers: { Authorization: `token ${token}` } });
+  if(!getRes.ok) throw new Error('could not read current data.json (check token permissions and repo name)');
+  const getJson = await getRes.json();
+  const sha = getJson.sha;
+
+  const contentStr = JSON.stringify(newData, null, 2);
+  const contentB64 = btoa(unescape(encodeURIComponent(contentStr)));
+
+  const putRes = await fetch(apiUrl, {
+    method: 'PUT',
+    headers: { Authorization: `token ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, content: contentB64, sha })
+  });
+  if(!putRes.ok){
+    const errJson = await putRes.json().catch(()=>({}));
+    throw new Error(errJson.message || 'GitHub rejected the commit');
+  }
+}
+
+async function submitOperation(existingCode){
+  const isEdit = !!existingCode;
+  const token = document.getElementById('fToken').value.trim();
+  const remember = document.getElementById('fRemember').checked;
+  const phaseIdx = parseInt(document.getElementById('fPhase').value);
+  const code = document.getElementById('fCode').value.trim();
+  const statusEl = document.getElementById('modalStatus');
+
+  // pull final values out of the row-editors (in case the last row
+  // wasn't followed by an add/remove click to sync it)
+  ['listSetup','listRoles','listRequired','listRecommended','listOrgs','listLore','listNotes'].forEach(id => {});
+
+  function readSimpleList(containerId){
+    const rows = document.querySelectorAll(`#${containerId} .row-block`);
+    return Array.from(rows).map(r => r.querySelector('input').value);
+  }
+  function readObjectList(containerId, keys){
+    const rows = document.querySelectorAll(`#${containerId} .row-block`);
+    return Array.from(rows).map(r => {
+      const obj = {};
+      keys.forEach(k => { const inp = r.querySelector(`[data-key="${k}"]`); obj[k] = inp ? inp.value : ''; });
+      return obj;
+    });
+  }
+
+  const rawOp = {
+    title: document.getElementById('fTitle').value,
+    classification: document.getElementById('fClassification').value,
+    type: document.getElementById('fType').value,
+    release: document.getElementById('fRelease').value,
+    difficulty: document.getElementById('fDifficulty').value,
+    status: document.getElementById('fStatus').value,
+    overview: {
+      target: document.getElementById('fTarget').value,
+      contact: document.getElementById('fContact').value,
+      objective: document.getElementById('fObjective').value
+    },
+    intel: document.getElementById('fIntel').value,
+    dialogue: document.getElementById('fDialogue').value,
+    planningLocation: {
+      host: document.getElementById('fHost').value,
+      observation: document.getElementById('fObservation').value,
+      evidenceRating: document.getElementById('fEvidenceRating').value
+    },
+    setup: readObjectList('listSetup', ['name','objective','locations','intel','dialogue']),
+    finalOperation: {
+      dialogue: document.getElementById('fFinaleDialogue').value,
+      roles: readObjectList('listRoles', ['role','duties'])
+    },
+    equipment: {
+      required: readSimpleList('listRequired'),
+      recommended: readSimpleList('listRecommended')
+    },
+    organizations: readObjectList('listOrgs', ['name','role']),
+    lore: readObjectList('listLore', ['name','note']),
+    environmentalEvidence: {
+      title: document.getElementById('fEvTitle').value,
+      observation: document.getElementById('fEvObservation').value,
+      theory: document.getElementById('fEvTheory').value,
+      confidence: document.getElementById('fEvConfidence').value
+    },
+    notes: readSimpleList('listNotes')
+  };
+
+  // status always kept even if somehow empty, so it renders correctly
+  const cleanedOp = pruneEmpty(rawOp) || {};
+  cleanedOp.status = rawOp.status;
+
+  if(!token || !code || !cleanedOp.title){
+    statusEl.innerHTML = '<div class="status-msg err">token, code, and a title are all required.</div>';
+    return;
+  }
+  if(!isEdit && DATA.operations[code]){
+    statusEl.innerHTML = '<div class="status-msg err">that code is already in use — pick another.</div>';
+    return;
+  }
+
+  statusEl.innerHTML = '<div class="status-msg">saving…</div>';
+  if(remember){ localStorage.setItem('gh_token', token); }
+  else { localStorage.removeItem('gh_token'); }
+
+  const newData = JSON.parse(JSON.stringify(DATA));
+
+  if(isEdit && existingCode !== code){
+    delete newData.operations[existingCode];
+  }
+  newData.operations[code] = cleanedOp;
+
+  newData.phases.forEach(p => {
+    p.ops = (p.ops || []).filter(c => c !== existingCode && c !== code);
+  });
+  newData.phases[phaseIdx].ops.push(code);
+
+  try{
+    await commitData(newData, `${isEdit ? 'Edit' : 'Add'} operation ${code}: ${cleanedOp.title}`, token);
+    DATA = newData;
+    currentOp = code;
+    currentPart = null;
+    currentPhase = phaseIdx;
+    statusEl.innerHTML = '<div class="status-msg ok">saved! the live site will update in about a minute.</div>';
+    renderPhaseRail();
+    renderMain();
+    setTimeout(() => { document.getElementById('modalRoot').innerHTML = ''; }, 1200);
+  }catch(e){
+    statusEl.innerHTML = `<div class="status-msg err">${e.message}</div>`;
+  }
+}
+
+async function deleteOperation(code){
+  const root = document.getElementById('modalRoot');
+  root.innerHTML = `
+    <div class="modal-overlay" id="overlay">
+      <div class="modal">
+        <h3>Delete ${code}?</h3>
+        <p style="font-size:13px;">This removes it from the archive for everyone. This can't be undone from here.</p>
+        <div class="field">
+          <label>Github token (write access to this repo)</label>
+          <input type="password" id="dToken" placeholder="paste your token">
+        </div>
+        <div id="modalStatus"></div>
+        <div class="modal-actions">
+          <button id="cancelBtn">Cancel</button>
+          <button id="confirmDeleteBtn">Delete</button>
+        </div>
+      </div>
+    </div>
+  `;
+  const savedToken = localStorage.getItem('gh_token');
+  if(savedToken) document.getElementById('dToken').value = savedToken;
+
+  document.getElementById('overlay').addEventListener('click', (e) => {
+    if(e.target.id === 'overlay') root.innerHTML = '';
+  });
+  document.getElementById('cancelBtn').addEventListener('click', () => root.innerHTML = '');
+  document.getElementById('confirmDeleteBtn').addEventListener('click', async () => {
+    const token = document.getElementById('dToken').value.trim();
+    const statusEl = document.getElementById('modalStatus');
+    if(!token){
+      statusEl.innerHTML = '<div class="status-msg err">token required.</div>';
+      return;
+    }
+    statusEl.innerHTML = '<div class="status-msg">deleting…</div>';
+    const newData = JSON.parse(JSON.stringify(DATA));
+    delete newData.operations[code];
+    newData.phases.forEach(p => { p.ops = (p.ops || []).filter(c => c !== code); });
+    try{
+      await commitData(newData, `Delete operation ${code}`, token);
+      DATA = newData;
+      currentOp = null;
+      statusEl.innerHTML = '<div class="status-msg ok">deleted.</div>';
+      renderPhaseRail();
+      renderMain();
+      setTimeout(() => { document.getElementById('modalRoot').innerHTML = ''; }, 800);
+    }catch(e){
+      statusEl.innerHTML = `<div class="status-msg err">${e.message}</div>`;
+    }
+  });
+}
+
+document.getElementById('addBtn').addEventListener('click', () => openOperationModal(null));
+loadData();
+</script>
+
+</body>
+</html>
