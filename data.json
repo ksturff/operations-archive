@@ -805,47 +805,35 @@
           "name": "1. Casino Scoping",
           "objective": "Photograph every access point and point of interest around the resort — staff lobby, waste disposal, roof terrace, helipad, and the security tunnel used by the Big Con route. Doesn't need to be redone every heist, but it's what unlocks entry-point choice on the prep board.",
           "locations": "The Diamond Casino & Resort",
-          "intel": "The photographed access points determine which entry routes are available when planning the finale — skipping a location later locks that door off entirely.",
-          "dialogue": ""
+          "intel": "The photographed access points determine which entry routes are available when planning the finale — skipping a location later locks that door off entirely."
         },
         {
           "name": "2. General Preps",
           "objective": "A shared pool of prep work that applies no matter which finale approach gets picked later. Only one of these is actually mandatory — the rest are optional but make every approach easier.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Vault Keycards",
-              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. The only general prep that's mandatory on every single run, no matter which approach gets chosen.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. The only general prep that's mandatory on every single run, no matter which approach gets chosen."
             },
             {
               "mandatory": false,
               "name": "Guard Patrol Routes",
               "objective": "Photograph the guards' staff roster at a Duggan security meeting to learn exactly where every guard will be positioned during the heist.",
               "locations": "Duggan security meeting",
-              "intel": "This intel shows up on the in-game minimap during the finale, making it far easier to avoid or time around patrols.",
-              "dialogue": ""
+              "intel": "This intel shows up on the in-game minimap during the finale, making it far easier to avoid or time around patrols."
             },
             {
               "mandatory": false,
               "name": "Duggan Shipments",
               "objective": "Destroy weapons and equipment shipments meant for the casino's Duggan-contracted security team. Ten targets exist around the map — the more that get destroyed, the weaker security is during the actual heist.",
-              "locations": "Various locations around Los Santos",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Various locations around Los Santos"
             },
             {
               "mandatory": false,
               "name": "Security Intel",
               "objective": "Meet Vincent at Rockford Plaza after retrieving a stolen Gauntlet Hellfire, in exchange for a USB drive loaded with casino security information.",
-              "locations": "Rockford Plaza",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Rockford Plaza"
             }
           ]
         },
@@ -853,135 +841,94 @@
           "name": "3. Vault Contents",
           "objective": "Scout the vault itself to identify what's actually stored there this run — cash, art, gold, or diamonds — since the reward rotates and isn't known ahead of time. Mandatory on every run, same as Vault Keycards.",
           "locations": "The Diamond Casino & Resort vault",
-          "intel": "Diamonds pay out the highest but are also the rarest find; cash tends to come up most often.",
-          "dialogue": ""
+          "intel": "Diamonds pay out the highest but are also the rarest find; cash tends to come up most often."
         },
         {
           "name": "4. Silent & Sneaky prep",
           "objective": "Build out a stealth-first loadout — the least prep-heavy of the three approaches on paper, but the least forgiving once inside. Rewards patience: staying fully undetected buys extra time inside the vault, which usually means walking out with the highest-value loot.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Support Crew Selection",
-              "objective": "Hire a Gunman, Driver, and Hacker for the finale. Their workload stays minimal if the run goes cleanly, but a bad Hacker in particular can cost real time.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Hire a Gunman, Driver, and Hacker for the finale. Their workload stays minimal if the run goes cleanly, but a bad Hacker in particular can cost real time."
             },
             {
               "mandatory": true,
               "name": "Acquiring the Hacking Device",
               "objective": "Retrieve a piece of NOOSE or FIB tech that the crew's Hacker will need to work the vault door quietly during the finale.",
-              "locations": "NOOSE / FIB facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "NOOSE / FIB facility"
             },
             {
               "mandatory": true,
               "name": "Nano Drone",
               "objective": "Destroy five LSPD-deployed drones and collect their scraps, then bring them back to the Arcade so Lester can build a nano drone from the parts.",
               "locations": "Around Los Santos",
-              "intel": "An Oppressor Mk II or Buzzard makes this much faster, since drone scraps can be picked up from the vehicle without dismounting.",
-              "dialogue": ""
+              "intel": "An Oppressor Mk II or Buzzard makes this much faster, since drone scraps can be picked up from the vehicle without dismounting."
             },
             {
               "mandatory": true,
               "name": "Vault Lasers",
               "objective": "Steal two vault lasers from a location guarded by Merryweather and heavy army personnel.",
-              "locations": "Merryweather-guarded facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Merryweather-guarded facility"
             },
             {
               "mandatory": false,
               "name": "EMP Device",
-              "objective": "Steal an EMP device capable of cutting the casino's power for a short window, which knocks out security cameras and makes guards far less effective at spotting the crew.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Steal an EMP device capable of cutting the casino's power for a short window, which knocks out security cameras and makes guards far less effective at spotting the crew."
             },
             {
               "mandatory": false,
               "name": "Infiltration Suits",
               "objective": "Steal infiltration suits with built-in night vision — usually paired with the EMP Device, since the power cut plunges the casino into darkness.",
-              "locations": "Fort Zancudo or Humane Labs and Research",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Fort Zancudo or Humane Labs and Research"
             }
           ]
         },
         {
           "name": "5. The Big Con prep",
           "objective": "Build out a disguise-based infiltration — considered the fastest and most forgiving of the three approaches, since a good cover story keeps the crew from tripping alarms on the way in rather than needing to avoid or fight past security directly.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Support Crew Selection",
               "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "dialogue": "“Okay, your gunman can provide you with options on where to steal untraceable weapons. These guns will not lead back to us if the shit hits the fan. And I know you're a genius, okay, but I've seen a lot of shit hit a lot of fans in my day.”\n—Lester's briefing.\n\n“We've traced some untraceable weapons for ya. If you're quick, you can head over there and grab them before they're seized by the cops.”\n—Lester's briefing.\n\nOn route to stoner cement works players pass Ron Alternates Wind Farm\n\nLocation: Stoner Cement Works\n\nHeist Member: Karl Abolaji"
             },
             {
               "mandatory": true,
               "name": "Gruppe Sechs Gear (Part 1 & 2)",
-              "objective": "Complete both parts of this job to unlock the Gruppe Sechs security disguise, one of two possible entry routes for this approach. Requires having scoped the security tunnel access point beforehand.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Complete both parts of this job to unlock the Gruppe Sechs security disguise, one of two possible entry routes for this approach. Requires having scoped the security tunnel access point beforehand."
             },
             {
               "mandatory": true,
               "name": "Vault Drills",
-              "objective": "Acquire the drills needed to physically breach the vault door once inside, since the Big Con relies on drilling through rather than hacking or blowing it open.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire the drills needed to physically breach the vault door once inside, since the Big Con relies on drilling through rather than hacking or blowing it open."
             },
             {
               "mandatory": false,
               "name": "NOOSE Exit Disguise",
-              "objective": "Secure a second disguise, worn as N.O.O.S.E. personnel, to swap into partway through the escape and slip past the police response that's already converged on the casino.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Secure a second disguise, worn as N.O.O.S.E. personnel, to swap into partway through the escape and slip past the police response that's already converged on the casino."
             }
           ]
         },
         {
           "name": "6. Aggressive prep",
           "objective": "Gather heavier weapons, armor, and a direct assault loadout — no disguises, no stealth, just enough firepower to fight straight to the vault. Fastest time-to-vault of the three approaches, but every shot fired damages a portion of the loot and draws a heavier police response, so it tends to pay out the least. Duggan Shipments, though technically a shared general prep, is close to mandatory here — finishing all ten shipments significantly weakens the guards' armor, aim, and health during the finale.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Support Crew Selection",
-              "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach."
             },
             {
               "mandatory": true,
               "name": "Vault Breach Method",
-              "objective": "Choose and acquire one method of forcing the vault door open by brute strength rather than stealth or disguise — Thermal Charges, Vault Explosives, or a Boring Machine, depending on preference.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Choose and acquire one method of forcing the vault door open by brute strength rather than stealth or disguise — Thermal Charges, Vault Explosives, or a Boring Machine, depending on preference."
             }
           ]
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Entry Team",
@@ -1000,10 +947,8 @@
       "equipment": {
         "required": [
           "Player-owned Arcade"
-        ],
-        "recommended": []
-      },
-      "notes": []
+        ]
+      }
     },
     "SUM-018": {
       "title": "Los Santos Summer Special",
