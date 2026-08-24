@@ -1379,7 +1379,7 @@
           "intel": "Base price $2,620,000, the most expensive base office. Fully upgraded, around $4,860,000 — also the priciest fully kitted out. No targets confirmed from source material yet for this office."
         },
         {
-          "name": "Hawick (unconfirmed office)",
+          "name": "Hawick",
           "objective": "Listed as a Bail Bonds office in the source material for one target, but this doesn't match the 5 officially purchasable locations (Paleto Bay, Davis, Del Perro, Mission Row, Downtown Vinewood) confirmed elsewhere. Keeping it as its own card rather than dropping the target, but this needs double-checking.",
           "operations": [
             {
