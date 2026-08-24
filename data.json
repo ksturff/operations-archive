@@ -825,16 +825,13 @@
           "name": "Vault Contents",
           "objective": "Covers the scoping stage that applies before any approach gets picked — casing the resort and scouting the vault itself. Mandatory items unlock the prep board; optional ones make the finale itself easier or add extra flair.",
           "locations": "The Diamond Casino & Resort",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Scope Out Casino",
               "objective": "Photograph every access point around the resort — staff lobby, waste disposal, roof terrace, helipad, and the security tunnel. Unlocks entry-point choice on the prep board.",
               "locations": "The Diamond Casino & Resort",
-              "intel": "",
-              "dialogue": ""
+              "dialogue": "Okay. So, you're ready to scope out the target. The classic first step. Head on over there. Like I said before, how we can approach this thing will depend on what we discover at this stage, so be as thorough or quick as you like. There's a lot of information you can gather, but it's not all equally important."
             },
             {
               "mandatory": true,
@@ -842,265 +839,187 @@
               "objective": "Scout the vault itself to identify what's actually stored there this run — cash, art, gold, or diamonds — since the reward rotates and isn't known ahead of time.",
               "locations": "The Diamond Casino & Resort vault",
               "intel": "Diamonds pay out the highest but are also the rarest find; cash tends to come up most often.",
-              "dialogue": ""
+              "dialogue": "Ok here we go, let’s find out whats in that vault. First we need someone with the right log in credentials for their security system. I’ve tracked the rough location of a member of Duggan’s security team using his phone signal. Head over there and find him."
             },
             {
               "mandatory": true,
               "name": "Select Approach",
-              "objective": "Commit to one of the three finale approaches — Silent & Sneaky, The Big Con, or Aggressive. The same approach can't be picked twice in a row.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Commit to one of the three finale approaches — Silent & Sneaky, The Big Con, or Aggressive. The same approach can't be picked twice in a row."
             },
             {
               "mandatory": false,
               "name": "Scope All P.O.I.",
               "objective": "Photograph every point of interest inside the casino, beyond just the entry access points.",
-              "locations": "The Diamond Casino & Resort",
-              "intel": "",
-              "dialogue": ""
+              "locations": "The Diamond Casino & Resort"
             },
             {
               "mandatory": false,
               "name": "Scope All Access Points",
               "objective": "Photograph every possible access point rather than just the ones needed for the chosen approach, for full flexibility on future runs.",
-              "locations": "The Diamond Casino & Resort",
-              "intel": "",
-              "dialogue": ""
+              "locations": "The Diamond Casino & Resort"
             },
             {
               "mandatory": false,
               "name": "Purchase Casino Model",
               "objective": "Buy a physical model of the casino for the Arcade planning room.",
-              "locations": "",
-              "intel": "Cosmetic/planning-room extra, not required to run the heist.",
-              "dialogue": ""
+              "intel": "Cosmetic/planning-room extra, not required to run the heist."
             },
             {
               "mandatory": false,
               "name": "Purchase Security Legend",
               "objective": "Buy a security legend/key overlay for the planning room.",
-              "locations": "",
-              "intel": "Cosmetic/planning-room extra, not required to run the heist.",
-              "dialogue": ""
+              "intel": "Cosmetic/planning-room extra, not required to run the heist."
             },
             {
               "mandatory": false,
               "name": "Purchase Vault Door",
               "objective": "Buy a vault door replica for the planning room.",
-              "locations": "",
-              "intel": "Cosmetic/planning-room extra, not required to run the heist.",
-              "dialogue": ""
+              "intel": "Cosmetic/planning-room extra, not required to run the heist."
             }
           ]
         },
         {
           "name": "Silent & Sneaky",
           "objective": "Build out a stealth-first loadout — the least prep-heavy of the three approaches on paper, but the least forgiving once inside. Rewards patience: staying fully undetected buys extra time inside the vault, which usually means walking out with the highest-value loot.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Vault Keycards",
-              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach."
             },
             {
               "mandatory": true,
               "name": "Support Crew Selection",
-              "objective": "Hire a Gunman, Driver, and Hacker for the finale. Their workload stays minimal if the run goes cleanly, but a bad Hacker in particular can cost real time.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Hire a Gunman, Driver, and Hacker for the finale. Their workload stays minimal if the run goes cleanly, but a bad Hacker in particular can cost real time."
             },
             {
               "mandatory": true,
               "name": "Acquiring the Hacking Device",
               "objective": "Retrieve a piece of NOOSE or FIB tech that the crew's Hacker will need to work the vault door quietly during the finale.",
-              "locations": "NOOSE / FIB facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "NOOSE / FIB facility"
             },
             {
               "mandatory": true,
               "name": "Nano Drone",
               "objective": "Destroy five LSPD-deployed drones and collect their scraps, then bring them back to the Arcade so Lester can build a nano drone from the parts.",
               "locations": "Around Los Santos",
-              "intel": "An Oppressor Mk II or Buzzard makes this much faster, since drone scraps can be picked up from the vehicle without dismounting.",
-              "dialogue": ""
+              "intel": "An Oppressor Mk II or Buzzard makes this much faster, since drone scraps can be picked up from the vehicle without dismounting."
             },
             {
               "mandatory": true,
               "name": "Vault Lasers",
               "objective": "Steal two vault lasers from a location guarded by Merryweather and heavy army personnel.",
-              "locations": "Merryweather-guarded facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Merryweather-guarded facility"
             },
             {
               "mandatory": false,
               "name": "Guard Patrol Routes",
               "objective": "Photograph the guards' staff roster at a Duggan security meeting to learn exactly where every guard will be positioned during the heist.",
               "locations": "Duggan security meeting",
-              "intel": "Shows up on the in-game minimap during the finale, making it far easier to avoid patrols entirely.",
-              "dialogue": ""
+              "intel": "Shows up on the in-game minimap during the finale, making it far easier to avoid patrols entirely."
             },
             {
               "mandatory": false,
               "name": "Duggan Shipments",
               "objective": "Destroy weapons and equipment shipments meant for the casino's Duggan-contracted security team. Ten targets exist around the map.",
-              "locations": "Various locations around Los Santos",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Various locations around Los Santos"
             },
             {
               "mandatory": false,
               "name": "Security Intel",
               "objective": "Meet Vincent at Rockford Plaza after retrieving a stolen Gauntlet Hellfire, in exchange for a USB drive loaded with casino security information.",
-              "locations": "Rockford Plaza",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Rockford Plaza"
             },
             {
               "mandatory": false,
               "name": "Power Drills",
-              "objective": "Acquire power drills, a shared general prep item that carries over regardless of approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire power drills, a shared general prep item that carries over regardless of approach."
             },
             {
               "mandatory": false,
               "name": "EMP Device",
-              "objective": "Steal an EMP device capable of cutting the casino's power for a short window, which knocks out security cameras and makes guards far less effective at spotting the crew.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Steal an EMP device capable of cutting the casino's power for a short window, which knocks out security cameras and makes guards far less effective at spotting the crew."
             },
             {
               "mandatory": false,
               "name": "Infiltration Suits",
               "objective": "Steal infiltration suits with built-in night vision — usually paired with the EMP Device, since the power cut plunges the casino into darkness.",
-              "locations": "Fort Zancudo or Humane Labs and Research",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Fort Zancudo or Humane Labs and Research"
             }
           ]
         },
         {
           "name": "Big Con",
           "objective": "Build out a disguise-based infiltration — considered the fastest and most forgiving of the three approaches, since a good cover story keeps the crew from tripping alarms on the way in rather than needing to avoid or fight past security directly.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Unmarked Weapons",
-              "objective": "Acquire untraceable weapons for the crew ahead of the finale.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire untraceable weapons for the crew ahead of the finale."
             },
             {
               "mandatory": true,
               "name": "Getaway Vehicles",
-              "objective": "Secure the getaway vehicles used once the crew is clear of the casino.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Secure the getaway vehicles used once the crew is clear of the casino."
             },
             {
               "mandatory": true,
               "name": "Hacking Device",
               "objective": "Retrieve a piece of NOOSE or FIB tech needed by the crew's Hacker.",
-              "locations": "NOOSE / FIB facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "NOOSE / FIB facility"
             },
             {
               "mandatory": true,
               "name": "Vault Key Cards",
-              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach."
             },
             {
               "mandatory": true,
               "name": "Entry Disguise",
-              "objective": "Secure the Gruppe Sechs security disguise (or equivalent), the actual entry method for this approach. Requires having scoped the security tunnel access point beforehand.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Secure the Gruppe Sechs security disguise (or equivalent), the actual entry method for this approach. Requires having scoped the security tunnel access point beforehand."
             },
             {
               "mandatory": true,
               "name": "Vault Drills",
-              "objective": "Acquire the drills needed to physically breach the vault door once inside, since the Big Con relies on drilling through rather than hacking or blowing it open.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire the drills needed to physically breach the vault door once inside, since the Big Con relies on drilling through rather than hacking or blowing it open."
             },
             {
               "mandatory": false,
               "name": "Patrol Routes",
               "objective": "Photograph the guards' staff roster at a Duggan security meeting to learn exactly where every guard will be positioned during the heist.",
-              "locations": "Duggan security meeting",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Duggan security meeting"
             },
             {
               "mandatory": false,
               "name": "Duggan Shipments",
               "objective": "Destroy weapons and equipment shipments meant for the casino's Duggan-contracted security team. Ten targets exist around the map.",
-              "locations": "Various locations around Los Santos",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Various locations around Los Santos"
             },
             {
               "mandatory": false,
               "name": "Security Intel",
               "objective": "Meet Vincent at Rockford Plaza after retrieving a stolen Gauntlet Hellfire, in exchange for a USB drive loaded with casino security information.",
-              "locations": "Rockford Plaza",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Rockford Plaza"
             },
             {
               "mandatory": false,
               "name": "Power Drills",
-              "objective": "A shared general prep item that carries over regardless of approach — redundant with the mandatory Vault Drills above for this approach specifically, but still listed on the board.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "A shared general prep item that carries over regardless of approach — redundant with the mandatory Vault Drills above for this approach specifically, but still listed on the board."
             },
             {
               "mandatory": false,
               "name": "Security Passes",
-              "objective": "Acquire extra security passes to smooth the disguised entry further.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire extra security passes to smooth the disguised entry further."
             },
             {
               "mandatory": false,
               "name": "Acquire Masks",
-              "objective": "Pick up masks as an additional disguise layer.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Pick up masks as an additional disguise layer."
             },
             {
               "mandatory": false,
               "name": "Exit Disguise",
-              "objective": "Secure a second disguise, worn as N.O.O.S.E. personnel, to swap into partway through the escape and slip past the police response that's already converged on the casino.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Secure a second disguise, worn as N.O.O.S.E. personnel, to swap into partway through the escape and slip past the police response that's already converged on the casino."
             },
             {
               "mandatory": false,
@@ -1115,95 +1034,67 @@
               "name": "Yung Ancestor: After Party",
               "objective": "Second half of the Yung Ancestor chain — only available after finishing Dead Weight. Paparazzi have photos of whatever Yung got up to at his penthouse party, and he wants them gone.",
               "locations": "The Diamond Casino & Resort penthouse",
-              "intel": "Take out four labeled paparazzi targets and destroy their cameras — if a camera gets knocked out of a target's hand, it still needs shooting separately to actually destroy the evidence. Completing this unlocks Yung Ancestor as an entry disguise option on the finale prep board.",
-              "dialogue": ""
+              "intel": "Take out four labeled paparazzi targets and destroy their cameras — if a camera gets knocked out of a target's hand, it still needs shooting separately to actually destroy the evidence. Completing this unlocks Yung Ancestor as an entry disguise option on the finale prep board."
             }
           ]
         },
         {
           "name": "Aggressive",
           "objective": "Gather heavier weapons, armor, and a direct assault loadout — no disguises, no stealth, just enough firepower to fight straight to the vault. Fastest time-to-vault of the three approaches, but every shot fired damages a portion of the loot and draws a heavier police response, so it tends to pay out the least.",
-          "locations": "",
-          "intel": "",
-          "dialogue": "",
           "operations": [
             {
               "mandatory": true,
               "name": "Vault Keycards",
-              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Acquire two keycards needed to access the mantrap between the casino floor and the vault itself. Mandatory on every approach."
             },
             {
               "mandatory": true,
               "name": "Support Crew Selection",
-              "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Hire a Gunman, Driver, and Hacker for the finale, same as any other approach."
             },
             {
               "mandatory": true,
               "name": "Hacking Device",
               "objective": "Retrieve a piece of NOOSE or FIB tech needed by the crew's Hacker — same requirement as Silent & Sneaky, just used to force a way in rather than sneak one.",
-              "locations": "NOOSE / FIB facility",
-              "intel": "",
-              "dialogue": ""
+              "locations": "NOOSE / FIB facility"
             },
             {
               "mandatory": true,
               "name": "Vault Breach Method",
-              "objective": "Choose and acquire one method of forcing the vault door open by brute strength rather than stealth or disguise — Thermal Charges, Vault Explosives, or a Boring Machine, depending on preference.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Choose and acquire one method of forcing the vault door open by brute strength rather than stealth or disguise — Thermal Charges, Vault Explosives, or a Boring Machine, depending on preference."
             },
             {
               "mandatory": false,
               "name": "Patrol Routes",
               "objective": "Photograph the guards' staff roster at a Duggan security meeting to learn exactly where every guard will be positioned during the heist.",
-              "locations": "Duggan security meeting",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Duggan security meeting"
             },
             {
               "mandatory": false,
               "name": "Duggan Shipments",
               "objective": "Destroy weapons and equipment shipments meant for the casino's Duggan-contracted security team. Ten targets exist around the map. Not officially mandatory here, but finishing all ten significantly weakens guards' armor, aim, and health during the finale — close to essential in practice for this approach.",
-              "locations": "Various locations around Los Santos",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Various locations around Los Santos"
             },
             {
               "mandatory": false,
               "name": "Security Intel",
               "objective": "Meet Vincent at Rockford Plaza after retrieving a stolen Gauntlet Hellfire, in exchange for a USB drive loaded with casino security information.",
-              "locations": "Rockford Plaza",
-              "intel": "",
-              "dialogue": ""
+              "locations": "Rockford Plaza"
             },
             {
               "mandatory": false,
               "name": "Power Drills",
-              "objective": "A shared general prep item that carries over regardless of approach.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "A shared general prep item that carries over regardless of approach."
             },
             {
               "mandatory": false,
               "name": "Reinforced Armor",
-              "objective": "Pick up extra armor ahead of the finale. Explicitly safe to skip if the crew is already running near-max health and armor.",
-              "locations": "",
-              "intel": "",
-              "dialogue": ""
+              "objective": "Pick up extra armor ahead of the finale. Explicitly safe to skip if the crew is already running near-max health and armor."
             }
           ]
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Entry Team",
@@ -1222,10 +1113,8 @@
       "equipment": {
         "required": [
           "Player-owned Arcade"
-        ],
-        "recommended": []
-      },
-      "notes": []
+        ]
+      }
     },
     "SUM-018": {
       "title": "Los Santos Summer Special",
