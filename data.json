@@ -5,11 +5,11 @@
       "title": "Original Heists",
       "year": "2015",
       "ops": [
-        "HUM-003",
         "SER-004",
         "PAC-005",
         "FLE-001",
-        "PRI-002"
+        "PRI-002",
+        "HUM-003"
       ]
     },
     {
@@ -341,45 +341,38 @@
         "objective": "Infiltrate the Humane Labs facility and steal sensitive research data."
       },
       "intel": "Agent 14 lays out five setups: securing lab key codes, stealing armored Insurgents, taking a Hydra fitted with an EMP, seizing a Valkyrie attack helicopter, and driving the EMP into the facility grounds ahead of the raid itself.",
+      "dialogue": "Hello people, think you'll like this, it pays a lot which is what you want. So, there's this chemical laboratory called Humane labs used to be run by Rashkovsky and Pawpaw's pharma company few years ago it was leased to a shadow company run in part by Don Percival you guys know Don Percival well he's a warmongering right wing douche with all the subtlety of a red **** trust me I met a lot of them warmongering right wing douches not red **** whatever point is Percival is up to no good in that shithole. Nerve agents believe at least that's what the intel seems to suggest what I got told on the street and what my boss he doesn't want you to know his name will pay you to discover because don't worry about the why just worry about the how. \n\nFirst got a couple things to take care of get the Humane Labs key codes and the armored 4x4 like the ones guarding the place you'll do the Key code exchange just off Elgin Avenue you're going to be meeting with somebody who's had a bit of trouble with the Bureau so please use caution One of you is gonna do the exchange one of you is a bodyguard and the other two are gonna be lookouts. The armored 4x4 belongs to Merryweather Security Consulting which belongs to Don Percival who is running Humane Labs. You'll find the Merryweather insurgents on exercise at Davis Courts in Blaine County. Alright people, it doesn't matter what order you do this in, just get it done. This will pay well no questions asked. We never met.",
+      "planningLocation": {
+        "host": "High-End Apartment"
+      },
       "setup": [
         {
           "name": "1. Key Codes",
           "objective": "Meet a contact downtown as Buyer and Bodyguard to obtain the lab's key codes, then fight out.",
-          "locations": "Downtown Los Santos",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Downtown Los Santos"
         },
         {
           "name": "2. Insurgents",
           "objective": "Steal two armored Insurgent LAPVs from a Merryweather test site.",
-          "locations": "Davis Quartz Quarry",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Davis Quartz Quarry"
         },
         {
           "name": "3. EMP",
           "objective": "Fight onto a Merryweather aircraft carrier to steal a Hydra jump jet fitted with an EMP device.",
-          "locations": "Merryweather aircraft carrier, at sea",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Merryweather aircraft carrier, at sea"
         },
         {
           "name": "4. Valkyrie",
           "objective": "Assault Merryweather's naval base to steal the Buckingham Valkyrie attack helicopter used in the finale.",
-          "locations": "Los Santos Naval Port",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Los Santos Naval Port"
         },
         {
           "name": "5. Deliver EMP",
           "objective": "Load the EMP into a stolen Insurgent and drive it into the Humane Labs grounds undetected.",
-          "locations": "Humane Labs facility",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Humane Labs facility"
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Ground Team",
@@ -400,15 +393,7 @@
           "Buckingham Valkyrie",
           "Night vision goggles",
           "Rebreather"
-        ],
-        "recommended": []
-      },
-      "notes": [],
-      "planningLocation": {
-        "address": "Tinsel Towers, Apartment 45",
-        "area": "Rockford Hills",
-        "price": "$270,000",
-        "host": "High-End Apartment"
+        ]
       }
     },
     "SER-004": {
