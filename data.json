@@ -291,7 +291,9 @@
         {
           "name": "3. Station",
           "objective": "Split into two teams — one poses as cops at Mission Row Police Station for the inmate transfer schedule, the other retrieves Rashkovsky's Lampadati Casco from a cargo ship at the port.",
-          "locations": "Mission Row Police Station, Port of Los Santos"
+          "locations": "Mission Row Police Station, Port of Los Santos",
+          "intel": "",
+          "dialogue": "Okay, we got two teams split up and hit your objectives. I'm setting up a healthy atmosphere of competitiveness, use that. Station team you're going for the Bolingbrook Transit schedule. You got the right uniforms but they'll be no good to you if you turn up on foot or in civilian transportation. Get a hold of a cop car using any means necessary, then you can go to the station. and I shouldn't need to say this, don’t get yourselves killed.\n\nYou got a car? Okay. Make sure no one is following you, You can’t turn up at the station when you’re wanted by the police, unless you’re turning yourself in, that is. Lose the cops.\n\nFrom the looks of it you’re clear now go into the station and grab the hard copy on the way in you wont have a problem with the cops unless you act stupid. On the way out with the document, I don’t know. I would do this quickly if I were you just incase someone adds 2 and 2 and makes yeah. \n\nYou got it? Alright get out of there  OK one more thing, I'm going to need you to torch the cop car  to stop this from coming back to us. There are some gas cans under the olympic freeway in Murrieta Heights that will do the job. \n\nYou almost there? My drivers been mainlining Junk energy drinks and downloading soft rock classics for a 40 yard drive to Central America. She would really appreciate if you’d hurry up and send her on her way. \n\nGood work on the schedule but now you got to wait till the team on the car delivers it. Make yourselves useful or make yourself scarce. Okay.\n\nDriver:\nHey. Out. I’m taking over."
         },
         {
           "name": "4. Wet Work",
