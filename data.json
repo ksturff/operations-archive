@@ -483,7 +483,9 @@
         {
           "name": "1. Vans",
           "objective": "Two teams (Driver + Navigator) use the Trackify app to locate and photograph Post OP vans, then steal the one Lester identifies.",
-          "locations": "Los Santos streets"
+          "locations": "Los Santos streets",
+          "intel": "",
+          "dialogue": "Okay, here we go. Transponders on one of four Post Op Vans making runs around the city. Work in pairs - driver and navigator photographer - and use the Trackify app on your phones to find the vans. We’ve got a limited time before the van we need goes out of circulation. \n\nTrackify uses the signal on your phone to tell you when you’re going in the right direction of a target, but it's not very good on distances. If the two teams communicate, you should be able to locate them quickly, then we can all go back to our clickbait, and tube sites. That’s good clear shot of the plate. \n\nNow, get me the rest of them. Don't send me shots of your privates, or the sunset, or your private bits at sunset. I just want shots of license plates. No filters, and definitely no hashtags. alright. I got another picture. We still need some more though. that works. I can see the plate. \n\nNow, get me the last one.  there we go. I got all 4 plates now. Hold on while I run them against their database. bingo. I found our guy. Lemme me ping you the location. great little app that Trackify. Hmm? Hmm? if by great I mean barely functional. but we found the vans, so…  5 star rating! Recommend it to your friends! you should enjoy that version while it's live. The next update installs micro payments. Nah, it doesn't really, but actually probably should.  the transponder is fixed inside, so you'll have to commandeer the whole van, and bring it to Paige. try and do it without attracting attention.\n\nPaige:\nThis the one? transponders should be back here. Yep, that's the model. When you can, take it to Lester's guy. \n"
         },
         {
           "name": "2. Signal",
