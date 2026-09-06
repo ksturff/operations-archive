@@ -511,7 +511,9 @@
         {
           "name": "5. Bikes",
           "objective": "Steal four Principe Lectro motorcycles from The Lost MC's East Los Santos clubhouse for the getaway.",
-          "locations": "East Los Santos"
+          "locations": "East Los Santos",
+          "intel": "",
+          "dialogue": "They’re not really known for their love of sports bikes, I know, but the Lost Motorcycles Club has the ones you're after at their East LS Clubhouse. now, you almost there? You're after the sports bikes, not the choppers. the choppers won't be fast enough to get you away from the cops, and if they were, they wouldn't be able to turn a corner. these bikes use a Kinetic Energy Recovery System, they store the energy you use breaking to accelerate later on. You'll burn the cops, and save the environment while you're at it. OK, as always, don't let them know you're breaking in until you want them to know you're breaking in. There's a bike each. We need all 4 for the job. When you've got ‘em, stash them in the alley for the job. sounds like the lost are mobilizing their troops. A wrecked bike is no good to us, people. Stay out in front of them. I think you’re in the clear. Drop the bikes off in the alley, and we are nearly a go."
         }
       ],
       "finalOperation": {
