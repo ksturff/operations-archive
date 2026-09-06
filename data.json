@@ -5,11 +5,11 @@
       "title": "Original Heists",
       "year": "2015",
       "ops": [
-        "SER-004",
         "PAC-005",
         "FLE-001",
         "PRI-002",
-        "HUM-003"
+        "HUM-003",
+        "SER-004"
       ]
     },
     {
@@ -414,45 +414,36 @@
         "objective": "Steal drug stashes from rival gangs to sell for profit, then defend the haul at Trevor's warehouse."
       },
       "intel": "Trevor runs five setup missions to gather product from various rival operations, then calls in the crew to defend the TPI Warehouse once every group he's stolen from figures out who's responsible.",
+      "dialogue": "Hi there, ha ha ha ha hah. Welcome welcome so glad you could make it. Now, haven’t we met already? Huh? Have you met Ron? Have you? Well either way it doesn't matter. Congratulations huh? You all now have jobs in a start up. This is it, Trevor Phillips industries. Welcome aboard, ahhhh, welcome aboard, hmmm.  I am not a drug dealer. I am not a pusher. Yeah we're... we're locavore's, huh? Recyclers, yeah we think very green. We take the drugs that already exist in America and we add value to their supply chain and that is what all of you will be doing. \n\nNow, first off, Ron, we will be borrowing a couple bricks of cocaine from some juiced up frat boys on a yacht off the coast. Then, we are gonna beat the Vagos to their supply of molly pills. Now our guys do pick up in trash trucks, and so are you. Then, we’re gonna be… sneaking in to the backyard of the Lost MC;s. Oh, and then we’re going to take their meds, that they have stashed. In something… So, there we have it. We're gonna get the meds, we're gonna get the pills, we're gonna get the cocaine. Or we can get the pills the meds the cocaine, ahhh fucking whatever. You're gonna get it, you're gonna bring it to Ron, and then we're gonna fucking get moving.",
+      "planningLocation": {
+        "host": "High-End Apartment"
+      },
       "setup": [
         {
           "name": "1. Coke",
           "objective": "Split into air and water teams to hit a yacht for a cocaine shipment.",
-          "locations": "Yacht, open water",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Yacht, open water"
         },
         {
           "name": "2. Trash Truck",
           "objective": "Collect drug-stashed trash bags from four locations around the city in teams of two.",
-          "locations": "Various Los Santos locations",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Various Los Santos locations"
         },
         {
           "name": "3. Bikers",
-          "objective": "Raid a Lost MC stash.",
-          "locations": "",
-          "intel": "",
-          "dialogue": ""
+          "objective": "Raid a Lost MC stash."
         },
         {
           "name": "4. Weed",
-          "objective": "Steal a weed shipment.",
-          "locations": "",
-          "intel": "",
-          "dialogue": ""
+          "objective": "Steal a weed shipment."
         },
         {
           "name": "5. Steal Meth",
           "objective": "Clear the O'Neil Brothers' farm, then escort a meth tanker off the property with two escort drivers.",
-          "locations": "O'Neil Brothers Farm, Grapeseed",
-          "intel": "",
-          "dialogue": ""
+          "locations": "O'Neil Brothers Farm, Grapeseed"
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Warehouse Defense",
@@ -463,13 +454,6 @@
             "duties": "Drive armed escort alongside the drug vans on the run to the drop-off, fending off pursuers."
           }
         ]
-      },
-      "notes": [],
-      "planningLocation": {
-        "address": "4 Integrity Way, Apartment 28",
-        "area": "Downtown Los Santos",
-        "price": "$476,000",
-        "host": "High-End Apartment"
       }
     },
     "PAC-005": {
