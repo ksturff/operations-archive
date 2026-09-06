@@ -298,7 +298,9 @@
         {
           "name": "4. Wet Work",
           "objective": "Split into two teams to tie off loose ends — take out Rashkovsky's business associate Dima Popov, and two lawyers outside the FIB building for their deposition documents.",
-          "locations": "Richman Glen mansion, FIB building"
+          "locations": "Richman Glen mansion, FIB building",
+          "intel": "",
+          "dialogue": "Hey, good work people, great job. We're still in business very well done all of you very very non incriminating yes that's the word I'm looking for. Now it's ironic given we ah, ah, maybe now it's not the best time to discuss irony. God what is wrong with me you know? I'm usually such a high achiever. Or a criminal. So before we remove Professor Rashkovsky from his unwelcome stay in prison we've gotta clean up a few other loose ends pertaining to the case. Yes, it's a killing but no it's nothing immoral at all just lawyers. Well the professor's old business associate and two lawyers, but really it's all the same. I mean, I always say, if you can't kill a couple lawyers to bend the law to your will then who can you kill? Oh here they are gavin Van Dulu and Josh Sherman get them on the way to City Hall get the documents they're carrying business partner is Dima Popov, extremely rich extremely paranoid and extremely horrible. Don't cry for this guy, no one else will. He's renting a place up in Richmond Glen, just him and a huge security team get close to him take him down and after that we should be ready to go."
         }
       ],
       "finalOperation": {
