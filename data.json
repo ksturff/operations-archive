@@ -349,7 +349,9 @@
         {
           "name": "1. Key Codes",
           "objective": "Meet a contact downtown as Buyer and Bodyguard to obtain the lab's key codes, then fight out.",
-          "locations": "Downtown Los Santos"
+          "locations": "Downtown Los Santos",
+          "intel": "",
+          "dialogue": "Okay, you’re going for the codes. I’ll tell my contact to meet you off Elgin Ave. My contact needs to be able to get in and out quick, make sure the entrance to the lot isn't blocked by your vehicle. My contact is trying to drop her bureau surveillance I mean that would be tough in normal circumstances, but these guy have a real hard-on for her in a non creepy, just annoying sense. So, anyway, were hoping for the best , preparing for the worst. That’s why we got a team of 4 on this. Let’s go. \n\nYou here for access codes? Humane Labs? Alright when I get the all clear we'll give you the codes Can I get sign up we need to be sure about that That bank that was you right? Or someone associated to you? What you're getting into right now is a whole different ball game my friends. you got the go ahead? We got it. The FIB what are the clowns doing here.\n\nThe bureau is coming at us, take them out. Do it. Do not surrender, take them out. We are burned if we are caught. You need to clean up these agentsThey;re chasing a pay off, and they will keep coming. Looks like you’re clear but we’ve heard that before. Drop the codes at the HQ and look out for tails."
         },
         {
           "name": "2. Insurgents",
