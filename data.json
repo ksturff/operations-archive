@@ -5,11 +5,11 @@
       "title": "Original Heists",
       "year": "2015",
       "ops": [
-        "PRI-002",
         "HUM-003",
         "SER-004",
         "PAC-005",
-        "FLE-001"
+        "FLE-001",
+        "PRI-002"
       ]
     },
     {
@@ -269,38 +269,33 @@
         "objective": "Break Professor Maxim Rashkovsky out of Bolingbroke Penitentiary and get him out of the country."
       },
       "intel": "Agent 14 outlines the setup jobs needed before the breakout: securing an aircraft for Rashkovsky's escape flight, hijacking a prison transport bus, obtaining the inmate transfer schedule, retrieving Rashkovsky's car from a rival theft ring, and cleaning up loose ends connected to his case.",
+      "dialogue": "Mr. Crest said we should talk about work but not here Is there a room in the back or something cool I'll get set so Mr Crest said you might be able to help me out with something Well not me so that's clear it's not me you're gonna be helping and I want to understood that I am not involved just a bystander doing a favor and this is not an offer of employment so much as an opportunity well anyway that's just getting a bit technical but the point is sometimes they're fair and legal justice system makes mistakes and this is one such time here he is professor Maxim Rashkovsky you know the professor used to be head of research for the Army Three doctorates overconfident polymath vain sociopath tedious egomaniac control freak geneticist weapons development engineer car nut but definitely not a people person accused of espionage along with everything else you don't remember well lucky you exceedingly vain and self absorbed man brilliant at everything he does yada yada yada makes you want to puke it's a **** **** traitor I mean he's a rat but he pays incarcerated for a crime he did commit but well let's just say money talks and he's going to walk so we got a few things to get ready all pretty straightforward do them one at a time but anyway you like standard op for gov fat breakouts you know what I mean. \n\nAlright first thing's a plane, then we get a bus and then well two things we get the inmate transfer schedule and Rashkovsky's car. More on that later. Let me show you we need a plane to get the professor out of the country. It's currently being used to traffic drugs by transnational street gang The Vagos. The Bus is a standard Bolingbrook transport vehicle; the least traffic is on the route from Paleto Bay, alright, that's where we'll be able to get a hold of one. You can get a hard copy of the inmate transit schedule at the LSPD  mission row station. Go in unarmed, play it cool you might not have a problem. That's a 2 person job max. The other two handlers are guys prized casco. We believe it's about to be shipped to Korea by a luxury car theft ring. Okay, Mr. Crest said you guys are at least semi competent, so well,l Professor Rashkovsky pays well.",
+      "planningLocation": {
+        "host": "High-End Apartment"
+      },
       "setup": [
         {
           "name": "1. Plane",
           "objective": "Fight through Vagos gang members at McKenzie Airfield to steal a Velum aircraft for Rashkovsky's escape flight.",
-          "locations": "McKenzie Airfield, LSIA hangar",
-          "intel": "",
-          "dialogue": ""
+          "locations": "McKenzie Airfield, LSIA hangar"
         },
         {
           "name": "2. Bus",
           "objective": "Intercept and steal a Bolingbroke prison transport bus during a police pursuit, then stash it at a Sandy Shores junkyard.",
-          "locations": "Blaine County convoy route, Sandy Shores junkyard",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Blaine County convoy route, Sandy Shores junkyard"
         },
         {
           "name": "3. Station",
           "objective": "Split into two teams — one poses as cops at Mission Row Police Station for the inmate transfer schedule, the other retrieves Rashkovsky's Lampadati Casco from a cargo ship at the port.",
-          "locations": "Mission Row Police Station, Port of Los Santos",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Mission Row Police Station, Port of Los Santos"
         },
         {
           "name": "4. Wet Work",
           "objective": "Split into two teams to tie off loose ends — take out Rashkovsky's business associate Dima Popov, and two lawyers outside the FIB building for their deposition documents.",
-          "locations": "Richman Glen mansion, FIB building",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Richman Glen mansion, FIB building"
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Prisoner",
@@ -325,15 +320,7 @@
           "Velum aircraft",
           "Prison bus",
           "Buzzard attack helicopter"
-        ],
-        "recommended": []
-      },
-      "notes": [],
-      "planningLocation": {
-        "address": "Eclipse Towers, Apartment 40",
-        "area": "Rockford Hills",
-        "price": "$391,000",
-        "host": "High-End Apartment"
+        ]
       }
     },
     "HUM-003": {
