@@ -490,7 +490,9 @@
         {
           "name": "2. Signal",
           "objective": "Rescue signal expert Avi Schwartzman and deliver him to Paige so he can tune a transponder to disable the bank's dye packs.",
-          "locations": "North Chumash"
+          "locations": "North Chumash",
+          "intel": "",
+          "dialogue": "So this guy's meeting you off the Western Highway just before Paletto Bay. you got any friends who, like, totally overreact when you say something? well, my friend Avi's kinda like that. a few years ago, I told him there was a out on him and he goes full hermit - like, stealing food from trash cans, talking to the trees, Jerking it with squirrels type hermit. I mean, I know that go into hiding and don't even change their Golf Club! The cops are not that smart… or motivated! where were we? Oh yeah… Schwartzman. He's reluctantly agreed to help tune into the Pacific Standard frequency. so, give him the transponder, let him do his thing, then give it to Paige. \n\nOkay, ah, slight change of plans. so… It would appear that some of Abby's paranoia might have been somewhat justified. our call got picked up, they came after him, and he ran. now he's holed up in a Hut on some small island off the coast, surrounded by about 20 government agents. as much as I'd love to hang him out to dry, he's our only shot at this.. and, well it's… kinda our fault so… So, I'm sending you to a rental place on Ineseno Road. \n\nPick up some Seasharks and get out to the island. so, Avi's not going to come out of his Hut until the cops are gone. Gone, you understand? You might not want to let ‘em know you're there ‘till you’ve got it in hand. Oh yeah, and, uh, You need a boat to get him off the island, but I'm guessing the cops won't need theirs when you're done with them, right?"
         },
         {
           "name": "3. Hack",
