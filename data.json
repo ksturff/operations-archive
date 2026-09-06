@@ -284,7 +284,9 @@
         {
           "name": "2. Bus",
           "objective": "Intercept and steal a Bolingbroke prison transport bus during a police pursuit, then stash it at a Sandy Shores junkyard.",
-          "locations": "Blaine County convoy route, Sandy Shores junkyard"
+          "locations": "Blaine County convoy route, Sandy Shores junkyard",
+          "intel": "",
+          "dialogue": "Take an old school bus, paint it, bar the windows and make it smell like blood bowels at your brother's high school. sorry we could do that but it costs money and this is costing Rashkovsky enough already so you're hitting the transport and you're not second guessing us again.  Set to move they're holding inmate class national security risk Bad news is that means there's non security detail the good news is the authorities will think we're trying to break him out and they'll be distracted from what's really going on you read me.\n\nOkay. so we need the bus intact so the way to do that would be neutralizing the driver just so you know. Ok looks like things are heating up. You'll need to lose the police attention before you come anywhere near us again. Hows the bus no ones hiding in the back with a cell phone a carton of cigarettes a pint of pruno up his ass. Amazing what they can fit up there. The lifers especially. You know those games you play where someone gets out a rocket launcher and people go, where was he keeping that? It’s so unrealistic. I say that you've clearly not spent much time in the US prison system. Levity and pop culture references are useful tools when trying to gain trust of new associates. Nice. We’ll hold on to this for you."
         },
         {
           "name": "3. Station",
