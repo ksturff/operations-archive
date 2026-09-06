@@ -504,7 +504,9 @@
         {
           "name": "4. Convoy",
           "objective": "Hijack a Merryweather convoy in Blaine County for thermal charges to breach the vault doors.",
-          "locations": "Blaine County"
+          "locations": "Blaine County",
+          "intel": "",
+          "dialogue": "Ah, okay, so we're going for the charges. Head out to Calafia Bridge and I'll come back with a P.O.A. so, you're gonna run what's known in the “bizz” as a hijacking, because you’re… Well, you're hijacking the Merryweather convoy. The bridge is a nice, tidy place to get it done. Not many places they can go, but plenty of options for you. you can station people at vantage points, block the road, and wait for them to roll into the trap. you can try to take out all the drivers at once. You can concentrate really hard and try to make the truck levitate with your minds. This is San Andreas after all. do whatever you think will work. but get the truck, and don't let anyone follow it. \n\nYou're bringing it to Paige in grape seed, so she can dig out thermal charges. Oh yeah and that reminds me, try not to blow them up. Do not damage that truck at all, okay? I'll be in touch when there is a target about a click out from the bridge. they're on the way roll out some flypaper, start thinking some nasty thoughts and do whatever you're gonna do. More guys incoming, they called back up. \n\nYou got the truck question? Okay, bring it to Paige. Fucking Merryweather. they must have access to satellite imagery, they know where you are and they're coming.\n\nPaige\nYou got ‘em? Looking good. I'll ditch the truck, you hold on to those."
         },
         {
           "name": "5. Bikes",
