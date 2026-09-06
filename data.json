@@ -5,11 +5,11 @@
       "title": "Original Heists",
       "year": "2015",
       "ops": [
-        "PAC-005",
         "FLE-001",
         "PRI-002",
         "HUM-003",
-        "SER-004"
+        "SER-004",
+        "PAC-005"
       ]
     },
     {
@@ -475,45 +475,38 @@
         "objective": "Rob the flagship branch of the Pacific Standard Bank and escape with the vault's contents."
       },
       "intel": "Lester's most ambitious job: five setups gather a disabling transponder, hacking equipment, thermal charges, and getaway bikes before the crew hits the bank itself.",
+      "dialogue": "Well you all look good. How do I look? Do I look like a like a model? Like I work at Peckerwoods. Like a regular dream book. Whatever. We all love banks, especially the big ones that take big risks 'cause they just know that if they went under we'd all be dead. Too big to fail? Great idea! Let's put it to the test, hmm? Well this is a little something I came up with I er… I like to call it - bank robbing with a social agenda if you will. It's something I tell myself so I can… get some sleep at night. \n\nAnyway those overly leveraged turds and Pacific Standard Bank they are going to be hit at their flagship branch. How are we going to do that? Well… it's a little complicated, but there are some trucks. I need you to photograph. One of those trucks. has a built in transponder and we need our transponder to blip out a don't explode signal to the dye packs when we take them out of range of the Pacific Standard signal. \n\nGet it? Alright, don't worry about it just photograph the trucks and I'll tell you which one to hit, but once we've done that we need to have the transponder programmed to Pacific Standards frequency on my signals expert Avi Schwarzman he's a he's been on the run for years you know avoiding people and pulled up somewhere in the middle of nowhere near North Chumash you know you go up there you make nice and you bring the device back and then I will brief you on the rest what do you say? Not very much I imagine. Be good.",
+      "planningLocation": {
+        "host": "High-End Apartment"
+      },
       "setup": [
         {
           "name": "1. Vans",
           "objective": "Two teams (Driver + Navigator) use the Trackify app to locate and photograph Post OP vans, then steal the one Lester identifies.",
-          "locations": "Los Santos streets",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Los Santos streets"
         },
         {
           "name": "2. Signal",
           "objective": "Rescue signal expert Avi Schwartzman and deliver him to Paige so he can tune a transponder to disable the bank's dye packs.",
-          "locations": "North Chumash",
-          "intel": "",
-          "dialogue": ""
+          "locations": "North Chumash"
         },
         {
           "name": "3. Hack",
           "objective": "Steal a hacking rig from a rival heist crew and swap it into your own van.",
-          "locations": "Vinewood",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Vinewood"
         },
         {
           "name": "4. Convoy",
           "objective": "Hijack a Merryweather convoy in Blaine County for thermal charges to breach the vault doors.",
-          "locations": "Blaine County",
-          "intel": "",
-          "dialogue": ""
+          "locations": "Blaine County"
         },
         {
           "name": "5. Bikes",
           "objective": "Steal four Principe Lectro motorcycles from The Lost MC's East Los Santos clubhouse for the getaway.",
-          "locations": "East Los Santos",
-          "intel": "",
-          "dialogue": ""
+          "locations": "East Los Santos"
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Hacker",
@@ -534,15 +527,7 @@
           "Hacking rig",
           "Thermal charges",
           "Principe Lectro motorcycles"
-        ],
-        "recommended": []
-      },
-      "notes": [],
-      "planningLocation": {
-        "address": "4 Integrity Way, Apartment 35",
-        "area": "Downtown Los Santos",
-        "price": "$247,000",
-        "host": "High-End Apartment"
+        ]
       }
     },
     "LOW-006": {
