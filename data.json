@@ -654,48 +654,42 @@
           "objective": "Break into an ambulance depot and steal a set of paramedic equipment — jumpsuits, a defibrillator, and the rest of an EMT loadout — needed to convincingly pose as first responders at the courier's crime scene.",
           "locations": "LS County ambulance depot",
           "intel": "This is what makes the Dead Courier job work: showing up to a police-taped crime scene dressed as paramedics is the only way to get close to the body without setting off every cop in the area.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "Dead Courier",
           "objective": "A government courier has turned up dead with a data cache still on them. The crew poses as first responders — stealing an ambulance is the cleanest way to reach the body without drawing attention — then recovers the cache before anyone else gets to it.",
           "locations": "LS County Coroners / crime scene",
           "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "Deluxos",
           "objective": "Steal a prototype Deluxo — an amphibious, flight-capable sports car — from the guarded lab or warehouse it's being developed in, then deliver it back to the Facility.",
           "locations": "Guarded R&D warehouse",
           "intel": "The Deluxo is what makes Signal Intercepts possible — its flight mode is the only way to keep pace with intercept targets moving across both land and water.",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Signal Intercepts",
           "objective": "Using the amphibious, flight-capable Deluxos acquired in prep, the crew tails a set of moving targets — armored vans first, then boats — getting close enough to hack each one with the SecuroServ app before it can relay its data onward.",
           "locations": "Across land and waterways in Los Santos",
           "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight.",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Akula",
           "objective": "Steal an Akula stealth attack helicopter from a heavily guarded military installation and fly it back to the Facility undetected.",
           "locations": "Military installation",
           "intel": "The Akula's stealth systems are what let the crew land undetected on the NOOSE facility roof for Server Farm — showing up in anything else gets the whole approach blown before it starts.",
-          "dialogue": "",
-          "bunch": 3
+          "dialogue": ""
         },
         {
           "name": "Server Farm",
           "objective": "With the Akula stealth helicopter from prep, the crew flies undetected onto the roof of a NOOSE facility, then moves in on foot to quietly clear guards and cameras on the way to the server room.",
           "locations": "NOOSE Headquarters",
           "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach.",
-          "dialogue": "",
-          "bunch": 3
+          "dialogue": ""
         }
       ],
       "finalOperation": {
@@ -730,74 +724,65 @@
         {
           "name": "Key Cards",
           "objective": "Track down and steal the keycards needed to access the facility where the Avenger is being held, clearing the way to acquire it.",
-          "locations": "",
+          "locations": "Paleto Bay",
           "intel": "Without these, the Avenger job doesn't happen — this is the access prep for the rest of Act 2's mobile command post.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": "“I feel like Mrs. Rackman is not a lady we wanna trifle with. Unless we wanna end up in a secret foreign prison that is. I mean, do you wanna end up at an IAA black site? Yeah, me neither.”\n—Commenting about their alliance with the IAA.\n\n“Look out, our bank robbers have made the oh-so-wise decision to shoot their way to glory through a gas station! It could go up at any time. But, I don't know, maybe that's what you want. Hard to know.”\n—When approaching to the gas station.\n\n“My my. You all alright, huh? The van's still intact, so, uhh... so get it back here!”\n—When close to the van.\n\n“I should probably say, we'd rather you didn't bring the cops here... we've, uhh, kinda got enough to deal with right now.”\n—When taking the van.\n\n“There's a sub off the coast. Foreign agents everywhere, and no real explanation of what's going on! I'm sure there are conspiracy videos about this online, but... I'm too scared to watch 'em.”\n—When closer to the Facility.\n\n“So, the setup jobs are a big deal ahead of the final operation, the move on the submarine. So we always gotta make sure we have the equipment we need. Might seem like this prep work is small fry, but details matter! We need this stuff, but it's not so important how we get it: source it, steal it from rival crews, throw money down to buy it, whatever. Get the equipment and we can do the job and we can get paid.”\n—After delivering the Police Riot to the Facility."
         },
         {
           "name": "Avenger",
           "objective": "Secure a Avenger jet, which becomes the crew's new mobile operations base for the rest of the act — replacing the Facility as the planning hub while at sea.",
           "locations": "",
           "intel": "The Avenger's mobility is the whole point here — Bogdan's submarine moves, so the crew needs a base that can move with it.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "ULP Intel",
           "objective": "Recover intel pinpointing Agent ULP's location before Bogdan's people find them first.",
           "locations": "",
           "intel": "This is what turns Rescue ULP from a blind search into a targeted extraction.",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Rescue ULP",
           "objective": "Extract Agent ULP, the government asset who actually has intel on Bogdan's whereabouts and operations, before Bogdan's people can silence them.",
           "locations": "",
           "intel": "ULP becomes the crew's inside source for the rest of Act 2 once safely extracted.",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Riot Control Van",
           "objective": "Steal a riot control van, whose reinforced frame and crowd-control hardware make it the tool the crew needs to force their way into wherever the hard drives are being kept.",
           "locations": "",
           "intel": "Sets up Salvage Hard Drives — the van does the heavy lifting getting the crew through whatever's standing between them and the data.",
-          "dialogue": "",
-          "bunch": 3
+          "dialogue": ""
         },
         {
           "name": "Salvage Hard Drives",
           "objective": "Recover hard drives holding further detail on Bogdan's submarine and operation, filling in the gaps ULP's intel alone can't cover.",
           "locations": "",
           "intel": "",
-          "dialogue": "",
-          "bunch": 3
+          "dialogue": ""
         },
         {
           "name": "Strombergs",
           "objective": "Steal a pair of Strombergs — missile-firing amphibious sports cars — needed to operate underwater and hold their own against Bogdan's defenses during recon.",
           "locations": "",
           "intel": "One of two preps feeding into Submarine Recon; the Stromberg is what lets the crew actually get close to the sub without just the Kosatka for cover.",
-          "dialogue": "",
-          "bunch": 4
+          "dialogue": ""
         },
         {
           "name": "Torpedo ECU",
           "objective": "Steal the torpedo ECU needed to arm the crew's hardware with functioning torpedoes ahead of the sub recon and the finale assault to come.",
           "locations": "",
           "intel": "The second of the two preps feeding into Submarine Recon, alongside the Strombergs.",
-          "dialogue": "",
-          "bunch": 4
+          "dialogue": ""
         },
         {
           "name": "Submarine Recon",
           "objective": "Scout Bogdan's submarine directly ahead of the finale, confirming its position, defenses, and the safest approach vector.",
           "locations": "At sea, off the San Andreas coast",
           "intel": "This is the last piece before the finale — everything from the previous three setups feeds into planning the actual assault.",
-          "dialogue": "",
-          "bunch": 4
+          "dialogue": ""
         }
       ],
       "finalOperation": {
@@ -831,91 +816,80 @@
       "setup": [
         {
           "name": "Marked Cash",
-          "objective": "Steal a duffel bag of marked bills from a dead drop that the FIB has under surveillance.",
+          "objective": "Track down and recover a shipment of marked cash tied to Avon's operation, following the money as a lead toward Agent 14's location.",
           "locations": "",
           "intel": "One of two preps feeding into Rescue Agent 14, alongside Recon.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "Recon",
           "objective": "Scout the location Agent 14 is being held, confirming guard patterns and the safest way in before committing to the extraction.",
           "locations": "",
           "intel": "The second prep feeding into Rescue Agent 14, alongside Marked Cash.",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "Rescue Agent 14",
           "objective": "Extract Agent 14, who has intel critical to understanding what Avon and Clifford are actually planning.",
           "locations": "",
           "intel": "",
-          "dialogue": "",
-          "bunch": 1
+          "dialogue": ""
         },
         {
           "name": "Chernobog",
-          "objective": "Steal a Chernobog ballistic missile launcher away from Merryweather Security.",
+          "objective": "Secure a Chernobog mobile anti-air platform, giving the crew a mobile base with serious anti-air firepower for the rest of the act.",
           "locations": "",
           "intel": "Sets up Escort ULP — the Chernobog's firepower is what actually keeps ULP alive on the route out.",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Escort ULP",
           "objective": "Escort ULP safely clear of danger, using the Chernobog mobile anti-air platform secured in prep to cover the route.",
           "locations": "",
           "intel": "",
-          "dialogue": "",
-          "bunch": 2
+          "dialogue": ""
         },
         {
           "name": "Flight Path",
-          "objective": "Take out an arms dealer to recover information on the Barrage ATV that's being flown into Los Santos.",
+          "objective": "Scout and secure a safe flight path for the crew's aircraft ahead of the coming assault against the operation.",
           "locations": "",
-          "intel": "Feeds directly into Barrage, tracking the ATV shipment the crew needs to intercept.",
-          "dialogue": "",
-          "bunch": 3
+          "intel": "Feeds directly into Barrage, clearing the route the crew needs to push back the incoming attack.",
+          "dialogue": ""
         },
         {
           "name": "Barrage",
           "objective": "Push back an assault against the crew's own operations, buying time to keep preparing for the base itself.",
           "locations": "",
           "intel": "",
-          "dialogue": "",
-          "bunch": 3
+          "dialogue": ""
         },
         {
           "name": "Test Site Intel",
-          "objective": "Retrieve the Khanjali tank's test site location from the home of one of Avon's employees.",
+          "objective": "Gather intel on Avon's weapons test site, mapping out security and the Khanjali's exact location before the crew moves to steal it.",
           "locations": "Weapons test site",
           "intel": "Sets up Khanjali — without this, the crew would be going into the test site blind.",
-          "dialogue": "",
-          "bunch": 4
+          "dialogue": ""
         },
         {
           "name": "Khanjali",
           "objective": "Steal a TM-02 Khanjali battle tank from Avon's own test site — heavy armor the crew will need for the assault to come.",
           "locations": "Weapons test site",
           "intel": "",
-          "dialogue": "",
-          "bunch": 4
+          "dialogue": ""
         },
         {
           "name": "Onboard Computer",
-          "objective": "Unlocks only after every other Act 3 prep and setup is complete — the final piece needed ahead of Air Defenses.",
+          "objective": "Steal an onboard computer holding the schematics and access codes needed to take down Avon's air defenses.",
           "locations": "",
           "intel": "The last prep of the act, feeding straight into Air Defenses.",
-          "dialogue": "",
-          "bunch": 5
+          "dialogue": ""
         },
         {
           "name": "Air Defenses",
           "objective": "Take down anti-air defenses guarding Avon's base so the finale's air support isn't shot out of the sky before it arrives.",
           "locations": "Pacific Allied Shipyard and surrounding area",
           "intel": "",
-          "dialogue": "",
-          "bunch": 5
+          "dialogue": ""
         }
       ],
       "finalOperation": {
