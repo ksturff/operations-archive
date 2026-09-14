@@ -738,9 +738,9 @@
         {
           "name": "ULP Intel",
           "objective": "Recover intel pinpointing Agent ULP's location before Bogdan's people find them first.",
-          "locations": "",
+          "locations": "Strawberry",
           "intel": "This is what turns Rescue ULP from a blind search into a targeted extraction.",
-          "dialogue": ""
+          "dialogue": "“Okay, so we're looking for the whereabouts of this missing IAA agent. ULP, they called him. He was last seen with some very bad people. Take out the targets sent to your phone, while I monitor various channels. ULP wasn't just heading up the investigation into these breaches... you know what else he was in charge of? The IAA's drug deals on the West Coast. They just can't help themselves... some of these bastards love selling rocks to fund their illegal wars.”\n—Lester's briefing.\n\n“At least there are some seemingly competent people at the IAA, like Mrs. Rackman. Though that Agent 14 had set the bar pretty low. Am I right?”\n—Commenting about the IAA agents.\n\n“Keep taking down those dealers, someone's gonna lead us to that missing agent!”\n—After killing the first dealer.\n“You take out enough of these criminals, they'll panic, and someone will start talking about the kidnapping.”\n—After killing half of the dealers.\n\n“Alright. We got it. One of his dealers set him up. I traced his cellphone to an apartment. Get over there, and recover anything that might tell us where they're holding him. And don't expect a friendly welcome.”\n—After taking out all the dealers.\n\n“Now look for a bag, Russian made, the cameras show him going in with it. Pick it up, and bring it in.”\n—After taking out all the dealers inside the apartment.\n\n“Any hope of finding that agent is in that bag. Bring it in for analysis, and uhh... watch out for any interested parties.”\n—After retrieving the duffel bag from the apartment.\n\n“Okay. This should lead us right to him. When you wanna put on a rescue, you know where to go.”\n—After bringing the duffel bag to the Facility."
         },
         {
           "name": "Rescue ULP",
