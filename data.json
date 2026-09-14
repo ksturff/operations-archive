@@ -773,7 +773,7 @@
         {
           "name": "Torpedo ECU",
           "objective": "Steal the torpedo ECU needed to arm the crew's hardware with functioning torpedoes ahead of the sub recon and the finale assault to come.",
-          "locations": "",
+          "locations": "Palomino Highlands",
           "intel": "The second of the two preps feeding into Submarine Recon, alongside the Strombergs.",
           "dialogue": ""
         },
