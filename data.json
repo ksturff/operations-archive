@@ -724,9 +724,9 @@
         {
           "name": "Key Cards",
           "objective": "Track down and steal the keycards needed to access the facility where the Avenger is being held, clearing the way to acquire it.",
-          "locations": "Paleto Bay",
+          "locations": "",
           "intel": "Without these, the Avenger job doesn't happen — this is the access prep for the rest of Act 2's mobile command post.",
-          "dialogue": "“I feel like Mrs. Rackman is not a lady we wanna trifle with. Unless we wanna end up in a secret foreign prison that is. I mean, do you wanna end up at an IAA black site? Yeah, me neither.”\n—Commenting about their alliance with the IAA.\n\n“Look out, our bank robbers have made the oh-so-wise decision to shoot their way to glory through a gas station! It could go up at any time. But, I don't know, maybe that's what you want. Hard to know.”\n—When approaching to the gas station.\n\n“My my. You all alright, huh? The van's still intact, so, uhh... so get it back here!”\n—When close to the van.\n\n“I should probably say, we'd rather you didn't bring the cops here... we've, uhh, kinda got enough to deal with right now.”\n—When taking the van.\n\n“There's a sub off the coast. Foreign agents everywhere, and no real explanation of what's going on! I'm sure there are conspiracy videos about this online, but... I'm too scared to watch 'em.”\n—When closer to the Facility.\n\n“So, the setup jobs are a big deal ahead of the final operation, the move on the submarine. So we always gotta make sure we have the equipment we need. Might seem like this prep work is small fry, but details matter! We need this stuff, but it's not so important how we get it: source it, steal it from rival crews, throw money down to buy it, whatever. Get the equipment and we can do the job and we can get paid.”\n—After delivering the Police Riot to the Facility."
+          "dialogue": ""
         },
         {
           "name": "Avenger",
@@ -754,7 +754,7 @@
           "objective": "Steal a riot control van, whose reinforced frame and crowd-control hardware make it the tool the crew needs to force their way into wherever the hard drives are being kept.",
           "locations": "",
           "intel": "Sets up Salvage Hard Drives — the van does the heavy lifting getting the crew through whatever's standing between them and the data.",
-          "dialogue": "“You might not have noticed this, but nice friendly corporations have bought up most of the public squares and parks in LS. Oh and they have their own nice friendly security guards to keep the peace. So get there and cause chaos, launch some tear gas, you know, punch a few folks. Just get in the mix, and wait for the riot van to arrive. Then steal it from the fascist pricks and come back. And don't kill anyone, it's just a riot, we don't want the cops there.”\n—When approaching to the location.\n\n“Okay, corporate HQ won't like the look of this. Keep it up!”\n—When fighting with the rioters.\n\n“This is a PR nightmare... the riot squad will be there soon.”\n—When the riot is taking effect.\n\n“Right on time, there's the RCV. Get it and bring it in!”\n—When the riot squad is sent.\n\n“Alright, this van might be the only thing that stands in the way of the Russians, or whoever they are, doing what they came here to do.”\n—When taking the RCV.\n\n“Is it weird that there's a Russian nuclear sub of the coast of San Andreas, or is that like par for the course? I'm not sure which answer to that question would be more disquietening.”\n—Commenting about the presence of the submarine.\n\n“A Russian invasion of Los Santos is definitely not something you would have expected a few years ago, but now I'm like... meh.”\n—When approaching to the Facility.\n\n“We got it. Okay, hit the Planning Room when you wanna try and stop these enemy agents.”\n—After delivering the RCV to the Facility."
+          "dialogue": ""
         },
         {
           "name": "Salvage Hard Drives",
@@ -768,7 +768,7 @@
           "objective": "Steal a pair of Strombergs — missile-firing amphibious sports cars — needed to operate underwater and hold their own against Bogdan's defenses during recon.",
           "locations": "",
           "intel": "One of two preps feeding into Submarine Recon; the Stromberg is what lets the crew actually get close to the sub without just the Kosatka for cover.",
-          "dialogue": ""
+          "dialogue": "“Okay, head out. The wrecked cars are on the back of repo trucks. This is for our reconnaissance on the Russian submarine just off the coast. If we wanna turn Ocelot Strombergs into assault vessels, we're gonna need Ocelot Strombergs. So bring the trucks they're being carried on into base, we'll repair the Strombergs, you know, make some adjustments and you'll be ready to go.”\n—Lester's briefing.\n\n“Okay, head out. Luckily, a rival Import/Export crew's done most of our work for us. They've got the wrecked cars on the back of some Wastelanders. I'll send you an image of what you're looking for.”\n—Lester's alternate briefing.\n\n“We have a Stromberg! Get the truck off those assholes, and bring it in.”\n—When approaching to a valid target truck.\n\n“That's what we're after. Repo the repo truck, and bring it in.”\n—When approaching to a valid target truck.\n\n“You found one! Now steal the truck and get it back to the facility.”\n—When approaching to a valid target truck.\n\n“That's one. Bring the whole truck in to the base.”\n—When approaching to a valid target truck.\n\n“No dice. Keep looking for a Stromberg.”\n—When approaching to an invalid target truck.\n\n“That's not what we're looking for.”\n—When approaching to an invalid target truck.\n\n“Strombergs are all that will work for this, I'm afraid.”\n—When approaching to an invalid target truck.\nWhen delivering the trucks\n\n“Okay, we've got something to work with.”\n—When delivering the first truck to the Facility.\n\n“Well done, that's two of them.”\n—When delivering the second truck to the Facility.\n\n“Alright. Only looking for one more of these.”\n—When delivering the third truck to the Facility.\n\n“Okay, that's the set. We'll start working on the cars. When you've got the weapons system, we can move on the sub.”\n—When delivering the last truck to the Facility."
         },
         {
           "name": "Torpedo ECU",
@@ -816,7 +816,7 @@
       "setup": [
         {
           "name": "Marked Cash",
-          "objective": "Track down and recover a shipment of marked cash tied to Avon's operation, following the money as a lead toward Agent 14's location.",
+          "objective": "Steal a duffel bag of marked bills from a dead drop that the FIB has under surveillance.",
           "locations": "",
           "intel": "One of two preps feeding into Rescue Agent 14, alongside Recon.",
           "dialogue": ""
@@ -837,7 +837,7 @@
         },
         {
           "name": "Chernobog",
-          "objective": "Secure a Chernobog mobile anti-air platform, giving the crew a mobile base with serious anti-air firepower for the rest of the act.",
+          "objective": "Steal a Chernobog ballistic missile launcher away from Merryweather Security.",
           "locations": "",
           "intel": "Sets up Escort ULP — the Chernobog's firepower is what actually keeps ULP alive on the route out.",
           "dialogue": ""
@@ -851,9 +851,9 @@
         },
         {
           "name": "Flight Path",
-          "objective": "Scout and secure a safe flight path for the crew's aircraft ahead of the coming assault against the operation.",
+          "objective": "Take out an arms dealer to recover information on the Barrage ATV that's being flown into Los Santos.",
           "locations": "",
-          "intel": "Feeds directly into Barrage, clearing the route the crew needs to push back the incoming attack.",
+          "intel": "Feeds directly into Barrage, tracking the ATV shipment the crew needs to intercept.",
           "dialogue": ""
         },
         {
@@ -865,7 +865,7 @@
         },
         {
           "name": "Test Site Intel",
-          "objective": "Gather intel on Avon's weapons test site, mapping out security and the Khanjali's exact location before the crew moves to steal it.",
+          "objective": "Retrieve the Khanjali tank's test site location from the home of one of Avon's employees.",
           "locations": "Weapons test site",
           "intel": "Sets up Khanjali — without this, the crew would be going into the test site blind.",
           "dialogue": ""
@@ -879,7 +879,7 @@
         },
         {
           "name": "Onboard Computer",
-          "objective": "Steal an onboard computer holding the schematics and access codes needed to take down Avon's air defenses.",
+          "objective": "Unlocks only after every other Act 3 prep and setup is complete — the final piece needed ahead of Air Defenses.",
           "locations": "",
           "intel": "The last prep of the act, feeding straight into Air Defenses.",
           "dialogue": ""
