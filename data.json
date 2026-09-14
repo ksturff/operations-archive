@@ -725,7 +725,9 @@
         {
           "name": "1. Avenger",
           "objective": "Secure a Avenger jet, which becomes the crew's new mobile operations base for the rest of the act — replacing the Facility as the planning hub while at sea.",
-          "intel": "The Avenger's mobility is the whole point here — Bogdan's submarine moves, so the crew needs a base that can move with it."
+          "intel": "The Avenger's mobility is the whole point here — Bogdan's submarine moves, so the crew needs a base that can move with it.",
+          "locations": "",
+          "dialogue": "There's a location up on your GPS. Now we need a NOOSE van, to get a key card, to get in an aircraft hangar, to steal an Avenger. so get their van while their occupied and bring it to me. Remember, when we just robbed banks, eh? What innocent times those were. Look out, our bank robbers have made the oh-so-wise decision to shoot their way to glory through a gas station. It could go up at any time. But I don't know, maybe that's what you want hard to know.\n\nMy my. You all alright, huh? The van's still intact, so, uhh... so get it back here. I should probably say, we'd rather you didn't bring the cops here, we've, uhh, kinda got enough to deal with right now. 6% cash back i'm sure there are conspiracy videos about this online, but... I'm too scared to watch 'em. "
         },
         {
           "name": "2. Rescue ULP",
