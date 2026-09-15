@@ -65,9 +65,9 @@
       "title": "The Doomsday Heist",
       "year": "2017",
       "ops": [
-        "DOOM-012",
         "DOOM-013",
-        "DOOM-014"
+        "DOOM-014",
+        "DOOM-012"
       ]
     },
     {
@@ -648,6 +648,7 @@
         "objective": "Investigate who's behind the breaches and feed the recovered data to Avon's AI, Clifford, for analysis."
       },
       "intel": "Lester and tech billionaire Avon Hertz recruit the crew to track down a string of data breaches, framing it as a straightforward recovery job. Requires owning a Facility to unlock the planning room. Three prep missions (Paramedic Equipment, Deluxos, Akula) unlock three setup missions before the finale — this act is the gentlest introduction to the trilogy, but it's what puts the crew on Avon's radar for what's coming in Acts 2 and 3.",
+      "dialogue": "Lester:\nYes, come in, come in, come in. Have a seat anywhere this is the one room in the country where we cannot be recorded can I take this mask off now Do you know Avon Avon Hertz? Yes the Avon Hurts. \n\nAvon:\nDon't act all weird i'm just a normal genius. I do very normal things like kite surf with presidents and date B list actresses. I bleed real tears, this is real hair, I program, and I have actual emotions. I'm sort of like one of those things that is good at lots of things. Why isn't this person talking? \n\nLester:\nJust don't worry about it, Mr Hertz took his first company public when he was 22 years old. \n\nAvon:\nAt 21 3/4 I was worth a billion 5 by the time I was 25 i'm trying to save the world for fuck sake man if it'll let me. I was helping the IAA, the government, helping the government I was trying to be the government. My work with artificial intelligence thinking only better. That's my slogan by the way. I was trying to guide the government through a security and ethics nightmare it had stumbled into when whoosh, I'm told no thanks it's a fucking joke but I'm not laughing. \n\nLester:\nAvon is worried that someone's trying to start a war. \n\nAvon:\nI'm not worried about it, i'm certain of it. The only problem is, I just don't know who exactly and worse Clifford doesn't know who. \n\nLester:\nClifford that's his supercomputer. \n\nAvon: \nIt's a neural network of supercomputers. Clifford is a problem solving facility. Say hello Clifford. \n\nClifford:\nYou're embarrassing me Bob, I'm blushing. \n\nAvon:\nGive Clifford data and no more problem. Clifford was on to something, but now the data is gone... gone. It has to be the Russians or the North Koreans or the Iranians or the Chinese using a proxy agent. The fact is if we cannot figure out who is behind these data breaches, then Clifford is useless. If we can get paid of course we can help there are three data thefts I need you to unbreak, rebreach, broach. I'm a natural communicator. I'm a \n\nLester:\nYou getting off topic. \n\nAvon:\nNo this is the topic. How I've been treated, how I've been mistreated. it's an American tragedy kill the clever genius so that numbskulls could take cheap bribes. Yeah, I'll pay, I'll pay whatever it takes. Will I need serious cash 6 figures minimum? No problem. My share price is through the roof. Look three problems, three easy enough solutions. \n\nLester:\nIf you stop talking like you're giving a keynote speech, please? \n\nAvon:\nDo I do that? \n\nLester: Yes \n\nAvon: \nThree data thefts, 250 trillion data points in enemy hands, three simple solutions. One, data courier murdered on the streets of Los Santos, bodies at the morgue. The morgue, you'll have to steal an ambulance to get in there. Old fashion analog, I love it. Retro problem. Two, four of these vans are beaming vast amounts of previously secure military data, you'll need cars to track them down. I have a sort of friend who has some cars you can borrow. Here. \n\nLester:\nOkay, that sounds easy enough. What's the 3rd? \n\nAvon:\nThe big new server farm in Palomino has been compromised I'm certain of it. No one believed me, and I have no idea how to prove it, but if someone could get inside... \n\nLester: \nJust give me a minute, I know these stealth helicopters, these things. Now, Avon these all do seem a bit random. \n\nAvon:\nOf course they seem random because you are not a supercomputer. Clifford will solve it for us, just give us more data about the data so we can data it. Alright, well get to work, and good luck. \n\nClifford:\nPleasure to meet you. You look nice in that suit Avon. I like your hair. \n\nAvon:\nThank you. Prague, kill Clifford .Exe",
       "setup": [
         {
           "name": "Paramedic Equipment",
@@ -660,40 +661,34 @@
           "name": "Dead Courier",
           "objective": "A government courier has turned up dead with a data cache still on them. The crew poses as first responders — stealing an ambulance is the cleanest way to reach the body without drawing attention — then recovers the cache before anyone else gets to it.",
           "locations": "LS County Coroners / crime scene",
-          "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for.",
-          "dialogue": ""
+          "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for."
         },
         {
           "name": "Deluxos",
           "objective": "Steal a prototype Deluxo — an amphibious, flight-capable sports car — from the guarded lab or warehouse it's being developed in, then deliver it back to the Facility.",
           "locations": "Guarded R&D warehouse",
-          "intel": "The Deluxo is what makes Signal Intercepts possible — its flight mode is the only way to keep pace with intercept targets moving across both land and water.",
-          "dialogue": ""
+          "intel": "The Deluxo is what makes Signal Intercepts possible — its flight mode is the only way to keep pace with intercept targets moving across both land and water."
         },
         {
           "name": "Signal Intercepts",
           "objective": "Using the amphibious, flight-capable Deluxos acquired in prep, the crew tails a set of moving targets — armored vans first, then boats — getting close enough to hack each one with the SecuroServ app before it can relay its data onward.",
           "locations": "Across land and waterways in Los Santos",
-          "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight.",
-          "dialogue": ""
+          "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight."
         },
         {
           "name": "Akula",
           "objective": "Steal an Akula stealth attack helicopter from a heavily guarded military installation and fly it back to the Facility undetected.",
           "locations": "Military installation",
-          "intel": "The Akula's stealth systems are what let the crew land undetected on the NOOSE facility roof for Server Farm — showing up in anything else gets the whole approach blown before it starts.",
-          "dialogue": ""
+          "intel": "The Akula's stealth systems are what let the crew land undetected on the NOOSE facility roof for Server Farm — showing up in anything else gets the whole approach blown before it starts."
         },
         {
           "name": "Server Farm",
           "objective": "With the Akula stealth helicopter from prep, the crew flies undetected onto the roof of a NOOSE facility, then moves in on foot to quietly clear guards and cameras on the way to the server room.",
           "locations": "NOOSE Headquarters",
-          "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach.",
-          "dialogue": ""
+          "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach."
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Infiltration Team",
@@ -704,8 +699,7 @@
             "duties": "Provides outside cover and mans the war room's gun camera system to clear remaining resistance while the infiltration team works."
           }
         ]
-      },
-      "notes": []
+      }
     },
     "DOOM-013": {
       "title": "Act II — The Bogdan Problem",
