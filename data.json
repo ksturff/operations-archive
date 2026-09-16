@@ -11118,22 +11118,11 @@
       "title": "IAA Documents",
       "classification": "Government Conspiracy",
       "type": "Photo evidence dossier",
-      "release": "",
       "status": "Filed",
       "overview": {
         "objective": "A visual dossier of IAA-related documents, memos, and evidence pieces tied to The Doomsday Heist storyline."
       },
       "intel": "A folder of classified IAA documents naming everyone involved, most of it encoded in ROT13 with the odd glyph substitution thrown in. The paper trail runs from a 2013 United Liberty Paper contact naming four IAA gun-running agents through to a set of documents signed by Agent 14, one of them dated as late as August 2018 — possibly pointing at content tied to a future update.",
-      "notes": [
-        "Classified Document 1 — Mr. Thornton is referenced via ROT13 alphabet encoding. Classified by the U.L. Paper Contact (identity censored).",
-        "Classified Document 2 — Dated June 13, 2013. Signed off by Mr. Thornton and the U.L.P. contact. In section (b), the last two words of the first censored sentence decode to \"is indicating,\" found using ROT13 plus basic glyph translation. Carries the case number 0001-4742-6002-2010.",
-        "Classified Document 3 — Names the U.L. Paper Contact, Mrs. Jacob, Mrs. Daniels, and Mrs. Smith as the four IAA gun-running (GR) agents, flagged \"do not disclose.\" Signed off by both U.L.P. and K.D. Case number 0001-4742-6002-2010 recurs. Classified by the U.L. Paper Contact; signed by A. Thornton, dated 6/2013 (June 2013).",
-        "Classified Document 4 — Blurred; not yet legible.",
-        "Top Secret Document 5 — Dated August 8, 2018, possibly referencing a future update. Signed by Agent 14 (fR).",
-        "Top Secret Document 6 — Signed by Agent 14 (fR).",
-        "Top Secret Document 7 — Decoded via ROT13: reads \"Jet pack is under surveillance\" and \"Successful transfer of artificial intelligence.\" Signed by Agent 14 (fR)."
-      ],
-      "photos": [],
       "organizations": [
         {
           "name": "International Affairs Agency (IAA)",
@@ -11177,6 +11166,26 @@
           "name": "Joe Thornton — <a href=\"https://www.grandtheftwiki.com/Joe_Thornton\" target=\"_blank\" rel=\"noopener\">wiki</a>",
           "note": "Possibly related to Aleks Thornton — appears on a BJ magazine cover at Poisonbys in Burton and has a Vinewood Star in West Vinewood."
         }
+      ],
+      "photos": [
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597393114.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597401812.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597409656.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597417045.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597425191.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597438133.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597447404.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597455594.jfif",
+        "https://raw.githubusercontent.com/ksturff/operations-archive/main/images/DOOM-028/1789597460800.jfif"
+      ],
+      "notes": [
+        "Classified Document 1 — Mr. Thornton is referenced via ROT13 alphabet encoding. Classified by the U.L. Paper Contact (identity censored).",
+        "Classified Document 2 — Dated June 13, 2013. Signed off by Mr. Thornton and the U.L.P. contact. In section (b), the last two words of the first censored sentence decode to \"is indicating,\" found using ROT13 plus basic glyph translation. Carries the case number 0001-4742-6002-2010.",
+        "Classified Document 3 — Names the U.L. Paper Contact, Mrs. Jacob, Mrs. Daniels, and Mrs. Smith as the four IAA gun-running (GR) agents, flagged \"do not disclose.\" Signed off by both U.L.P. and K.D. Case number 0001-4742-6002-2010 recurs. Classified by the U.L. Paper Contact; signed by A. Thornton, dated 6/2013 (June 2013).",
+        "Classified Document 4 — Blurred; not yet legible.",
+        "Top Secret Document 5 — Dated August 8, 2018, possibly referencing a future update. Signed by Agent 14 (fR).",
+        "Top Secret Document 6 — Signed by Agent 14 (fR).",
+        "Top Secret Document 7 — Decoded via ROT13: reads \"Jet pack is under surveillance\" and \"Successful transfer of artificial intelligence.\" Signed by Agent 14 (fR)."
       ]
     }
   }
