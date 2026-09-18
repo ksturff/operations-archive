@@ -11214,27 +11214,24 @@
           "objective": "Hit a money laundering business twice over to build up a slush fund for the operation, then deliver the stolen cash to Vincent's Lockup.",
           "locations": "Vespucci Police Station (contact point)",
           "intel": "Unlocks Breaking and Entering, Dispatch Work, and purchase access to the Gauntlet Interceptor.",
-          "dialogue": "",
-          "bunch": 1,
-          "protagonist": "Silent"
+          "dialogue": "“I have an opportunity for you. Some unorthodox but profitable collaboration. I can't say more over text. But step one plays to your strengths: asset forfeiture.”\n—Officer Vincent Effenburger (Brief)\n\n“Hello, this is Vincent. We haven't had the pleasure of acquainting ourselves quite yet, but I'd like to offer you a lucrative, albeit unorthodox, opportunity to make some money and sabotage one of your long-standing adversaries.\n\nIf you're interested, meet me at the police precinct by the Vespucci Canals.”\n—Officer Vincent Effenburger's call to new players.\n\n“Hello, this is Vincent. Haven't seen you since we were first acquainted at the Diamond.\nSince then, I uh, unwillingly retired from my former post: head of security.\nI'd like to offer you a lucrative, albeit unorthodox, opportunity to make some money and sabotage one of your long-standing adversaries... \n\nIf you're interested, meet me at the Vespucci Police Station.”\n—Officer Vincent Effenburger's call to players who did not complete all Casino Story Missions.\n\n“Hello, this is Vincent. I haven't seen you since, uh, I unwillingly retired from my former post as head of security at the Diamond Casino. I'd like to offer you a lucrative, albeit unorthodox, opportunity to make some money and sabotage one of your long-standing adversaries...\n\nIf you're interested, meet me at the Vespucci Police Station.”\n—Officer Vincent Effenburger's call to players who competed Casino - Cashing Out.\n\n“Hey, it's Vincent. It gives me supreme pleasure to report I am no longer mall security guard over at Rockford Plaza.\n\nIn fact, these days I'm in a position to offer you a lucrative, although unorthodox, opportunity to make some money and sabotage one of your long-standing adversaries. If you're interested, meet me at the Vespucci Police Station.”\n—Officer Vincent Effenburger's call to players who have last seen him during The Diamond Casino Heist.",
+          "bunch": 1
         },
         {
           "name": "Breaking and Entering",
           "objective": "Do the groundwork for infiltrating the Cluckin' Bell factory — steal a laptop and a hacking device, then hijack a freight train.",
           "locations": "Abandoned FIB Lockup",
           "intel": "Unlocked by Slush Fund; unlocks both Concealed Weapons and Hit and Run. Losing the Terrorbyte during this mission fails it.",
-          "dialogue": "",
-          "bunch": 1,
-          "protagonist": "Silent"
+          "dialogue": "“Alright, now our operation is underway, we need to consider our moves. Preparation is key when it comes to infiltrating the Cluckin' Bell factory, so I need you to do some groundwork. You know how to drive a train, right?”\n—Officer Vincent Effenburger (Brief)\n\nlet's discuss a potential way into this place The cartel of paying off employees are clucking Bell to use the factory as a cover There are a couple things we'll need in order to solidify my current infiltration plan let's move \n\nOlay, sending some coordinates your way. I have a checklist for today's operation. Number one, a laptop from a clucking bell employee on the cartel's payroll, it has got critical intel for our operation. Number two, a hacking device, which is going to help us pilot a train. And that brings me to number three, we need a train,  That's how we're getting into the factory. By the way, we may share a goal, but I'm fully aware we do not share a motication. I've made sure sufficient funds are allocated to recompense you for your efforts today.  Okay, lets get the guy with the laptop. This is a critical piece of intel. The Cartel have paid multiple Cluckin' Bell employees to look the other way while they use their business as a cover for the manufacture and distribution of cocaine. This laptop is give us a window into their schedules. I just sent you a CCTV image of the guy. You've got a choice, steal the laptop behind his back or incapacitate him first. I'll leave it to you.  the information on this laptop is going to tell us how optimal fanning the factory All right let's get ourselves a hacking device if we're going to do this there's a lot of computer systems we're going to need to override along the way and this is our ticket. Now fair warning, the guy who owns this is pretty serious criminal element. Major hacker. The LSPD won't touch him. But we will. He operates out of a Terrorbyte command truck. I'm sending you a picture of him now. My advice to you is... locate his drones. They're tethered to his security. Take them down before you proceed. I guess an inconspicuous locale is a necessity when you're in possession of your very own military industrial complex on wheels.  ",
+          "bunch": 1
         },
         {
           "name": "Concealed Weapons",
           "objective": "Carefully select and steal a cache of weapons and gear for the crew ahead of the raid, staying covert rather than going in loud.",
           "locations": "Abandoned FIB Lockup",
-          "intel": "Unlocked by Breaking and Entering; needs to be completed alongside Hit and Run before Disorganized Crime unlocks. The Marabunta Grande loadout includes a suppressed pistol — worth grabbing if you're planning to go Silent in the finale. Stealing every weapon and piece of gear in one run earns the \"All the Sides\" award.",
+          "intel": "Unlocked by Breaking and Entering; needs to be completed alongside Hit and Run before Disorganized Crime unlocks. Stealing every weapon and piece of gear in one run earns the \"All the Sides\" award.",
           "dialogue": "",
-          "bunch": 2,
-          "protagonist": "Silent"
+          "bunch": 2
         },
         {
           "name": "Hit and Run",
@@ -11242,90 +11239,23 @@
           "locations": "Abandoned FIB Lockup",
           "intel": "Unlocked by Breaking and Entering; needs to be completed alongside Concealed Weapons before Disorganized Crime unlocks. Stealing every getaway vehicle in one run earns the \"Fly The Coop\" award.",
           "dialogue": "",
-          "bunch": 2,
-          "protagonist": "Silent"
+          "bunch": 2
         },
         {
           "name": "Disorganized Crime",
-          "objective": "Hack both cartel vans to find the garage, then slip in and sabotage the delivery trucks quietly.",
+          "objective": "Sabotage the cartel's supply lines by stealing a keycard to their cocaine storage, clearing the way for the factory raid.",
           "locations": "Abandoned FIB Lockup",
-          "intel": "Hacking the vans to delete their CCTV footage during this mission is what unlocks the Silent approach for the finale — do it here, or the crew gets locked into going in loud instead. Unlocks the trade price for the Cluckin' Bell Benson.",
+          "intel": "Unlocked once both Concealed Weapons and Hit and Run are complete; unlocks the trade price for the Cluckin' Bell Benson.",
           "dialogue": "",
-          "bunch": 3,
-          "protagonist": "Silent"
+          "bunch": 3
         },
         {
           "name": "Scene of the Crime",
-          "objective": "Infiltrate the Cluckin' Bell factory undetected — work through both storage areas and the office without tripping the alarm, then get the loot back to Vincent's Lockup clean.",
+          "objective": "The finale — infiltrate the Cluckin' Bell factory, steal cocaine from two storage areas, hack the office computer to crack the safe, then get the loot back to Vincent's Lockup.",
           "locations": "Cluckin' Bell Farm, Paleto Bay",
-          "intel": "Only available if the CCTV footage was deleted during Disorganized Crime. Unlocks the trade price for the Gauntlet Interceptor. Completing the raid also unlocks the weekly Cluckin' Bell Cap challenge.",
+          "intel": "Unlocks the trade price for the Gauntlet Interceptor. Completing the raid also unlocks the weekly Cluckin' Bell Cap challenge.",
           "dialogue": "",
-          "bunch": 3,
-          "protagonist": "Silent"
-        },
-        {
-          "name": "Slush Fund",
-          "objective": "Hit a money laundering business twice over to build up a slush fund for the operation, then deliver the stolen cash to Vincent's Lockup.",
-          "locations": "Vespucci Police Station (contact point)",
-          "intel": "Unlocks Breaking and Entering, Dispatch Work, and purchase access to the Gauntlet Interceptor.",
-          "dialogue": "",
-          "bunch": 1,
-          "protagonist": "Aggressive"
-        },
-        {
-          "name": "Breaking and Entering",
-          "objective": "Do the groundwork for infiltrating the Cluckin' Bell factory — steal a laptop and a hacking device, then hijack a freight train.",
-          "locations": "Abandoned FIB Lockup",
-          "intel": "Unlocked by Slush Fund; unlocks both Concealed Weapons and Hit and Run. Losing the Terrorbyte during this mission fails it.",
-          "dialogue": "",
-          "bunch": 1,
-          "protagonist": "Aggressive"
-        },
-        {
-          "name": "Concealed Weapons",
-          "objective": "Carefully select and steal a cache of weapons and gear for the crew ahead of the raid, staying covert rather than going in loud.",
-          "locations": "Abandoned FIB Lockup",
-          "intel": "Unlocked by Breaking and Entering; needs to be completed alongside Hit and Run before Disorganized Crime unlocks. The Marabunta Grande loadout includes a suppressed pistol — worth grabbing if you're planning to go Silent in the finale. Stealing every weapon and piece of gear in one run earns the \"All the Sides\" award.",
-          "dialogue": "",
-          "bunch": 2,
-          "protagonist": "Aggressive"
-        },
-        {
-          "name": "Hit and Run",
-          "objective": "Secure an untraceable getaway vehicle for the crew's exit from the Cluckin' Bell factory.",
-          "locations": "Abandoned FIB Lockup",
-          "intel": "Unlocked by Breaking and Entering; needs to be completed alongside Concealed Weapons before Disorganized Crime unlocks. Stealing every getaway vehicle in one run earns the \"Fly The Coop\" award.",
-          "dialogue": "",
-          "bunch": 2,
-          "protagonist": "Aggressive"
-        },
-        {
-          "name": "Disorganized Crime",
-          "objective": "Hack both cartel vans to find the garage, then hit the delivery trucks by force rather than sneaking past.",
-          "locations": "Abandoned FIB Lockup",
-          "intel": "Skipping the CCTV deletion here (or getting made) locks the finale into the Aggressive approach. Unlocks the trade price for the Cluckin' Bell Benson.",
-          "dialogue": "",
-          "bunch": 3,
-          "protagonist": "Aggressive"
-        },
-        {
-          "name": "Scene of the Crime",
-          "objective": "Storm the Cluckin' Bell factory guns blazing — fight through both storage areas and the office against constantly respawning enemies, then shoot your way out to the getaway vehicle with the loot.",
-          "locations": "Cluckin' Bell Farm, Paleto Bay",
-          "intel": "The default approach if the CCTV footage wasn't deleted during Disorganized Crime — expect enemies to keep respawning until the mission's done. Unlocks the trade price for the Gauntlet Interceptor. Completing the raid also unlocks the weekly Cluckin' Bell Cap challenge.",
-          "dialogue": "",
-          "bunch": 3,
-          "protagonist": "Aggressive"
-        }
-      ],
-      "groups": [
-        {
-          "name": "Silent",
-          "color": "#00E5FF"
-        },
-        {
-          "name": "Aggressive",
-          "color": "#FF3B3B"
+          "bunch": 3
         }
       ]
     }
