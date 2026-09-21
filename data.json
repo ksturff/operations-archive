@@ -65,10 +65,10 @@
       "title": "The Doomsday Heist",
       "year": "2017",
       "ops": [
-        "DOOM-012",
         "DOOM-013",
         "DOOM-014",
-        "DOOM-028"
+        "DOOM-028",
+        "DOOM-012"
       ]
     },
     {
@@ -659,58 +659,47 @@
         "objective": "Investigate who's behind the breaches and feed the recovered data to Avon's AI, Clifford, for analysis."
       },
       "intel": "Lester and tech billionaire Avon Hertz recruit the crew to track down a string of data breaches, framing it as a straightforward recovery job. Requires owning a Facility to unlock the planning room. Three prep missions (Paramedic Equipment, Deluxos, Akula) unlock three setup missions before the finale — this act is the gentlest introduction to the trilogy, but it's what puts the crew on Avon's radar for what's coming in Acts 2 and 3.",
+      "dialogue": "Lester:\nYes, yes, come in, come in, come in, have a seat anywhere. This is the one room in the country where we cannot be recorded can I take this mask off. Now, do you know Avon Hertz? Avon Hertz?\n\nAvon:\nYes the Avon hurts. Don't act all weird. I'm just a normal genius, I do very normal things, like kite surf with presidents and date B list actresses. I bleed real tears, this is real hair, I program, and I have actual emotions. I'm sort of like one of those things that is good at lots of things. Why isn't this person talking? \n\nLester: \nDon't worry about it. Mr Hertz took his first company public when he was 22 years old.\n\nAvon:\nAt 21 3/4 I was worth a billion 5 by the time I was 25 i'm trying to save the world for fuck sake man if it'll let me. \n\nLester:\nAvon was helping the IAA, the government.\n\nAvon: \nHelping the government, I was trying to be the government. My work with artificial intelligence thinking only better. That's my slogan by the way. I was trying to guide the government through a security and ethics nightmare it had stumbled into when... whoosh. I'm told no thanks it's a fucking joke but I'm not laughing. \n\nLester:\nAvon is worried that someone's trying to start a war. \n\nAvon:\nI'm not worried about it, I'm certain of it. The only problem is I just don't know who exactly, and worse, Clifford doesn't know who. \n\nLester:\nClifford that's his super computer. \n\nAvon:\nIt's a neural network of supercomputers. Clifford is a problem solving facility. Say hello Clifford... \n\nClifford:\nYou're embarrassing me, Avon. I'm blushing. \n\nAvon:\nGive Clifford data and no more problem. Clifford was on to something but now the data is gone... gone. It has to be the Russians or the North Koreans or the Iranians.... or the Chinese using a proxy agent. The fact is, if we cannot figure out who is behind these data breaches, then Clifford is useless. \n\nLester:\nIf we can get paid, of course we can help. \n\nAvon:\nThere are three data thefts I need you to unbreach, re breach, broach. I'm a natural communicator. I'm uh \n\nLester:\nYou're getting off topic. \n\nAvon:\nNo this is the topic. How I've been treated, how I've been mistreated. It's an American tragedy. Kill the clever genius so that numbskulls could take cheap bribes. Yeah, I'll pay, I'll pay whatever it takes. Will I need serious cash 6 figures minimum? No problem. My share price is through the roof. Look three problems, three easy enough solutions. If you \n\nLester:\nStop talking like you're giving a keynote speech, please? \n\nAvon:\nDo I do that? \n\nLester:\nYes\n\nAvon: \nThree data thefts, 250 trillion data points in enemy hands. three simple solutions, one data Courier murdered on the streets of Los Santos, bodies at the morgue. \n\nLester:\nUh the morgue. \n\nAvon:\nYou'll have to steal an ambulance to get in there old fashioned analog. \n\nLester:\nI love it, retro problem. \n\nAvon:\nTwo Four of these vans are beaming vast amounts of previously secure military data. You'll need cars to track them down. I have a sort of friend who has some cars you can borrow. Easy enough. What's the 3rd? The big new server farm in Palomino has been compromised. I'm certain of it. No one believes me and I have no idea how to prove it, but if someone could get inside... \n\nLester:\nJust give me a minute, I know these stealth helicopters, these things. huh. Now Avon these all do seem a bit random. \n\nAvon:\nOf course they seem random because you are not a supercomputer. Clifford will solve it for us. Just give us more data about the data so we can data in. Alright, well, get to work, and good luck. \n\nClifford:\nPleasure to meet you, you look nice in that shirt, Avon. I like your hair. \n\nAvon:\nThank you. Prague, kill clifford.Exe.",
       "setup": [
         {
           "name": "Paramedic Equipment",
           "objective": "Break into an ambulance depot and steal a set of paramedic equipment — jumpsuits, a defibrillator, and the rest of an EMT loadout — needed to convincingly pose as first responders at the courier's crime scene.",
           "locations": "LS County ambulance depot",
           "intel": "This is what makes the Dead Courier job work: showing up to a police-taped crime scene dressed as paramedics is the only way to get close to the body without setting off every cop in the area.",
-          "dialogue": "“Sending you the location now. In case it wasn't clear, you're gonna need the ambulance and the paramedic gear to get into the Coroner's Office. You know, to get the agent's body, to get the data, yeah? Okay. Get to work.”\n—Lester's briefing.\n\n“You got it? Alright. Now bring it back to the facility in one piece and we'll call it a job well done.”\n—After taking the Ambulance.\n\n“Stealing data just doesn't have the same, uh... allure as analogue theft, am I right? I mean, it's just not sexy. But soon all money will be data and this will be the only gig going, so... there's that. We should just enjoy it while it lasts.”\n—On the way to the Facility.\n\n“Avon is exactly the kind of guy I'd like to rob... and I'm working for him. He better pay us so much, it's like we robbed him!”\n—When closer to the Facility.\n\n“Or, you could just call up an ambulance and get it to come to you, of course. I thought that was pretty obvious, so I didn't mention it. Now bring it back to the facility in one piece and we'll call it a job well done.”\n—Shortly after calling 911.\n\n“Good work getting that, um, \"thing\" for the, uhh... \"job\". Hey, um, you ever want to outsource that kind of work, there's always people who can get us things for a price. Yeah? Something to think about if your time is precious.”\n—After delivering the Ambulance.",
-          "bunch": 1
+          "dialogue": "“Sending you the location now. In case it wasn't clear, you're gonna need the ambulance and the paramedic gear to get into the Coroner's Office. You know, to get the agent's body, to get the data, yeah? Okay. Get to work.”\n—Lester's briefing.\n\n“You got it? Alright. Now bring it back to the facility in one piece and we'll call it a job well done.”\n—After taking the Ambulance.\n\n“Stealing data just doesn't have the same, uh... allure as analogue theft, am I right? I mean, it's just not sexy. But soon all money will be data and this will be the only gig going, so... there's that. We should just enjoy it while it lasts.”\n—On the way to the Facility.\n\n“Avon is exactly the kind of guy I'd like to rob... and I'm working for him. He better pay us so much, it's like we robbed him!”\n—When closer to the Facility.\n\n“Or, you could just call up an ambulance and get it to come to you, of course. I thought that was pretty obvious, so I didn't mention it. Now bring it back to the facility in one piece and we'll call it a job well done.”\n—Shortly after calling 911.\n\n“Good work getting that, um, \"thing\" for the, uhh... \"job\". Hey, um, you ever want to outsource that kind of work, there's always people who can get us things for a price. Yeah? Something to think about if your time is precious.”\n—After delivering the Ambulance."
         },
         {
           "name": "Dead Courier",
           "objective": "A government courier has turned up dead with a data cache still on them. The crew poses as first responders — stealing an ambulance is the cleanest way to reach the body without drawing attention — then recovers the cache before anyone else gets to it.",
           "locations": "LS County Coroners / crime scene",
-          "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for.",
-          "dialogue": "",
-          "bunch": 1
+          "intel": "The cache turns out to be only half the puzzle — it points toward a wider signal network still broadcasting data the crew hasn't accounted for."
         },
         {
           "name": "Deluxos",
           "objective": "Steal a prototype Deluxo — an amphibious, flight-capable sports car — from the guarded lab or warehouse it's being developed in, then deliver it back to the Facility.",
           "locations": "Guarded R&D warehouse",
-          "intel": "The Deluxo is what makes Signal Intercepts possible — its flight mode is the only way to keep pace with intercept targets moving across both land and water.",
-          "dialogue": "",
-          "bunch": 2
+          "intel": "The Deluxo is what makes Signal Intercepts possible — its flight mode is the only way to keep pace with intercept targets moving across both land and water."
         },
         {
           "name": "Signal Intercepts",
           "objective": "Using the amphibious, flight-capable Deluxos acquired in prep, the crew tails a set of moving targets — armored vans first, then boats — getting close enough to hack each one with the SecuroServ app before it can relay its data onward.",
           "locations": "Across land and waterways in Los Santos",
-          "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight.",
-          "dialogue": "",
-          "bunch": 2
+          "intel": "Each hacked target has to be destroyed immediately after the hack completes, and every vehicle carries an armed passenger, so it's equal parts stealth-hacking and running gunfight."
         },
         {
           "name": "Akula",
           "objective": "Steal an Akula stealth attack helicopter from a heavily guarded military installation and fly it back to the Facility undetected.",
           "locations": "Military installation",
-          "intel": "The Akula's stealth systems are what let the crew land undetected on the NOOSE facility roof for Server Farm — showing up in anything else gets the whole approach blown before it starts.",
-          "dialogue": "",
-          "bunch": 3
+          "intel": "The Akula's stealth systems are what let the crew land undetected on the NOOSE facility roof for Server Farm — showing up in anything else gets the whole approach blown before it starts."
         },
         {
           "name": "Server Farm",
           "objective": "With the Akula stealth helicopter from prep, the crew flies undetected onto the roof of a NOOSE facility, then moves in on foot to quietly clear guards and cameras on the way to the server room.",
           "locations": "NOOSE Headquarters",
-          "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach.",
-          "dialogue": "",
-          "bunch": 3
+          "intel": "Once inside, the job becomes a stealth puzzle — four servers need hacking while staying out of guard sightlines, since running or getting spotted blows the whole approach."
         }
       ],
       "finalOperation": {
-        "dialogue": "",
         "roles": [
           {
             "role": "Infiltration Team",
@@ -721,8 +710,7 @@
             "duties": "Provides outside cover and mans the war room's gun camera system to clear remaining resistance while the infiltration team works."
           }
         ]
-      },
-      "notes": []
+      }
     },
     "DOOM-013": {
       "title": "Act II — The Bogdan Problem",
